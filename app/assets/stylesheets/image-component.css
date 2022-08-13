@@ -1,0 +1,11 @@
+.image-container{
+    height: 500px;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    overflow: hidden;
+}
+
+.image-container img{
+    height: 500px;
+}

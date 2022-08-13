@@ -1,0 +1,14 @@
+@import "navbar.css";
+@import "summary-component.css";
+@import "image-component.css";
+@import "description-component.css";
+@import "footer.css";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 1100px;
+}
