@@ -1,8 +1,18 @@
-@import "navbar.css";
-@import "summary-component.css";
-@import "image-component.css";
-@import "description-component.css";
-@import "footer.css";
+@import url("common_assets/navbar.css");
+@import url("common_assets/footer.css");
+@import url("common_assets/background.css");
+
+@import url("home_page/summary-component.css");
+@import url("home_page/image-component.css");
+@import url("home_page/description-component.css");
+
+@import url("project_page/projects-page.css");
+@import url("project_page/portfolio_page/portfolio-page.css");
+@import url("project_page/telegram_bot_page/telegram-bot-page.css");
+
+@import url("about_me_page/about-me-page.css");
+@import url("about_me_page/resume.css");
+@import url("about_me_page/description-component.css");
 
 *{
     margin: 0px;
@@ -10,5 +20,6 @@
 }
 
 body{
-    height: 1100px;
+    height: 740px;
+    overflow: hidden;
 }
