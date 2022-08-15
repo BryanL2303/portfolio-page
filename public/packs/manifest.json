@@ -1,0 +1,15 @@
+{
+  "entrypoints": {
+    "hello_react": {
+      "js": [
+        "/packs/js/hello_react-f3128a6f6b290aa2e4d0.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_react-f3128a6f6b290aa2e4d0.js.map"
+      ]
+    }
+  },
+  "hello_react.js": "/packs/js/hello_react-f3128a6f6b290aa2e4d0.js",
+  "hello_react.js.map": "/packs/js/hello_react-f3128a6f6b290aa2e4d0.js.map",
+  "media/components/images/bryan-lee.jpg": "/packs/media/components/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg"
+}
