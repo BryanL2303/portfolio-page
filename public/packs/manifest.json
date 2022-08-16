@@ -1,15 +1,17 @@
 {
+  "app.js": "/packs/js/app-ad98fd756d0d9c4b1b68.js",
+  "app.js.map": "/packs/js/app-ad98fd756d0d9c4b1b68.js.map",
   "entrypoints": {
-    "hello_react": {
+    "app": {
       "js": [
-        "/packs/js/hello_react-f3128a6f6b290aa2e4d0.js"
+        "/packs/js/app-ad98fd756d0d9c4b1b68.js"
       ],
       "js.map": [
-        "/packs/js/hello_react-f3128a6f6b290aa2e4d0.js.map"
+        "/packs/js/app-ad98fd756d0d9c4b1b68.js.map"
       ]
     }
   },
-  "hello_react.js": "/packs/js/hello_react-f3128a6f6b290aa2e4d0.js",
-  "hello_react.js.map": "/packs/js/hello_react-f3128a6f6b290aa2e4d0.js.map",
-  "media/components/images/bryan-lee.jpg": "/packs/media/components/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg"
+  "media/components/images/bryan-lee.jpg": "/packs/media/components/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg",
+  "media/components/images/resume.jpg": "/packs/media/components/images/resume-99de9e47d42f8f91bb7ac5f3769149c9.jpg",
+  "media/components/images/telegram-bot-screenshot.jpg": "/packs/media/components/images/telegram-bot-screenshot-9d6c275391506849de2d9f0756e4ff9c.jpg"
 }

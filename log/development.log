@@ -8676,3 +8676,402 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 71ms (Views: 66.8ms | Allocations: 5452)
 
 
+Started GET "/" for 127.0.0.1 at 2022-08-16 09:15:37 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/bryan/NUS/CVWO/portfolio-page/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: [1m8634c3f76d424b15f72a[39m[22m
+Version: webpack [1m4.46.0[39m[22m
+Time: [1m3860[39m[22mms
+Built at: 16/08/2022 [1m9:15:46 am[39m[22m
+                                                                               [1mAsset[39m[22m       [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m                       [1m[39m[22m[1mChunk Names[39m[22m
+                                                      [1m[32mjs/app-246577a90447efeed267.js[39m[22m   1.34 MiB     [1mapp[39m[22m  [1m[32m[emitted] [immutable][39m[22m  app
+                                                  [1m[32mjs/app-246577a90447efeed267.js.map[39m[22m    1.5 MiB     [1mapp[39m[22m  [1m[32m[emitted] [dev][39m[22m        app
+                                                                       [1m[32mmanifest.json[39m[22m  702 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+              [1m[32mmedia/components/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg[39m[22m    291 KiB        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                 [1m[32mmedia/components/images/resume-99de9e47d42f8f91bb7ac5f3769149c9.jpg[39m[22m   85.6 KiB        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+[1m[32mmedia/components/images/telegram-bot-screenshot-9d6c275391506849de2d9f0756e4ff9c.jpg[39m[22m    247 KiB        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+Entrypoint [1mapp[39m[22m = [1m[32mjs/app-246577a90447efeed267.js[39m[22m [1m[32mjs/app-246577a90447efeed267.js.map[39m[22m
+[[1m./app/javascript/components/about_me_page/AboutMePage.jsx[39m[22m] 1.69 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/about_me_page/DescriptionComponent.jsx[39m[22m] 2.65 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/about_me_page/Resume.jsx[39m[22m] 720 bytes {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/common_assets/Background.jsx[39m[22m] 1.44 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/common_assets/Footer.jsx[39m[22m] 1.37 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/common_assets/NavBar.jsx[39m[22m] 1.2 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/home_page/Home.jsx[39m[22m] 1.45 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/home_page/ImageComponent.jsx[39m[22m] 757 bytes {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/project_page/ProjectsPage.jsx[39m[22m] 4.02 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/project_page/portfolio_page/PortfolioPage.jsx[39m[22m] 3.62 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/project_page/telegram_bot_page/TelegramBotPage.jsx[39m[22m] 3.44 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/app.jsx[39m[22m] 2.74 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/react-dom/index.js[39m[22m] 1.32 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/react-router-dom/index.js[39m[22m] 13.8 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/react/index.js[39m[22m] 189 bytes {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+    + 16 hidden modules
+
+  Rendered pages/index.html.erb within layouts/application (Duration: 9331.8ms | Allocations: 35190)
+  Rendered layout layouts/application.html.erb (Duration: 9406.1ms | Allocations: 52886)
+Completed 200 OK in 9463ms (Views: 9424.3ms | ActiveRecord: 0.0ms | Allocations: 56571)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-16 09:15:49 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 54.5ms | Allocations: 5189)
+  Rendered layout layouts/application.html.erb (Duration: 59.8ms | Allocations: 7583)
+Completed 200 OK in 66ms (Views: 61.1ms | ActiveRecord: 0.0ms | Allocations: 7940)
+
+
+Started GET "/projects" for 127.0.0.1 at 2022-08-16 09:15:50 +0800
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"projects"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 61.5ms | Allocations: 4997)
+  Rendered layout layouts/application.html.erb (Duration: 67.6ms | Allocations: 7305)
+Completed 200 OK in 74ms (Views: 68.8ms | ActiveRecord: 0.0ms | Allocations: 7599)
+
+
+Started GET "/about_me" for 127.0.0.1 at 2022-08-16 09:15:50 +0800
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"about_me"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 54.0ms | Allocations: 4997)
+  Rendered layout layouts/application.html.erb (Duration: 58.8ms | Allocations: 7306)
+Completed 200 OK in 65ms (Views: 59.7ms | ActiveRecord: 0.0ms | Allocations: 7600)
+
+
+Started GET "/projects" for 127.0.0.1 at 2022-08-16 09:15:51 +0800
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"projects"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 65.7ms | Allocations: 5064)
+  Rendered layout layouts/application.html.erb (Duration: 72.1ms | Allocations: 7364)
+Completed 200 OK in 80ms (Views: 73.6ms | ActiveRecord: 0.0ms | Allocations: 7658)
+
+
+Started GET "/projects/telegram_bot_project" for 127.0.0.1 at 2022-08-16 09:15:51 +0800
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"projects/telegram_bot_project"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 63.2ms | Allocations: 4996)
+  Rendered layout layouts/application.html.erb (Duration: 70.1ms | Allocations: 7285)
+Completed 200 OK in 78ms (Views: 71.1ms | ActiveRecord: 0.0ms | Allocations: 7575)
+
+
+Started GET "/projects" for 127.0.0.1 at 2022-08-16 09:15:52 +0800
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"projects"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 86.7ms | Allocations: 4996)
+  Rendered layout layouts/application.html.erb (Duration: 102.8ms | Allocations: 7285)
+Completed 200 OK in 109ms (Views: 103.7ms | ActiveRecord: 0.0ms | Allocations: 7575)
+
+
+Started GET "/projects/portfolio_project" for 127.0.0.1 at 2022-08-16 09:15:53 +0800
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"projects/portfolio_project"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 62.8ms | Allocations: 5064)
+  Rendered layout layouts/application.html.erb (Duration: 67.8ms | Allocations: 7373)
+Completed 200 OK in 74ms (Views: 68.8ms | ActiveRecord: 0.0ms | Allocations: 7663)
+
+
+Started GET "/projects" for 127.0.0.1 at 2022-08-16 09:15:53 +0800
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"projects"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 55.7ms | Allocations: 4996)
+  Rendered layout layouts/application.html.erb (Duration: 61.2ms | Allocations: 7300)
+Completed 200 OK in 69ms (Views: 62.4ms | ActiveRecord: 0.0ms | Allocations: 7590)
+
+
+Started GET "/projects/telegram_bot_project" for 127.0.0.1 at 2022-08-16 09:15:54 +0800
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"projects/telegram_bot_project"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 69.3ms | Allocations: 4996)
+  Rendered layout layouts/application.html.erb (Duration: 74.6ms | Allocations: 7302)
+Completed 200 OK in 80ms (Views: 75.5ms | ActiveRecord: 0.0ms | Allocations: 7592)
+
+
+Started GET "/projects" for 127.0.0.1 at 2022-08-16 09:15:58 +0800
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"projects"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 63.6ms | Allocations: 4996)
+  Rendered layout layouts/application.html.erb (Duration: 69.5ms | Allocations: 7309)
+Completed 200 OK in 76ms (Views: 70.5ms | ActiveRecord: 0.0ms | Allocations: 7599)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-16 09:15:58 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 62.8ms | Allocations: 5063)
+  Rendered layout layouts/application.html.erb (Duration: 69.5ms | Allocations: 7364)
+Completed 200 OK in 76ms (Views: 70.6ms | ActiveRecord: 0.0ms | Allocations: 7654)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-16 09:16:54 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/bryan/NUS/CVWO/portfolio-page/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: [1mec93df91524227950e2b[39m[22m
+Version: webpack [1m4.46.0[39m[22m
+Time: [1m1738[39m[22mms
+Built at: 16/08/2022 [1m9:16:59 am[39m[22m
+                                                                               [1mAsset[39m[22m       [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m                       [1m[39m[22m[1mChunk Names[39m[22m
+                                                      [1m[32mjs/app-ad98fd756d0d9c4b1b68.js[39m[22m   1.34 MiB     [1mapp[39m[22m  [1m[32m[emitted] [immutable][39m[22m  app
+                                                  [1m[32mjs/app-ad98fd756d0d9c4b1b68.js.map[39m[22m    1.5 MiB     [1mapp[39m[22m  [1m[32m[emitted] [dev][39m[22m        app
+                                                                       [1m[32mmanifest.json[39m[22m  702 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+              [1m[32mmedia/components/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg[39m[22m    291 KiB        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                 [1m[32mmedia/components/images/resume-99de9e47d42f8f91bb7ac5f3769149c9.jpg[39m[22m   85.6 KiB        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+[1m[32mmedia/components/images/telegram-bot-screenshot-9d6c275391506849de2d9f0756e4ff9c.jpg[39m[22m    247 KiB        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+Entrypoint [1mapp[39m[22m = [1m[32mjs/app-ad98fd756d0d9c4b1b68.js[39m[22m [1m[32mjs/app-ad98fd756d0d9c4b1b68.js.map[39m[22m
+[[1m./app/javascript/components/about_me_page/AboutMePage.jsx[39m[22m] 1.69 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/about_me_page/DescriptionComponent.jsx[39m[22m] 2.65 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/about_me_page/Resume.jsx[39m[22m] 720 bytes {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/common_assets/Background.jsx[39m[22m] 1.44 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/common_assets/Footer.jsx[39m[22m] 1.37 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/common_assets/NavBar.jsx[39m[22m] 1.2 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/home_page/Home.jsx[39m[22m] 1.45 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/home_page/ImageComponent.jsx[39m[22m] 757 bytes {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/project_page/ProjectsPage.jsx[39m[22m] 4.02 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/project_page/portfolio_page/PortfolioPage.jsx[39m[22m] 3.62 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/project_page/telegram_bot_page/TelegramBotPage.jsx[39m[22m] 3.43 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/app.jsx[39m[22m] 2.74 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/react-dom/index.js[39m[22m] 1.32 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/react-router-dom/index.js[39m[22m] 13.8 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/react/index.js[39m[22m] 189 bytes {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+    + 16 hidden modules
+
+  Rendered pages/index.html.erb within layouts/application (Duration: 5849.7ms | Allocations: 6382)
+  Rendered layout layouts/application.html.erb (Duration: 5856.0ms | Allocations: 8671)
+Completed 200 OK in 5863ms (Views: 5857.1ms | ActiveRecord: 0.0ms | Allocations: 8958)
+
+
+Started GET "/projects" for 127.0.0.1 at 2022-08-16 09:17:01 +0800
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"projects"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 54.7ms | Allocations: 4996)
+  Rendered layout layouts/application.html.erb (Duration: 59.9ms | Allocations: 7301)
+Completed 200 OK in 67ms (Views: 60.8ms | ActiveRecord: 0.0ms | Allocations: 7591)
+
+
+Started GET "/projects/telegram_bot_project" for 127.0.0.1 at 2022-08-16 09:17:02 +0800
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"projects/telegram_bot_project"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 57.6ms | Allocations: 5063)
+  Rendered layout layouts/application.html.erb (Duration: 62.6ms | Allocations: 7383)
+Completed 200 OK in 69ms (Views: 63.7ms | ActiveRecord: 0.0ms | Allocations: 7673)
+
+
+Started GET "/about_me" for 127.0.0.1 at 2022-08-16 09:17:05 +0800
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"about_me"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 57.4ms | Allocations: 4996)
+  Rendered layout layouts/application.html.erb (Duration: 62.7ms | Allocations: 7300)
+Completed 200 OK in 69ms (Views: 63.9ms | ActiveRecord: 0.0ms | Allocations: 7590)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-16 09:26:08 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/bryan/NUS/CVWO/portfolio-page/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: [1mec93df91524227950e2b[39m[22m
+Version: webpack [1m4.46.0[39m[22m
+Time: [1m1598[39m[22mms
+Built at: 16/08/2022 [1m9:26:14 am[39m[22m
+                                                                               [1mAsset[39m[22m       [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m                       [1m[39m[22m[1mChunk Names[39m[22m
+                                                      [1m[32mjs/app-ad98fd756d0d9c4b1b68.js[39m[22m   1.34 MiB     [1mapp[39m[22m  [1m[32m[emitted] [immutable][39m[22m  app
+                                                  [1m[32mjs/app-ad98fd756d0d9c4b1b68.js.map[39m[22m    1.5 MiB     [1mapp[39m[22m  [1m[32m[emitted] [dev][39m[22m        app
+                                                                       [1m[32mmanifest.json[39m[22m  702 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+              [1m[32mmedia/components/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg[39m[22m    291 KiB        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                 [1m[32mmedia/components/images/resume-99de9e47d42f8f91bb7ac5f3769149c9.jpg[39m[22m   85.6 KiB        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+[1m[32mmedia/components/images/telegram-bot-screenshot-9d6c275391506849de2d9f0756e4ff9c.jpg[39m[22m    247 KiB        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+Entrypoint [1mapp[39m[22m = [1m[32mjs/app-ad98fd756d0d9c4b1b68.js[39m[22m [1m[32mjs/app-ad98fd756d0d9c4b1b68.js.map[39m[22m
+[[1m./app/javascript/components/about_me_page/AboutMePage.jsx[39m[22m] 1.69 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/about_me_page/DescriptionComponent.jsx[39m[22m] 2.65 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/about_me_page/Resume.jsx[39m[22m] 720 bytes {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/common_assets/Background.jsx[39m[22m] 1.44 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/common_assets/Footer.jsx[39m[22m] 1.37 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/common_assets/NavBar.jsx[39m[22m] 1.2 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/home_page/Home.jsx[39m[22m] 1.45 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/home_page/ImageComponent.jsx[39m[22m] 757 bytes {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/project_page/ProjectsPage.jsx[39m[22m] 4.02 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/project_page/portfolio_page/PortfolioPage.jsx[39m[22m] 3.62 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/components/project_page/telegram_bot_page/TelegramBotPage.jsx[39m[22m] 3.43 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/app.jsx[39m[22m] 2.74 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/react-dom/index.js[39m[22m] 1.32 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/react-router-dom/index.js[39m[22m] 13.8 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/react/index.js[39m[22m] 189 bytes {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+    + 16 hidden modules
+
+  Rendered pages/index.html.erb within layouts/application (Duration: 5691.0ms | Allocations: 6807)
+  Rendered layout layouts/application.html.erb (Duration: 5718.1ms | Allocations: 18753)
+Completed 200 OK in 5732ms (Views: 5725.9ms | Allocations: 19727)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-16 09:26:17 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 82.8ms | Allocations: 7815)
+  Rendered layout layouts/application.html.erb (Duration: 87.9ms | Allocations: 9786)
+Completed 200 OK in 113ms (Views: 88.9ms | Allocations: 10250)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-16 09:26:20 +0800
+Started GET "/projects" for 127.0.0.1 at 2022-08-16 09:26:20 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"projects"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 63.2ms | Allocations: 9758)
+  Rendered layout layouts/application.html.erb (Duration: 69.3ms | Allocations: 11778)
+Completed 200 OK in 78ms (Views: 70.4ms | Allocations: 12132)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 63.7ms | Allocations: 9698)
+  Rendered layout layouts/application.html.erb (Duration: 68.4ms | Allocations: 11666)
+Completed 200 OK in 76ms (Views: 70.1ms | Allocations: 13032)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-16 09:26:38 +0800
+Started GET "/projects/telegram_bot_project" for 127.0.0.1 at 2022-08-16 09:26:38 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"projects/telegram_bot_project"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 61.5ms | Allocations: 9875)
+  Rendered layout layouts/application.html.erb (Duration: 66.8ms | Allocations: 11880)
+Completed 200 OK in 75ms (Views: 67.5ms | Allocations: 12240)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 64.8ms | Allocations: 9692)
+  Rendered layout layouts/application.html.erb (Duration: 69.5ms | Allocations: 11663)
+Completed 200 OK in 78ms (Views: 70.4ms | Allocations: 13045)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-16 09:26:40 +0800
+Started GET "/about_me" for 127.0.0.1 at 2022-08-16 09:26:40 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"about_me"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 70.8ms | Allocations: 9902)
+  Rendered layout layouts/application.html.erb (Duration: 77.1ms | Allocations: 11895)
+Completed 200 OK in 88ms (Views: 78.2ms | Allocations: 12217)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 69.4ms | Allocations: 9674)
+  Rendered layout layouts/application.html.erb (Duration: 74.5ms | Allocations: 11622)
+Completed 200 OK in 81ms (Views: 75.4ms | Allocations: 11912)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-16 09:26:41 +0800
+Started GET "/projects" for 127.0.0.1 at 2022-08-16 09:26:41 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"projects"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 67.5ms | Allocations: 10144)
+  Rendered layout layouts/application.html.erb (Duration: 73.1ms | Allocations: 12122)
+Completed 200 OK in 84ms (Views: 74.4ms | Allocations: 12709)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 67.8ms | Allocations: 9717)
+  Rendered layout layouts/application.html.erb (Duration: 72.7ms | Allocations: 11657)
+Completed 200 OK in 82ms (Views: 74.2ms | Allocations: 13160)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-16 09:26:42 +0800
+Started GET "/projects/portfolio_project" for 127.0.0.1 at 2022-08-16 09:26:42 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"projects/portfolio_project"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 65.7ms | Allocations: 9855)
+  Rendered layout layouts/application.html.erb (Duration: 71.5ms | Allocations: 11844)
+Completed 200 OK in 81ms (Views: 73.3ms | Allocations: 12180)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 60.5ms | Allocations: 9664)
+  Rendered layout layouts/application.html.erb (Duration: 64.9ms | Allocations: 11615)
+Completed 200 OK in 75ms (Views: 66.1ms | Allocations: 12517)
+
+
