@@ -9075,3 +9075,24 @@ Completed 200 OK in 81ms (Views: 73.3ms | Allocations: 12180)
 Completed 200 OK in 75ms (Views: 66.1ms | Allocations: 12517)
 
 
+Started GET "/" for 127.0.0.1 at 2022-08-16 09:50:44 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 1318.0ms | Allocations: 59448)
+  Rendered layout layouts/application.html.erb (Duration: 1361.0ms | Allocations: 71648)
+Completed 200 OK in 1410ms (Views: 1377.9ms | ActiveRecord: 0.0ms | Allocations: 75315)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-16 09:50:47 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 130.4ms | Allocations: 5083)
+  Rendered layout layouts/application.html.erb (Duration: 137.1ms | Allocations: 7087)
+Completed 200 OK in 144ms (Views: 138.1ms | ActiveRecord: 0.0ms | Allocations: 7539)
+
+
