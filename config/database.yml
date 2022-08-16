@@ -82,9 +82,10 @@ test:
 #
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
-#
+# password: <%= ENV["PORTFOLIO_PAGE_DATABASE_PASSWORD"] %>
+
 production:
   <<: *default
   database: portfolio_page_production
-  username: portfolio_page
-  password: <%= ENV["PORTFOLIO_PAGE_DATABASE_PASSWORD"] %>
+  username: postgres
+  password: "LowMJ2303"
