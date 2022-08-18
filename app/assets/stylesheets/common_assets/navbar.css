@@ -8,15 +8,13 @@
 .navbar-container{
     width: inherit;
     height: inherit;
-    border-width: 5px;
-    border-style: solid;
 }
 
 .navbar-container a{
     font-size: 25px;
     color: white;
     text-align: center;
-    padding: 13.5%;
+    padding: 14vw;
 }
 
 .navbar-container a:hover{
