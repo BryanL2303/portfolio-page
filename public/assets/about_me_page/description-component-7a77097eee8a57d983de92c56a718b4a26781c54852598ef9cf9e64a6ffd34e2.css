@@ -1,0 +1,34 @@
+.about-me.description-container{
+    height: 900px;
+    width: 800px;
+    position: absolute;
+    top: 100px;
+    left: 550px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.about-me.description-container h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.about-me.description-container .description{
+    height: 850px;
+    width: inherit;
+    overflow: hidden;
+    position: absolute;
+    top: 150px;
+}
+
+.about-me.description-container .description p{
+    font-size: 20px;
+}
+
+.about-me.description-container a{
+    font-size: 20px;
+}
+
+.about-me.description-container a:hover{
+    opacity: 0.6;
+}

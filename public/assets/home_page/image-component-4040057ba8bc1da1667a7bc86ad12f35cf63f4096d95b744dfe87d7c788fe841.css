@@ -1,0 +1,11 @@
+.home.image-container{
+    height: inherit;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    overflow: hidden;
+}
+
+.home.image-container img{
+    height: inherit;
+}

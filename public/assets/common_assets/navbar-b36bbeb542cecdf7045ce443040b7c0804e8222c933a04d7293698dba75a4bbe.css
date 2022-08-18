@@ -1,0 +1,22 @@
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.navbar-container{
+    width: inherit;
+    height: inherit;
+}
+
+.navbar-container a{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding: 14vw;
+}
+
+.navbar-container a:hover{
+    background-color: gray;
+}
