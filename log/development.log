@@ -11970,3 +11970,531 @@ Processing by PagesController#index as */*
 Completed 200 OK in 73ms (Views: 64.4ms | ActiveRecord: 0.0ms | Allocations: 3709)
 
 
+Started GET "/" for 127.0.0.1 at 2022-08-21 21:22:36 +0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 69.0ms | Allocations: 3080)
+  Rendered layout layouts/application.html.erb (Duration: 91.7ms | Allocations: 5583)
+Completed 200 OK in 152ms (Views: 111.8ms | ActiveRecord: 0.0ms | Allocations: 9247)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-21 21:22:39 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 63.5ms | Allocations: 2392)
+  Rendered layout layouts/application.html.erb (Duration: 65.6ms | Allocations: 3276)
+Completed 200 OK in 74ms (Views: 66.6ms | ActiveRecord: 0.0ms | Allocations: 3701)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-21 21:22:40 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 43.8ms | Allocations: 2343)
+  Rendered layout layouts/application.html.erb (Duration: 45.6ms | Allocations: 3164)
+Completed 200 OK in 53ms (Views: 47.0ms | ActiveRecord: 0.0ms | Allocations: 3453)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-21 21:22:41 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 56.7ms | Allocations: 2337)
+  Rendered layout layouts/application.html.erb (Duration: 60.0ms | Allocations: 3127)
+Completed 200 OK in 68ms (Views: 61.3ms | ActiveRecord: 0.0ms | Allocations: 3411)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-21 21:22:52 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 61.5ms | Allocations: 2339)
+  Rendered layout layouts/application.html.erb (Duration: 64.8ms | Allocations: 3138)
+Completed 200 OK in 71ms (Views: 66.1ms | ActiveRecord: 0.0ms | Allocations: 3422)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-21 21:22:52 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 48.8ms | Allocations: 2337)
+  Rendered layout layouts/application.html.erb (Duration: 51.2ms | Allocations: 3151)
+Completed 200 OK in 57ms (Views: 52.1ms | ActiveRecord: 0.0ms | Allocations: 3435)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-21 21:25:18 +0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 69.8ms | Allocations: 3089)
+  Rendered layout layouts/application.html.erb (Duration: 80.7ms | Allocations: 5574)
+Completed 200 OK in 130ms (Views: 97.4ms | ActiveRecord: 0.0ms | Allocations: 9238)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-21 21:25:19 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 58.0ms | Allocations: 2393)
+  Rendered layout layouts/application.html.erb (Duration: 61.3ms | Allocations: 3265)
+Completed 200 OK in 70ms (Views: 63.6ms | ActiveRecord: 0.0ms | Allocations: 3690)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-21 21:25:26 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 47.8ms | Allocations: 2340)
+  Rendered layout layouts/application.html.erb (Duration: 50.7ms | Allocations: 3152)
+Completed 200 OK in 57ms (Views: 52.2ms | ActiveRecord: 0.0ms | Allocations: 3441)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-21 21:25:27 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 57.2ms | Allocations: 2339)
+  Rendered layout layouts/application.html.erb (Duration: 59.8ms | Allocations: 3157)
+Completed 200 OK in 65ms (Views: 60.6ms | ActiveRecord: 0.0ms | Allocations: 3480)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-21 21:26:41 +0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 64.5ms | Allocations: 3090)
+  Rendered layout layouts/application.html.erb (Duration: 74.0ms | Allocations: 5584)
+Completed 200 OK in 127ms (Views: 91.5ms | ActiveRecord: 0.0ms | Allocations: 9248)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-21 21:26:42 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 54.4ms | Allocations: 2393)
+  Rendered layout layouts/application.html.erb (Duration: 56.2ms | Allocations: 3283)
+Completed 200 OK in 67ms (Views: 57.7ms | ActiveRecord: 0.0ms | Allocations: 3708)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-21 21:36:14 +0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (5.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 93.6ms | Allocations: 3090)
+  Rendered layout layouts/application.html.erb (Duration: 103.8ms | Allocations: 5587)
+Completed 200 OK in 152ms (Views: 118.4ms | ActiveRecord: 0.0ms | Allocations: 9251)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-21 21:36:15 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 56.5ms | Allocations: 2400)
+  Rendered layout layouts/application.html.erb (Duration: 59.3ms | Allocations: 3271)
+Completed 200 OK in 65ms (Views: 60.7ms | ActiveRecord: 0.0ms | Allocations: 3688)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-21 21:36:20 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 47.4ms | Allocations: 2340)
+  Rendered layout layouts/application.html.erb (Duration: 49.8ms | Allocations: 3137)
+Completed 200 OK in 55ms (Views: 50.8ms | ActiveRecord: 0.0ms | Allocations: 3429)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-21 21:36:21 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 56.3ms | Allocations: 2339)
+  Rendered layout layouts/application.html.erb (Duration: 57.8ms | Allocations: 3145)
+Completed 200 OK in 63ms (Views: 58.8ms | ActiveRecord: 0.0ms | Allocations: 3454)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-21 21:36:21 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 62.3ms | Allocations: 2339)
+  Rendered layout layouts/application.html.erb (Duration: 78.9ms | Allocations: 3148)
+Completed 200 OK in 85ms (Views: 80.3ms | ActiveRecord: 0.0ms | Allocations: 3434)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-21 21:36:21 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 42.9ms | Allocations: 2337)
+  Rendered layout layouts/application.html.erb (Duration: 45.5ms | Allocations: 3136)
+Completed 200 OK in 51ms (Views: 46.5ms | ActiveRecord: 0.0ms | Allocations: 3420)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-21 21:36:22 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 44.1ms | Allocations: 2340)
+  Rendered layout layouts/application.html.erb (Duration: 46.7ms | Allocations: 3170)
+Completed 200 OK in 52ms (Views: 47.8ms | ActiveRecord: 0.0ms | Allocations: 3458)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-21 21:36:22 +0800
+Started GET "/" for 127.0.0.1 at 2022-08-21 21:36:22 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 49.3ms | Allocations: 3765)
+  Rendered layout layouts/application.html.erb (Duration: 52.0ms | Allocations: 5000)
+Completed 200 OK in 63ms (Views: 54.2ms | ActiveRecord: 0.0ms | Allocations: 5665)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 54.6ms | Allocations: 5876)
+  Rendered layout layouts/application.html.erb (Duration: 56.5ms | Allocations: 6697)
+Completed 200 OK in 62ms (Views: 57.8ms | ActiveRecord: 0.0ms | Allocations: 6987)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-21 21:36:22 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 58.7ms | Allocations: 2713)
+  Rendered layout layouts/application.html.erb (Duration: 60.3ms | Allocations: 3543)
+Completed 200 OK in 67ms (Views: 61.4ms | ActiveRecord: 0.0ms | Allocations: 3832)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-21 21:36:23 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 51.1ms | Allocations: 2338)
+  Rendered layout layouts/application.html.erb (Duration: 53.8ms | Allocations: 3161)
+Completed 200 OK in 60ms (Views: 55.1ms | ActiveRecord: 0.0ms | Allocations: 3445)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-21 21:36:23 +0800
+Started GET "/" for 127.0.0.1 at 2022-08-21 21:36:23 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 73.2ms | Allocations: 3753)
+  Rendered layout layouts/application.html.erb (Duration: 77.7ms | Allocations: 4997)
+Completed 200 OK in 91ms (Views: 79.6ms | ActiveRecord: 0.0ms | Allocations: 5672)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 78.1ms | Allocations: 5882)
+  Rendered layout layouts/application.html.erb (Duration: 81.2ms | Allocations: 6712)
+Completed 200 OK in 88ms (Views: 82.5ms | ActiveRecord: 0.0ms | Allocations: 7002)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-21 21:36:23 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 56.1ms | Allocations: 2337)
+  Rendered layout layouts/application.html.erb (Duration: 58.9ms | Allocations: 3124)
+Completed 200 OK in 64ms (Views: 60.1ms | ActiveRecord: 0.0ms | Allocations: 3408)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-21 21:38:43 +0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 61.4ms | Allocations: 3090)
+  Rendered layout layouts/application.html.erb (Duration: 74.1ms | Allocations: 5584)
+Completed 200 OK in 124ms (Views: 88.6ms | ActiveRecord: 0.0ms | Allocations: 9248)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-21 21:38:44 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 60.5ms | Allocations: 2393)
+  Rendered layout layouts/application.html.erb (Duration: 62.6ms | Allocations: 3274)
+Completed 200 OK in 71ms (Views: 64.3ms | ActiveRecord: 0.0ms | Allocations: 3699)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-21 21:55:44 +0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 68.1ms | Allocations: 3090)
+  Rendered layout layouts/application.html.erb (Duration: 77.9ms | Allocations: 5578)
+Completed 200 OK in 131ms (Views: 95.8ms | ActiveRecord: 0.0ms | Allocations: 9242)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-21 21:55:45 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 49.8ms | Allocations: 2393)
+  Rendered layout layouts/application.html.erb (Duration: 51.8ms | Allocations: 3256)
+Completed 200 OK in 60ms (Views: 53.4ms | ActiveRecord: 0.0ms | Allocations: 3681)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-21 21:55:51 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 56.9ms | Allocations: 2340)
+  Rendered layout layouts/application.html.erb (Duration: 58.2ms | Allocations: 3140)
+Completed 200 OK in 63ms (Views: 59.0ms | ActiveRecord: 0.0ms | Allocations: 3432)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-21 21:55:53 +0800
+Started GET "/projects" for 127.0.0.1 at 2022-08-21 21:55:53 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"projects"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 75.0ms | Allocations: 4272)
+  Rendered layout layouts/application.html.erb (Duration: 76.4ms | Allocations: 5130)
+Completed 200 OK in 82ms (Views: 77.5ms | ActiveRecord: 0.0ms | Allocations: 5440)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 89.6ms | Allocations: 6652)
+  Rendered layout layouts/application.html.erb (Duration: 91.2ms | Allocations: 7511)
+Completed 200 OK in 99ms (Views: 92.4ms | ActiveRecord: 0.0ms | Allocations: 7876)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-21 21:55:57 +0800
+Started GET "/about_me" for 127.0.0.1 at 2022-08-21 21:55:57 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"about_me"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 75.6ms | Allocations: 5166)
+  Rendered layout layouts/application.html.erb (Duration: 77.5ms | Allocations: 6144)
+Completed 200 OK in 86ms (Views: 78.5ms | ActiveRecord: 0.0ms | Allocations: 6522)
+
+
+  Rendered pages/index.html.erb within layouts/application (Duration: 63.8ms | Allocations: 4601)
+  Rendered layout layouts/application.html.erb (Duration: 67.9ms | Allocations: 6659)
+Completed 200 OK in 75ms (Views: 69.6ms | ActiveRecord: 0.0ms | Allocations: 6964)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-21 21:56:01 +0800
+Started GET "/projects" for 127.0.0.1 at 2022-08-21 21:56:01 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"projects"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 54.3ms | Allocations: 4514)
+  Rendered layout layouts/application.html.erb (Duration: 56.0ms | Allocations: 5344)
+Completed 200 OK in 69ms (Views: 57.6ms | ActiveRecord: 0.0ms | Allocations: 7353)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 59.2ms | Allocations: 5877)
+  Rendered layout layouts/application.html.erb (Duration: 61.2ms | Allocations: 6692)
+Completed 200 OK in 67ms (Views: 62.4ms | ActiveRecord: 0.0ms | Allocations: 6985)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-21 21:56:02 +0800
+Started GET "/projects/portfolio_project" for 127.0.0.1 at 2022-08-21 21:56:02 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"projects/portfolio_project"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 54.0ms | Allocations: 4512)
+  Rendered layout layouts/application.html.erb (Duration: 55.9ms | Allocations: 5351)
+Completed 200 OK in 65ms (Views: 56.8ms | ActiveRecord: 0.0ms | Allocations: 5696)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 58.8ms | Allocations: 5876)
+  Rendered layout layouts/application.html.erb (Duration: 60.7ms | Allocations: 6700)
+Completed 200 OK in 66ms (Views: 61.7ms | ActiveRecord: 0.0ms | Allocations: 6993)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-21 21:56:04 +0800
+Started GET "/projects" for 127.0.0.1 at 2022-08-21 21:56:04 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"projects"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 46.8ms | Allocations: 4521)
+  Rendered layout layouts/application.html.erb (Duration: 48.2ms | Allocations: 5372)
+Completed 200 OK in 58ms (Views: 49.0ms | ActiveRecord: 0.0ms | Allocations: 5711)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 48.9ms | Allocations: 5204)
+  Rendered layout layouts/application.html.erb (Duration: 52.1ms | Allocations: 6177)
+Completed 200 OK in 60ms (Views: 55.0ms | ActiveRecord: 0.0ms | Allocations: 7013)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-21 21:56:04 +0800
+Started GET "/projects/telegram_bot_project" for 127.0.0.1 at 2022-08-21 21:56:04 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"projects/telegram_bot_project"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 52.9ms | Allocations: 3774)
+  Rendered layout layouts/application.html.erb (Duration: 55.5ms | Allocations: 5024)
+Completed 200 OK in 66ms (Views: 57.4ms | ActiveRecord: 0.0ms | Allocations: 5707)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 59.9ms | Allocations: 5878)
+  Rendered layout layouts/application.html.erb (Duration: 61.7ms | Allocations: 6714)
+Completed 200 OK in 67ms (Views: 62.9ms | ActiveRecord: 0.0ms | Allocations: 7007)
+
+
+Started GET "/projects" for 127.0.0.1 at 2022-08-21 21:56:06 +0800
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-21 21:56:06 +0800
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"projects"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 50.5ms | Allocations: 4533)
+  Rendered layout layouts/application.html.erb (Duration: 52.6ms | Allocations: 5371)
+Completed 200 OK in 64ms (Views: 54.2ms | ActiveRecord: 0.0ms | Allocations: 5739)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 53.7ms | Allocations: 5896)
+  Rendered layout layouts/application.html.erb (Duration: 55.1ms | Allocations: 6720)
+Completed 200 OK in 60ms (Views: 56.2ms | ActiveRecord: 0.0ms | Allocations: 7010)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-21 21:56:07 +0800
+Started GET "/" for 127.0.0.1 at 2022-08-21 21:56:07 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 63.8ms | Allocations: 3744)
+  Rendered layout layouts/application.html.erb (Duration: 71.7ms | Allocations: 4579)
+Completed 200 OK in 80ms (Views: 72.8ms | ActiveRecord: 0.0ms | Allocations: 4934)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 80.8ms | Allocations: 5873)
+  Rendered layout layouts/application.html.erb (Duration: 87.0ms | Allocations: 6694)
+Completed 200 OK in 96ms (Views: 88.1ms | ActiveRecord: 0.0ms | Allocations: 6987)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-21 21:56:08 +0800
+Started GET "/projects" for 127.0.0.1 at 2022-08-21 21:56:08 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"projects"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 53.4ms | Allocations: 4457)
+  Rendered layout layouts/application.html.erb (Duration: 55.4ms | Allocations: 5289)
+Completed 200 OK in 64ms (Views: 56.8ms | ActiveRecord: 0.0ms | Allocations: 5679)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 58.0ms | Allocations: 5868)
+  Rendered layout layouts/application.html.erb (Duration: 59.7ms | Allocations: 6686)
+Completed 200 OK in 66ms (Views: 61.1ms | ActiveRecord: 0.0ms | Allocations: 6979)
+
+

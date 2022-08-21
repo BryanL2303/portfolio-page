@@ -2,7 +2,7 @@
     height: 670px;
     width: 100%;
     position: absolute;
-    top: 50px;
+    top: 30px;
     color: black;
     text-align: center;
 }
@@ -55,4 +55,79 @@
 .projects.body-container .project-container a:nth-child(2){
 	top: 100px;
 	left: 950px;
+}
+
+@media screen 
+  and (device-width< 400px) 
+  and (device-height< 700px) 
+  and (orientation: portrait){
+	.projects.body-container .project-container a{
+		height: 300px;
+		width: 200px;
+		position: absolute;
+	  	text-decoration: none;
+	  	color: black;
+	}    
+	.projects.body-container .project-image{
+		height: 200px;
+		width: 200px;
+	}
+
+	.projects.body-container .project-title{
+		height: 30px;
+		width: 200px;
+	}
+
+	.projects.body-container .project-description{
+		height: 70px;
+		width: 200px;
+	}
+
+	.projects.body-container .project-container a:nth-child(1){
+		top: 10px;
+		left: 10px;
+	}
+
+	.projects.body-container .project-container a:nth-child(2){
+		top: 10px;
+		left: 220px;
+	}
+}
+
+@media screen 
+  and (device-width< 400px) 
+  and (device-height< 700px) 
+  and (orientation: landscape)
+  {
+    .projects.body-container .project-container a{
+		height: 300px;
+		width: 200px;
+		position: absolute;
+	  	text-decoration: none;
+	  	color: black;
+	}    
+	.projects.body-container .project-image{
+		height: 200px;
+		width: 200px;
+	}
+
+	.projects.body-container .project-title{
+		height: 30px;
+		width: 200px;
+	}
+
+	.projects.body-container .project-description{
+		height: 70px;
+		width: 200px;
+	}
+
+	.projects.body-container .project-container a:nth-child(1){
+		top: 10px;
+		left: 10px;
+	}
+
+	.projects.body-container .project-container a:nth-child(2){
+		top: 10px;
+		left: 220px;
+	}
 }
