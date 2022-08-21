@@ -9,3 +9,26 @@
 .home.image-container img{
     height: inherit;
 }
+
+@media screen 
+  and (device-width< 400px) 
+  and (device-height< 700px) 
+  and (orientation: portrait){
+    .home.image-container{
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+    }    
+}
+
+@media screen 
+  and (device-width< 400px) 
+  and (device-height< 700px) 
+  and (orientation: landscape)
+  {
+    .home.image-container{
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+    }
+}  

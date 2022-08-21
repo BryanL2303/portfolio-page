@@ -9,9 +9,7 @@
 
 .home.summary-container .text{
     position: absolute;
-    text-align: center;
-    overflow: hidden;
-    top: 75px;
+    top: 55px;
 }
 
 
@@ -19,4 +17,57 @@
     width:100%;
     font-family: 'Courgette', cursive;
     font-size:45px;
+}
+
+@media screen 
+  and (device-width< 400px) 
+  and (device-height< 700px) 
+  and (orientation: portrait){
+    .home.summary-container{
+        height: 670px;
+        width: inherit;
+        position: absolute;
+        text-align: center;
+        overflow: hidden;
+        background-color: inherit;
+    }
+
+    .home.summary-container .text{
+        position: absolute;
+        top: 55px;
+    }
+
+
+    .home.summary-container h2{
+        width:100%;
+        font-family: 'Courgette', cursive;
+        font-size:25px;
+    }    
+}
+
+@media screen 
+  and (device-width< 400px) 
+  and (device-height< 700px) 
+  and (orientation: landscape)
+  {
+    .home.summary-container{
+        height: 670px;
+        width: inherit;
+        position: absolute;
+        text-align: center;
+        overflow: hidden;
+        background-color: inherit;
+    }
+
+    .home.summary-container .text{
+        position: absolute;
+        top: 55px;
+    }
+
+
+    .home.summary-container h2{
+        width:100%;
+        font-family: 'Courgette', cursive;
+        font-size:25px;
+    }
 }
