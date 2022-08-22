@@ -23,8 +23,8 @@
 }
 
 @media screen 
-  and (device-width< 400px) 
-  and (device-height< 700px) 
+  and (device-width< 1500px) 
+  and (device-height< 3000px) 
   and (orientation: portrait){
     .navbar-container a{
     font-size: 10px;
@@ -35,8 +35,8 @@
 }
 
 @media screen 
-  and (device-width< 400px) 
-  and (device-height< 700px) 
+  and (device-width< 1500px) 
+  and (device-height< 3000px) 
   and (orientation: landscape)
   {
     .navbar-container a{
