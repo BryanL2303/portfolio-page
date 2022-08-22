@@ -1,0 +1,24 @@
+@import url(/assets/common_assets/navbar-269aa023f2ba5430215575fd60c3f685e62b2872dcc97fc259e4dd84c43c7ff9.css);
+@import url(/assets/common_assets/footer-495c0471d604b3954bdef273902644bbdc9e62bbffcba0fc0547fe5fc79a974d.css);
+@import url(/assets/common_assets/background-caab40ea333f6946d9d9149d11ed3a1f3f6a6ba627818f64994807df89235bd4.css);
+
+@import url(/assets/home_page/summary-component-df62aceab388fef639285196469c22066eb616077a6406a3f14df434a332562f.css);
+@import url(/assets/home_page/image-component-22047cc47339fce45f45aa7d618ea5e45a3bfec07ee8e9c44bd5293f7cc702a4.css);
+
+@import url(/assets/project_page/projects-page-a70f2d2037950251d6b18bdbf23c58745abb643216867d9707462580cac9fd1f.css);
+@import url(/assets/project_page/portfolio_page/portfolio-page-4a5dae5367d645691ab62e09705346cdede281f979aa18c6108096deeda13cc4.css);
+@import url(/assets/project_page/telegram_bot_page/telegram-bot-page-8cf6077f6a19a45fa352e17f5decefe345adf331fb591b49dc0c3f544b92ddf8.css);
+
+@import url(/assets/about_me_page/about-me-page-63dafd472c0c957dc2503a3dc6d0c795bdb297712c3799ab9bf63484fe23c86e.css);
+@import url(/assets/about_me_page/resume-20542aa66dba19bf0b7fbf79c55e8fed0f86767a5a7b1e8786ec51e4461cf749.css);
+@import url(/assets/about_me_page/description-component-d4d9e2d7aab7a55e5c6523b5b9ea0a3f2e0dcd94db3bfb0fdbb4e87d5c0d7cf8.css);
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 740px;
+    overflow: hidden;
+}
