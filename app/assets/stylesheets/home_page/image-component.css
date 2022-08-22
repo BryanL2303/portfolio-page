@@ -11,8 +11,8 @@
 }
 
 @media screen 
-  and (device-width< 500px) 
-  and (device-height< 750px) 
+  and (device-width< 1500px) 
+  and (device-height< 3000px) 
   and (orientation: portrait){
     .home.image-container{
     height: 0px;
@@ -22,8 +22,8 @@
 }
 
 @media screen 
-  and (device-width< 500px) 
-  and (device-height< 750px) 
+  and (device-width< 1500px) 
+  and (device-height< 3000px) 
   and (orientation: landscape)
   {
     .home.image-container{

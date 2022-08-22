@@ -34,8 +34,8 @@
 }
 
 @media screen 
-  and (device-width< 500px) 
-  and (device-height< 750px) 
+  and (device-width< 1500px) 
+  and (device-height< 3000px) 
   and (orientation: portrait){
     .about-me.description-container{
         height: 400px;
@@ -69,8 +69,8 @@
 }
 
 @media screen 
-  and (device-width< 500px) 
-  and (device-height< 750px) 
+  and (device-width< 1500px) 
+  and (device-height< 3000px) 
   and (orientation: landscape)
   {
     .about-me.description-container{
@@ -102,4 +102,4 @@
     .about-me.description-container a{
         font-size: 15px;
     }
-}  
+ }
