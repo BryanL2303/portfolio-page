@@ -8,7 +8,7 @@
 }
 
 @media screen 
-  and (max-width< 500px)  
+  and (max-width: 500px)  
   and (orientation: portrait){
     .resume-container{
 	height: 614px;
@@ -20,7 +20,7 @@
 }
 
 @media screen 
-  and (max-width< 500px) 
+  and (max-width: 500px) 
   and (orientation: landscape)
   {
   	.resume-container{

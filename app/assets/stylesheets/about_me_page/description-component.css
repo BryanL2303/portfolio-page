@@ -34,7 +34,7 @@
 }
 
 @media screen 
-  and (max-width< 500px) 
+  and (max-width: 500px) 
   and (orientation: portrait){
     .about-me.description-container{
         height: 400px;
@@ -68,7 +68,7 @@
 }
 
 @media screen 
-  and (max-width< 500px) 
+  and (max-width: 500px) 
   and (orientation: landscape)
   {
     .about-me.description-container{
