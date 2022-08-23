@@ -52,7 +52,7 @@
 
     .about-me.description-container .description{
         height: 400px;
-        width: inherit;
+        width: 100%;
         overflow: hidden;
         position: absolute;
         top: 20px;
@@ -87,7 +87,7 @@
 
     .about-me.description-container .description{
         height: 400px;
-        width: inherit;
+        width: 100%;
         overflow: hidden;
         position: absolute;
         top: 20px;
