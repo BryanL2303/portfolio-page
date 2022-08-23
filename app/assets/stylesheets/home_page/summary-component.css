@@ -1,5 +1,5 @@
 .home.summary-container{
-    height: 670px;
+    height: 640px;
     width: 50%;
     position: absolute;
     text-align: center;
@@ -23,9 +23,10 @@
   and (max-width: 500px) 
   and (orientation: portrait){
     .home.summary-container{
-        height: 670px;
+        height: 340px;
         width: 100%;
         position: absolute;
+        top: 300;
         text-align: center;
         overflow: hidden;
         background-color: inherit;
@@ -33,7 +34,7 @@
 
     .home.summary-container .text{
         position: absolute;
-        top: 35px;
+        top: 5px;
     }
 
 
@@ -49,9 +50,10 @@
   and (orientation: landscape)
   {
     .home.summary-container{
-        height: 670px;
+        height: 340px;
         width: inherit;
         position: absolute;
+        top: 300;
         text-align: center;
         overflow: hidden;
         background-color: inherit;
@@ -59,7 +61,7 @@
 
     .home.summary-container .text{
         position: absolute;
-        top: 35px;
+        top: 5px;
     }
 
 

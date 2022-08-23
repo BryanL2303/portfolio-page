@@ -14,10 +14,14 @@
   and (max-width: 500px) 
   and (orientation: portrait){
     .home.image-container{
-    height: 0px;
-    width: 0px;
+    height: 300px;
+    width: 100%;
     overflow: hidden;
     }    
+
+    .home.image-container img{
+      height: 300px;
+    }
 }
 
 @media screen 
@@ -25,8 +29,12 @@
   and (orientation: landscape)
   {
     .home.image-container{
-    height: 0px;
-    width: 0px;
+    height: 300px;
+    width: 100%;
     overflow: hidden;
+    }
+
+    .home.image-container img{
+      height: 300px;
     }
 }  

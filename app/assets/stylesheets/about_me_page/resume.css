@@ -11,7 +11,7 @@
   and (max-width: 500px)  
   and (orientation: portrait){
     .resume-container{
-	height: 270px;
+	height: 614px;
 	width: 500px;
 	overflow-x: hidden;
 	overflow-y: scroll;
@@ -30,7 +30,7 @@
   and (orientation: landscape)
   {
   	.resume-container{
-	height: 270px;
+	height: 614px;
 	width: 500px;
 	overflow-x: hidden;
 	overflow-y: scroll;

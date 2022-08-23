@@ -1,9 +1,11 @@
 .telegram-bot-page.body-container{
-    height: 670px;
+    height: 640px;
     width: 100%;
     position: absolute;
     top: 30px;
     color: black;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .telegram-bot-page.body-container .description-container{
