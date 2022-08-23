@@ -58,8 +58,7 @@
 }
 
 @media screen 
-  and (device-width< 400px) 
-  and (device-height< 700px) 
+  and (device-width: 500px) 
   and (orientation: portrait){
 	.projects.body-container .project-container a{
 		height: 300px;
@@ -95,8 +94,7 @@
 }
 
 @media screen 
-  and (device-width< 400px) 
-  and (device-height< 700px) 
+  and (device-width: 500px) 
   and (orientation: landscape)
   {
     .projects.body-container .project-container a{
