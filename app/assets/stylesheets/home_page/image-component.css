@@ -22,7 +22,7 @@
     }    
 
     .home.image-container img{
-      height: 300px;
+      width: 100%;
     }
 }
 
@@ -39,6 +39,6 @@
     }
 
     .home.image-container img{
-      height: 300px;
+      width: 100%;
     }
 }  
