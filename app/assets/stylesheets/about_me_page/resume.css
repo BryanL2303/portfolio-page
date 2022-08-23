@@ -13,9 +13,10 @@
     .resume-container{
 	height: 614px;
 	width: 500px;
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: auto;
 	position: absolute;
-	top: 430px;
+	top: 400px;
 	left: 0px;
 	}    
 }
@@ -27,9 +28,10 @@
   	.resume-container{
 	height: 614px;
 	width: 500px;
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: auto;
 	position: absolute;
-	top: 430px;
+	top: 400px;
 	left: 0px;
 	}    
 }
