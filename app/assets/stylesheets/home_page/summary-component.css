@@ -24,7 +24,7 @@
   and (orientation: portrait){
     .home.summary-container{
         height: 670px;
-        width: inherit;
+        width: 100%;
         position: absolute;
         text-align: center;
         overflow: hidden;
@@ -33,7 +33,7 @@
 
     .home.summary-container .text{
         position: absolute;
-        top: 55px;
+        top: 35px;
     }
 
 
@@ -59,7 +59,7 @@
 
     .home.summary-container .text{
         position: absolute;
-        top: 55px;
+        top: 35px;
     }
 
 
