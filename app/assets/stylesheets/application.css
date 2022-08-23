@@ -20,5 +20,6 @@
 
 body{
     height: 740px;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
