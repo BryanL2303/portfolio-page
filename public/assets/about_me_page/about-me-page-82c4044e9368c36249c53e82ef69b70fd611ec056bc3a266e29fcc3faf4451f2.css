@@ -1,0 +1,7 @@
+.about-me.body-container{
+	height: 1015px;
+	overflow: hidden;
+	width: 100%;
+    position: absolute;
+    top: 30px;
+}
