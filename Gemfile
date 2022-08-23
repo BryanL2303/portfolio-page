@@ -74,3 +74,5 @@ end
 gem "webpack", "~> 0.4.2"
 
 gem "webpacker", "~> 5.4"
+
+gem "sass", "~> 3.7"
