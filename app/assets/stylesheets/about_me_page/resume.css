@@ -12,10 +12,11 @@
   and (orientation: portrait){
     .resume-container{
 	height: 614px;
-	width: 400px;
+	width: 500px;
 	overflow: hidden;
 	position: absolute;
 	top: 430px;
+	left: 0px;
 	}    
 }
 
@@ -25,9 +26,10 @@
   {
   	.resume-container{
 	height: 614px;
-	width: 400px;
+	width: 500px;
 	overflow: hidden;
 	position: absolute;
 	top: 430px;
+	left: 0px;
 	}    
 }
