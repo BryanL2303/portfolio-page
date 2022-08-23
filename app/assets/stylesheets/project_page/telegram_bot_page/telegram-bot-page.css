@@ -40,13 +40,13 @@
 }
 
 @media screen 
-  and (max-width: 500px) 
+  and (max-height: 500px) 
   and (orientation: landscape)
   {
     .telegram-bot-page.body-container .description-container{
         top: 20px;
     }
-    
+
     .telegram-bot-page.body-container .description-container .text-container{
         font-size: 20px;
         position: absolute;
