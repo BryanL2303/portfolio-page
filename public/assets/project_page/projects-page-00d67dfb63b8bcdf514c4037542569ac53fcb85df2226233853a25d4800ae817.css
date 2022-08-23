@@ -1,0 +1,131 @@
+.projects.body-container{
+    height: 670px;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    color: black;
+    text-align: center;
+}
+
+.projects.body-container .text{
+    position: absolute;
+    width: inherit;
+    top: 15px;
+    text-align: center;
+}
+
+.projects.body-container .project-container{
+	height: 450px;
+	width: inherit;
+	overflow: hidden;
+}
+
+.projects.body-container .project-container a{
+	height: 350px;
+	width: 250px;
+	position: absolute;
+  text-decoration: none;
+  color: black;
+}
+
+.projects.body-container .project-container a:hover{
+	background-color: gray;
+}
+
+.projects.body-container .project-image{
+	height: 250px;
+	width: 250px;
+}
+
+.projects.body-container .project-title{
+	height: 30px;
+	width: 250px;
+}
+
+.projects.body-container .project-description{
+	height: 70px;
+	width: 250px;
+}
+
+.projects.body-container .project-container a:nth-child(1){
+	top: 100px;
+	left: 350px;
+}
+
+.projects.body-container .project-container a:nth-child(2){
+	top: 100px;
+	left: 950px;
+}
+
+@media screen 
+  and (max-width: 500px) 
+  and (orientation: portrait){
+	.projects.body-container .project-container a{
+		height: 350px;
+		width: 200px;
+		position: absolute;
+	  	text-decoration: none;
+	  	color: black;
+	}    
+	.projects.body-container .project-image{
+		height: 200px;
+		width: 200px;
+	}
+
+	.projects.body-container .project-title{
+		height: 50px;
+		width: 200px;
+	}
+
+	.projects.body-container .project-description{
+		height: 100px;
+		width: 200px;
+	}
+
+	.projects.body-container .project-container a:nth-child(1){
+		top: 50px;
+		left: 10px;
+	}
+
+	.projects.body-container .project-container a:nth-child(2){
+		top: 50px;
+		left: 220px;
+	}
+}
+
+@media screen 
+  and (max-width: 500px) 
+  and (orientation: landscape)
+  {
+    .projects.body-container .project-container a{
+		height: 350px;
+		width: 200px;
+		position: absolute;
+	  	text-decoration: none;
+	  	color: black;
+	}    
+	.projects.body-container .project-image{
+		height: 200px;
+		width: 200px;
+	}
+
+	.projects.body-container .project-title{
+		height: 50px;
+		width: 200px;
+	}
+
+	.projects.body-container .project-description{
+		height: 100px;
+		width: 200px;
+	}
+
+	.projects.body-container .project-container a:nth-child(1){
+		top: 50px;
+		left: 10px;
+	}
+
+	.projects.body-container .project-container a:nth-child(2){
+		top: 50px;
+		left: 220px;
+	}
+}
