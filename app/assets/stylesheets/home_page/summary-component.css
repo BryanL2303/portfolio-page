@@ -20,8 +20,8 @@
 }
 
 @media screen 
-  and (device-width< 1500px) 
-  and (device-height< 3000px) 
+  and (max-width< 500px) 
+  and (max-height< 700px) 
   and (orientation: portrait){
     .home.summary-container{
         height: 670px;
@@ -46,8 +46,8 @@
 }
 
 @media screen 
-  and (device-width< 1500px) 
-  and (device-height< 3000px) 
+  and (max-width< 500px) 
+  and (max-height< 700px)
   and (orientation: landscape)
   {
     .home.summary-container{
