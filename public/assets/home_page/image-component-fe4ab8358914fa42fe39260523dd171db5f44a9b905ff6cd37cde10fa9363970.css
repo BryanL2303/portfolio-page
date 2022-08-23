@@ -1,0 +1,32 @@
+.home.image-container{
+    height: inherit;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    overflow: hidden;
+}
+
+.home.image-container img{
+    height: inherit;
+}
+
+@media screen 
+  and (max-width: 500px) 
+  and (orientation: portrait){
+    .home.image-container{
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+    }    
+}
+
+@media screen 
+  and (max-width: 500px) 
+  and (orientation: landscape)
+  {
+    .home.image-container{
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+    }
+}  
