@@ -6,7 +6,7 @@
 	}
 
 	.projects__container p{
-		font-size: 10px;
+		font-size: 20px;
 	}
 
 	.projects__list{
@@ -40,12 +40,14 @@
 	}
 
 	.project__name{
+		font-size: 23px;
 		height: 60px;
 		width: 100%;
 	    overflow: hidden;
 	}
 
 	.project__short-description{
+		font-size: 15px;
 		height: 45px;
 		width: 100%;
 		overflow: hidden;
