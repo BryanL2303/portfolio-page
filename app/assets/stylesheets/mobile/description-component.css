@@ -1,0 +1,29 @@
+@media screen and (max-width: 500px){
+    .description__container{
+        height: 150%;
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+        border-bottom: solid;
+        box-shadow: grey;
+    }
+
+    .description__container .resume--image{
+        position: absolute;
+        left: 0%;
+        height: 70%;
+        width: 100%;
+    }
+
+    .description__container .description{
+        height: 30%;
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 70%;
+    }
+
+    .description__container .description p{
+        font-size: 15px;
+    }
+}

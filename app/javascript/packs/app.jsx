@@ -1,20 +1,27 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Home from '../components/home_page/Home'
-import ProjectsPage from '../components/project_page/ProjectsPage'
-import TelegramBotPage from '../components/project_page/telegram_bot_page/TelegramBotPage'
-import PortfolioPage from '../components/project_page/portfolio_page/PortfolioPage'
-import AboutMePage from '../components/about_me_page/AboutMePage'
+import HomePage from './pages/HomePage'
+import OwnerPage from './pages/OwnerPage'
+//import BryanLee from './images/bryan-lee.jpg'
+//import TelegramBot from './images/telegram-bot-screenshot.jpg'
+//import TaskApp from './images/task-management-app-screenshot.jpg'
+//import axios from 'axios'
+
+/*axios.post('/project/1/update_project', {
+  id: 1,
+  image: TaskApp
+})
+.then(resp => {
+})
+.catch(resp => console.log(resp))
+*/
 
 ReactDOM.render(
   <Router>
   <Routes>
-    <Route path="/" element={<Home/>}/>
-    <Route exact path="/projects" element={<ProjectsPage/>}/>
-    <Route exact path="/projects/telegram_bot_project" element={<TelegramBotPage/>}/>
-    <Route exact path="/projects/portfolio_project" element={<PortfolioPage/>}/>
-    <Route exact path="/about_me" element={<AboutMePage/>}/>
+    <Route path="/" element={<HomePage/>}/>
+    <Route path="/bryanlzy" element={<OwnerPage/>}/>
   </Routes>
   </Router>,
   document.body.appendChild(document.createElement('div')),

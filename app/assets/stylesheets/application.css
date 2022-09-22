@@ -1,24 +1,40 @@
-@import url("common_assets/navbar.css");
-@import url("common_assets/footer.css");
-@import url("common_assets/background.css");
+@import url("desktop/footer.css");
+@import url("desktop/summary-component.css");
+@import url("desktop/description-component.css");
+@import url("desktop/projectlist.css");
+@import url("desktop/ownerpage.css");
 
-@import url("home_page/summary-component.css");
-@import url("home_page/image-component.css");
-
-@import url("project_page/projects-page.css");
-@import url("project_page/portfolio_page/portfolio-page.css");
-@import url("project_page/telegram_bot_page/telegram-bot-page.css");
-
-@import url("about_me_page/about-me-page.css");
-@import url("about_me_page/resume.css");
-@import url("about_me_page/description-component.css");
+@import url("mobile/footer.css");
+@import url("mobile/summary-component.css");
+@import url("mobile/description-component.css");
+@import url("mobile/projectlist.css");
 
 *{
     margin: 0px;
     padding: 0px;
 }
 
-body{
-    height: 740px;
-    overflow: hidden;
+.homepage__container{
+    height: 100vh;
+}
+
+body {
+    background: linear-gradient(-45deg, #00ffff, #0000FF, #00bfff, #1e90ff);
+    background-size: 500% 500%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+ 
+    50% {
+        background-position: 100% 50%;
+    }
+ 
+    100% {
+        background-position: 0% 50%;
+    }
 }

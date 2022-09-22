@@ -1,0 +1,30 @@
+@media screen and (min-width: 500px){
+    .description__container{
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+        border-bottom: solid;
+        box-shadow: grey;
+    }
+
+    .description__container .resume--image{
+        position: absolute;
+        left: 0%;
+        height: inherit;
+        width: 50%;
+    }
+
+    .description__container .description{
+        height: inherit;
+        width: 50%;
+        overflow: hidden;
+        position: absolute;
+        left: 50%;
+        margin-top: 10%;
+    }
+
+    .description__container .description p{
+        font-size: 20px;
+    }
+}

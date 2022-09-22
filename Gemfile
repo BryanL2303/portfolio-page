@@ -76,3 +76,5 @@ gem "webpack", "~> 0.4.2"
 gem "webpacker", "~> 5.4"
 
 gem "sass", "~> 3.7"
+
+gem "fast_jsonapi", "~> 1.5"
