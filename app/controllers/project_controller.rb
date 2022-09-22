@@ -26,7 +26,9 @@ class ProjectController < ApplicationController
 		project = Project.new(name: params[:name],
 			shortDescription: params[:shortDescription],
 			longDescription: params[:longDescription],
-			image: params[:image])
+			image: params[:image],
+			gitLink: params[:gitLink],
+			siteLink: params[:siteLink])
 
 		if project.save
 			render json: ProjectSerializer.new(project).serialized_json
@@ -47,6 +49,6 @@ class ProjectController < ApplicationController
 
 	private
 	def project_param
-		params.require(:project).permit(:id, :name, :image, :shortDescription, :longDescription)
+		params.require(:project).permit(:id, :name, :image, :shortDescription, :longDescription, :gitLink, :siteLink)
 	end
 end

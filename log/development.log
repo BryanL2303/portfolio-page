@@ -33118,3 +33118,1190 @@ Processing by PagesController#index as */*
 Completed 200 OK in 71ms (Views: 67.0ms | ActiveRecord: 0.0ms | Allocations: 6615)
 
 
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1641199830738863745)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddLinksToProject (20220922084854)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.2ms)[0m  [1m[35mALTER TABLE "projects" ADD "gitLink" character varying[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "projects" ADD "siteLink" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220922084854"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(1641199830738863745)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-09-22 18:01:44 +0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/bryan/NUS/CVWO/portfolio-page/public/packs
+[Webpacker] warning package.json: No license field
+warning ..\..\..\package.json: No license field
+
+[Webpacker] Hash: [1mc02400c151d1eb11c57c[39m[22m
+Version: webpack [1m4.46.0[39m[22m
+Time: [1m4135[39m[22mms
+Built at: 22/09/2022 [1m6:01:53 pm[39m[22m
+                                                                                 [1mAsset[39m[22m      [1mSize[39m[22m                                          [1mChunks[39m[22m  [1m[39m[22m                       [1m[39m[22m[1mChunk Names[39m[22m
+                                                        [1m[32mjs/app-1e0ef2f6140295e842c8.js[39m[22m  1.58 MiB                                             [1mapp[39m[22m  [1m[32m[emitted] [immutable][39m[22m  app
+                                                    [1m[32mjs/app-1e0ef2f6140295e842c8.js.map[39m[22m  1.76 MiB                                             [1mapp[39m[22m  [1m[32m[emitted] [dev][39m[22m        app
+                                           [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js[39m[22m  4.05 KiB                                [1mimages\bryan-lee[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\bryan-lee
+                                       [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js.map[39m[22m  3.71 KiB                                [1mimages\bryan-lee[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\bryan-lee
+                      [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js[39m[22m  4.19 KiB           [1mimages\task-management-app-screenshot[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\task-management-app-screenshot
+                  [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js.map[39m[22m  3.79 KiB           [1mimages\task-management-app-screenshot[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\task-management-app-screenshot
+                             [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js[39m[22m  4.15 KiB                  [1mimages\telegram-bot-screenshot[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\telegram-bot-screenshot
+                         [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js.map[39m[22m  3.77 KiB                  [1mimages\telegram-bot-screenshot[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\telegram-bot-screenshot
+                                             [1m[32mjs/pages\HomePage-b9ac5c4dabb281068a48.js[39m[22m   257 KiB                                  [1mpages\HomePage[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\HomePage
+                                         [1m[32mjs/pages\HomePage-b9ac5c4dabb281068a48.js.map[39m[22m   269 KiB                                  [1mpages\HomePage[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\HomePage
+                                            [1m[32mjs/pages\OwnerPage-0ce1c528886fb8e6c067.js[39m[22m   242 KiB                                 [1mpages\OwnerPage[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\OwnerPage
+                                        [1m[32mjs/pages\OwnerPage-0ce1c528886fb8e6c067.js.map[39m[22m   263 KiB                                 [1mpages\OwnerPage[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\OwnerPage
+                       [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js[39m[22m   104 KiB            [1mpages\home_page\DescriptionComponent[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\DescriptionComponent
+                   [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js.map[39m[22m   117 KiB            [1mpages\home_page\DescriptionComponent[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\DescriptionComponent
+                                     [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js[39m[22m   102 KiB                          [1mpages\home_page\Footer[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\Footer
+                                 [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js.map[39m[22m   115 KiB                          [1mpages\home_page\Footer[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\Footer
+                                [1m[32mjs/pages\home_page\ProjectList-c576ef6c28227999a9ed.js[39m[22m   244 KiB                     [1mpages\home_page\ProjectList[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\ProjectList
+                            [1m[32mjs/pages\home_page\ProjectList-c576ef6c28227999a9ed.js.map[39m[22m   264 KiB                     [1mpages\home_page\ProjectList[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\ProjectList
+                           [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js[39m[22m   103 KiB                [1mpages\home_page\SummaryComponent[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\SummaryComponent
+                       [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js.map[39m[22m   116 KiB                [1mpages\home_page\SummaryComponent[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\SummaryComponent
+                           [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js[39m[22m  4.14 KiB                [1mpages\home_page\images\bryan-lee[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\images\bryan-lee
+                       [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js.map[39m[22m  3.78 KiB                [1mpages\home_page\images\bryan-lee[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\images\bryan-lee
+                              [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js[39m[22m  4.12 KiB                   [1mpages\home_page\images\resume[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\images\resume
+                          [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js.map[39m[22m  3.76 KiB                   [1mpages\home_page\images\resume[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\images\resume
+             [1m[32mjs/pages\home_page\projectlist\ProjectDescription-d962b1a80522c9aafda6.js[39m[22m   102 KiB  [1mpages\home_page\projectlist\ProjectDescription[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\projectlist\ProjectDescription
+         [1m[32mjs/pages\home_page\projectlist\ProjectDescription-d962b1a80522c9aafda6.js.map[39m[22m   116 KiB  [1mpages\home_page\projectlist\ProjectDescription[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\projectlist\ProjectDescription
+                 [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js[39m[22m   102 KiB      [1mpages\home_page\projectlist\ProjectDisplay[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\projectlist\ProjectDisplay
+             [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js.map[39m[22m   116 KiB      [1mpages\home_page\projectlist\ProjectDisplay[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\projectlist\ProjectDisplay
+                                                                         [1m[32mmanifest.json[39m[22m  6.92 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                     [1m[32mmedia/packs/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg[39m[22m   291 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+[1m[32mmedia/packs/images/task-management-app-screenshot-053c3b8f0fc8365e528fa0377c74f305.jpg[39m[22m  50.7 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+       [1m[32mmedia/packs/images/telegram-bot-screenshot-9d6c275391506849de2d9f0756e4ff9c.jpg[39m[22m   247 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+     [1m[32mmedia/packs/pages/home_page/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg[39m[22m   291 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+        [1m[32mmedia/packs/pages/home_page/images/resume-99de9e47d42f8f91bb7ac5f3769149c9.jpg[39m[22m  85.6 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+Entrypoint [1mapp[39m[22m = [1m[32mjs/app-1e0ef2f6140295e842c8.js[39m[22m [1m[32mjs/app-1e0ef2f6140295e842c8.js.map[39m[22m
+Entrypoint [1mimages\bryan-lee[39m[22m = [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js[39m[22m [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js.map[39m[22m
+Entrypoint [1mimages\task-management-app-screenshot[39m[22m = [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js[39m[22m [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js.map[39m[22m
+Entrypoint [1mimages\telegram-bot-screenshot[39m[22m = [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js[39m[22m [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js.map[39m[22m
+Entrypoint [1mpages\home_page\DescriptionComponent[39m[22m = [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js[39m[22m [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js.map[39m[22m
+Entrypoint [1mpages\home_page\Footer[39m[22m = [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js[39m[22m [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js.map[39m[22m
+Entrypoint [1mpages\home_page\images\bryan-lee[39m[22m = [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js[39m[22m [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js.map[39m[22m
+Entrypoint [1mpages\home_page\images\resume[39m[22m = [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js[39m[22m [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js.map[39m[22m
+Entrypoint [1mpages\home_page\ProjectList[39m[22m = [1m[32mjs/pages\home_page\ProjectList-c576ef6c28227999a9ed.js[39m[22m [1m[32mjs/pages\home_page\ProjectList-c576ef6c28227999a9ed.js.map[39m[22m
+Entrypoint [1mpages\home_page\projectlist\ProjectDescription[39m[22m = [1m[32mjs/pages\home_page\projectlist\ProjectDescription-d962b1a80522c9aafda6.js[39m[22m [1m[32mjs/pages\home_page\projectlist\ProjectDescription-d962b1a80522c9aafda6.js.map[39m[22m
+Entrypoint [1mpages\home_page\projectlist\ProjectDisplay[39m[22m = [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js[39m[22m [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js.map[39m[22m
+Entrypoint [1mpages\home_page\SummaryComponent[39m[22m = [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js[39m[22m [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js.map[39m[22m
+Entrypoint [1mpages\HomePage[39m[22m = [1m[32mjs/pages\HomePage-b9ac5c4dabb281068a48.js[39m[22m [1m[32mjs/pages\HomePage-b9ac5c4dabb281068a48.js.map[39m[22m
+Entrypoint [1mpages\OwnerPage[39m[22m = [1m[32mjs/pages\OwnerPage-0ce1c528886fb8e6c067.js[39m[22m [1m[32mjs/pages\OwnerPage-0ce1c528886fb8e6c067.js.map[39m[22m
+[[1m./app/javascript/packs/app.jsx[39m[22m] 1.68 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/bryan-lee.jpg[39m[22m] 111 bytes {[1m[33mimages\bryan-lee[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/task-management-app-screenshot.jpg[39m[22m] 132 bytes {[1m[33mimages\task-management-app-screenshot[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/telegram-bot-screenshot.jpg[39m[22m] 125 bytes {[1m[33mimages\telegram-bot-screenshot[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/HomePage.jsx[39m[22m] 1.31 KiB {[1m[33mpages\HomePage[39m[22m} {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/OwnerPage.jsx[39m[22m] 8.81 KiB {[1m[33mpages\OwnerPage[39m[22m} {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/DescriptionComponent.jsx[39m[22m] 2.86 KiB {[1m[33mpages\home_page\DescriptionComponent[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/Footer.jsx[39m[22m] 1.15 KiB {[1m[33mpages\home_page\Footer[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/ProjectList.jsx[39m[22m] 6.18 KiB {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/SummaryComponent.jsx[39m[22m] 1.51 KiB {[1m[33mpages\home_page\SummaryComponent[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/images/bryan-lee.jpg[39m[22m] 127 bytes {[1m[33mpages\home_page\images\bryan-lee[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\SummaryComponent[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/images/resume.jpg[39m[22m] 124 bytes {[1m[33mpages\home_page\images\resume[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\DescriptionComponent[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/projectlist/ProjectDescription.jsx[39m[22m] 1.75 KiB {[1m[33mpages\home_page\projectlist\ProjectDescription[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/projectlist/ProjectDisplay.jsx[39m[22m] 1.59 KiB {[1m[33mpages\home_page\projectlist\ProjectDisplay[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/axios/index.js[39m[22m] 40 bytes {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m} {[1m[33mpages\OwnerPage[39m[22m}[1m[32m [built][39m[22m
+    + 49 hidden modules
+
+  Rendered pages/index.html.erb within layouts/application (Duration: 8906.6ms | Allocations: 60431)
+  Rendered layout layouts/application.html.erb (Duration: 8935.0ms | Allocations: 72624)
+Completed 200 OK in 8984ms (Views: 8950.9ms | ActiveRecord: 0.0ms | Allocations: 76303)
+
+
+Started GET "/project" for 127.0.0.1 at 2022-09-22 18:01:54 +0800
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-09-22 18:01:54 +0800
+Processing by ProjectController#index as HTML
+  [1m[36mProject Load (1.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/project_controller.rb:6:in `index'
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+Completed 200 OK in 48ms (Views: 0.2ms | ActiveRecord: 8.5ms | Allocations: 9743)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 77.4ms | Allocations: 12170)
+  Rendered layout layouts/application.html.erb (Duration: 83.2ms | Allocations: 14246)
+Completed 200 OK in 90ms (Views: 84.1ms | ActiveRecord: 0.0ms | Allocations: 14779)
+
+
+Started GET "/bryanlzy" for 127.0.0.1 at 2022-09-22 18:02:24 +0800
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"bryanlzy"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 55.8ms | Allocations: 4309)
+  Rendered layout layouts/application.html.erb (Duration: 60.5ms | Allocations: 6276)
+Completed 200 OK in 68ms (Views: 61.8ms | ActiveRecord: 0.0ms | Allocations: 6594)
+
+
+Started GET "/project" for 127.0.0.1 at 2022-09-22 18:02:25 +0800
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-09-22 18:02:25 +0800
+Processing by ProjectController#index as HTML
+  [1m[36mProject Load (1.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/project_controller.rb:6:in `index'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 1241)
+
+
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 57.6ms | Allocations: 4302)
+  Rendered layout layouts/application.html.erb (Duration: 61.9ms | Allocations: 6304)
+Completed 200 OK in 66ms (Views: 62.7ms | ActiveRecord: 0.0ms | Allocations: 6590)
+
+
+Started POST "/project/1/update_project" for 127.0.0.1 at 2022-09-22 18:02:29 +0800
+Processing by ProjectController#updateProject as HTML
+  Parameters: {"id"=>"1", "gitLink"=>"", "project"=>{"id"=>"1", "gitLink"=>""}}
+Can't verify CSRF token authenticity.
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/project_controller.rb:41:in `updateProject'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mProject Update (1.1ms)[0m  [1m[33mUPDATE "projects" SET "updated_at" = $1, "gitLink" = $2 WHERE "projects"."id" = $3[0m  [["updated_at", "2022-09-22 10:02:29.243221"], ["gitLink", ""], ["id", 1]]
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mTRANSACTION (7.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+Completed 200 OK in 31ms (Views: 0.1ms | ActiveRecord: 10.4ms | Allocations: 5988)
+
+
+Started POST "/project/1/update_project" for 127.0.0.1 at 2022-09-22 18:02:43 +0800
+Processing by ProjectController#updateProject as HTML
+  Parameters: {"id"=>"1", "longDescription"=>"This is the first project i have completed related to software engineering\nThe page that you are looking at now is created using Ruby on Rails with a React webpack\nWhile working on this page i learnt and practised alot of basic programming skills as well as organising code neatly\nOther than the stylesheet code for the background animation that was taken from another source everything else in this site was coded myself\nThe source of the background animation code: https://codepen.io/vaibhavarora/pen/xmpxjp\nLink to check out the repository in github: ", "project"=>{"id"=>"1", "longDescription"=>"This is the first project i have completed related to software engineering\nThe page that you are looking at now is created using Ruby on Rails with a React webpack\nWhile working on this page i learnt and practised alot of basic programming skills as well as organising code neatly\nOther than the stylesheet code for the background animation that was taken from another source everything else in this site was coded myself\nThe source of the background animation code: https://codepen.io/vaibhavarora/pen/xmpxjp\nLink to check out the repository in github: "}}
+Can't verify CSRF token authenticity.
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/project_controller.rb:41:in `updateProject'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mProject Update (0.6ms)[0m  [1m[33mUPDATE "projects" SET "longDescription" = $1, "updated_at" = $2 WHERE "projects"."id" = $3[0m  [["longDescription", "This is the first project i have completed related to software engineering\nThe page that you are looking at now is created using Ruby on Rails with a React webpack\nWhile working on this page i learnt and practised alot of basic programming skills as well as organising code neatly\nOther than the stylesheet code for the background animation that was taken from another source everything else in this site was coded myself\nThe source of the background animation code: https://codepen.io/vaibhavarora/pen/xmpxjp\nLink to check out the repository in github: "], ["updated_at", "2022-09-22 10:02:43.232456"], ["id", 1]]
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mTRANSACTION (6.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+Completed 200 OK in 24ms (Views: 0.2ms | ActiveRecord: 8.1ms | Allocations: 2764)
+
+
+Started POST "/project/1/update_project" for 127.0.0.1 at 2022-09-22 18:02:49 +0800
+Processing by ProjectController#updateProject as HTML
+  Parameters: {"id"=>"1", "gitLink"=>"https://github.com/BryanL2303/portfolio-page", "project"=>{"id"=>"1", "gitLink"=>"https://github.com/BryanL2303/portfolio-page"}}
+Can't verify CSRF token authenticity.
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/project_controller.rb:41:in `updateProject'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mProject Update (0.7ms)[0m  [1m[33mUPDATE "projects" SET "updated_at" = $1, "gitLink" = $2 WHERE "projects"."id" = $3[0m  [["updated_at", "2022-09-22 10:02:49.941196"], ["gitLink", "https://github.com/BryanL2303/portfolio-page"], ["id", 1]]
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 2.4ms | Allocations: 2733)
+
+
+Started POST "/project/1/update_project" for 127.0.0.1 at 2022-09-22 18:02:54 +0800
+Processing by ProjectController#updateProject as HTML
+  Parameters: {"id"=>"1", "gitLink"=>"https://github.com/BryanL2303/portfolio-page", "project"=>{"id"=>"1", "gitLink"=>"https://github.com/BryanL2303/portfolio-page"}}
+Can't verify CSRF token authenticity.
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/project_controller.rb:41:in `updateProject'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 1016)
+
+
+Started POST "/project/1/update_project" for 127.0.0.1 at 2022-09-22 18:03:06 +0800
+Processing by ProjectController#updateProject as HTML
+  Parameters: {"id"=>"1", "longDescription"=>"This is the first project i have completed related to software engineering\nThe page that you are looking at now is created using Ruby on Rails with a React webpack\nWhile working on this page i learnt and practised alot of basic programming skills as well as organising code neatly\nOther than the stylesheet code for the background animation that was taken from another source everything else in this site was coded myself\nThe source of the background animation code: https://codepen.io/vaibhavarora/pen/xmpxjp", "project"=>{"id"=>"1", "longDescription"=>"This is the first project i have completed related to software engineering\nThe page that you are looking at now is created using Ruby on Rails with a React webpack\nWhile working on this page i learnt and practised alot of basic programming skills as well as organising code neatly\nOther than the stylesheet code for the background animation that was taken from another source everything else in this site was coded myself\nThe source of the background animation code: https://codepen.io/vaibhavarora/pen/xmpxjp"}}
+Can't verify CSRF token authenticity.
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/project_controller.rb:41:in `updateProject'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mProject Update (0.6ms)[0m  [1m[33mUPDATE "projects" SET "longDescription" = $1, "updated_at" = $2 WHERE "projects"."id" = $3[0m  [["longDescription", "This is the first project i have completed related to software engineering\nThe page that you are looking at now is created using Ruby on Rails with a React webpack\nWhile working on this page i learnt and practised alot of basic programming skills as well as organising code neatly\nOther than the stylesheet code for the background animation that was taken from another source everything else in this site was coded myself\nThe source of the background animation code: https://codepen.io/vaibhavarora/pen/xmpxjp"], ["updated_at", "2022-09-22 10:03:06.089679"], ["id", 1]]
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+Completed 200 OK in 20ms (Views: 0.1ms | ActiveRecord: 7.4ms | Allocations: 2718)
+
+
+Started POST "/project/1/update_project" for 127.0.0.1 at 2022-09-22 18:03:06 +0800
+Processing by ProjectController#updateProject as HTML
+  Parameters: {"id"=>"1", "shortDescription"=>"This website itself!", "project"=>{"id"=>"1", "shortDescription"=>"This website itself!"}}
+Can't verify CSRF token authenticity.
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/project_controller.rb:41:in `updateProject'
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 1017)
+
+
+Started POST "/project/1/update_project" for 127.0.0.1 at 2022-09-22 18:03:13 +0800
+Processing by ProjectController#updateProject as HTML
+  Parameters: {"id"=>"1", "longDescription"=>"This was a personal project i worked on in February of 2022\nThe bot now helps to record expenses as well as how i spend my time each day\nIts functions are run by a Google Apps Script and the data are stored in a Google Docs sheet\nI have also created a separate Google Apps Script to generate the Google Doc Sheets required to work with the Telegram Bot\nUse the link to check out the repository in github: ", "project"=>{"id"=>"1", "longDescription"=>"This was a personal project i worked on in February of 2022\nThe bot now helps to record expenses as well as how i spend my time each day\nIts functions are run by a Google Apps Script and the data are stored in a Google Docs sheet\nI have also created a separate Google Apps Script to generate the Google Doc Sheets required to work with the Telegram Bot\nUse the link to check out the repository in github: "}}
+Can't verify CSRF token authenticity.
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/project_controller.rb:41:in `updateProject'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mProject Update (2.5ms)[0m  [1m[33mUPDATE "projects" SET "id" = $1, "longDescription" = $2, "updated_at" = $3 WHERE "projects"."id" = $4[0m  [["id", 2], ["longDescription", "This was a personal project i worked on in February of 2022\nThe bot now helps to record expenses as well as how i spend my time each day\nIts functions are run by a Google Apps Script and the data are stored in a Google Docs sheet\nI have also created a separate Google Apps Script to generate the Google Doc Sheets required to work with the Telegram Bot\nUse the link to check out the repository in github: "], ["updated_at", "2022-09-22 10:03:13.770945"], ["id", 1]]
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 3.6ms | Allocations: 3684)
+
+
+  
+ActiveRecord::RecordNotUnique (PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "projects_pkey"
+DETAIL:  Key (id)=(2) already exists.
+):
+  
+app/controllers/project_controller.rb:43:in `updateProject'
+Started POST "/project/1/update_project" for 127.0.0.1 at 2022-09-22 18:03:16 +0800
+Processing by ProjectController#updateProject as HTML
+  Parameters: {"id"=>"1", "gitLink"=>"https://github.com/BryanL2303/man-hour-and-finance-tracking-telegram-bot", "project"=>{"id"=>"1", "gitLink"=>"https://github.com/BryanL2303/man-hour-and-finance-tracking-telegram-bot"}}
+Can't verify CSRF token authenticity.
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/project_controller.rb:41:in `updateProject'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mProject Update (1.4ms)[0m  [1m[33mUPDATE "projects" SET "id" = $1, "updated_at" = $2, "gitLink" = $3 WHERE "projects"."id" = $4[0m  [["id", 2], ["updated_at", "2022-09-22 10:03:16.665965"], ["gitLink", "https://github.com/BryanL2303/man-hour-and-finance-tracking-telegram-bot"], ["id", 1]]
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 2.4ms | Allocations: 3812)
+
+
+  
+ActiveRecord::RecordNotUnique (PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "projects_pkey"
+DETAIL:  Key (id)=(2) already exists.
+):
+  
+app/controllers/project_controller.rb:43:in `updateProject'
+Started POST "/project/1/update_project" for 127.0.0.1 at 2022-09-22 18:03:23 +0800
+Processing by ProjectController#updateProject as HTML
+  Parameters: {"id"=>"1", "longDescription"=>"This was a personal project i worked on in February of 2022\nThe bot now helps to record expenses as well as how i spend my time each day\nIts functions are run by a Google Apps Script and the data are stored in a Google Docs sheet\nI have also created a separate Google Apps Script to generate the Google Doc Sheets required to work with the Telegram Bot\nUse the link to check out the repository in github: ", "project"=>{"id"=>"1", "longDescription"=>"This was a personal project i worked on in February of 2022\nThe bot now helps to record expenses as well as how i spend my time each day\nIts functions are run by a Google Apps Script and the data are stored in a Google Docs sheet\nI have also created a separate Google Apps Script to generate the Google Doc Sheets required to work with the Telegram Bot\nUse the link to check out the repository in github: "}}
+Can't verify CSRF token authenticity.
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/project_controller.rb:41:in `updateProject'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mProject Update (1.6ms)[0m  [1m[33mUPDATE "projects" SET "id" = $1, "longDescription" = $2, "updated_at" = $3 WHERE "projects"."id" = $4[0m  [["id", 2], ["longDescription", "This was a personal project i worked on in February of 2022\nThe bot now helps to record expenses as well as how i spend my time each day\nIts functions are run by a Google Apps Script and the data are stored in a Google Docs sheet\nI have also created a separate Google Apps Script to generate the Google Doc Sheets required to work with the Telegram Bot\nUse the link to check out the repository in github: "], ["updated_at", "2022-09-22 10:03:23.733786"], ["id", 1]]
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 2.8ms | Allocations: 3600)
+
+
+  
+ActiveRecord::RecordNotUnique (PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "projects_pkey"
+DETAIL:  Key (id)=(2) already exists.
+):
+  
+app/controllers/project_controller.rb:43:in `updateProject'
+Started POST "/project/1/update_project" for 127.0.0.1 at 2022-09-22 18:03:58 +0800
+Processing by ProjectController#updateProject as HTML
+  Parameters: {"id"=>"1", "longDescription"=>"This was a personal project i worked on in February of 2022\nThe bot now helps to record expenses as well as how i spend my time each day\nIts functions are run by a Google Apps Script and the data are stored in a Google Docs sheet\nI have also created a separate Google Apps Script to generate the Google Doc Sheets required to work with the Telegram Bot", "project"=>{"id"=>"1", "longDescription"=>"This was a personal project i worked on in February of 2022\nThe bot now helps to record expenses as well as how i spend my time each day\nIts functions are run by a Google Apps Script and the data are stored in a Google Docs sheet\nI have also created a separate Google Apps Script to generate the Google Doc Sheets required to work with the Telegram Bot"}}
+Can't verify CSRF token authenticity.
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/project_controller.rb:41:in `updateProject'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mProject Update (2.4ms)[0m  [1m[33mUPDATE "projects" SET "id" = $1, "longDescription" = $2, "updated_at" = $3 WHERE "projects"."id" = $4[0m  [["id", 2], ["longDescription", "This was a personal project i worked on in February of 2022\nThe bot now helps to record expenses as well as how i spend my time each day\nIts functions are run by a Google Apps Script and the data are stored in a Google Docs sheet\nI have also created a separate Google Apps Script to generate the Google Doc Sheets required to work with the Telegram Bot"], ["updated_at", "2022-09-22 10:03:58.183419"], ["id", 1]]
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 3.7ms | Allocations: 3600)
+
+
+  
+ActiveRecord::RecordNotUnique (PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "projects_pkey"
+DETAIL:  Key (id)=(2) already exists.
+):
+  
+app/controllers/project_controller.rb:43:in `updateProject'
+Started POST "/project/1/update_project" for 127.0.0.1 at 2022-09-22 18:04:01 +0800
+Processing by ProjectController#updateProject as HTML
+  Parameters: {"id"=>"1", "shortDescription"=>"Telegram bot with Google Spreadsheet to record finances", "project"=>{"id"=>"1", "shortDescription"=>"Telegram bot with Google Spreadsheet to record finances"}}
+Can't verify CSRF token authenticity.
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/project_controller.rb:41:in `updateProject'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mProject Update (1.6ms)[0m  [1m[33mUPDATE "projects" SET "id" = $1, "shortDescription" = $2, "updated_at" = $3 WHERE "projects"."id" = $4[0m  [["id", 2], ["shortDescription", "Telegram bot with Google Spreadsheet to record finances"], ["updated_at", "2022-09-22 10:04:01.796462"], ["id", 1]]
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 2.4ms | Allocations: 3579)
+
+
+  
+ActiveRecord::RecordNotUnique (PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "projects_pkey"
+DETAIL:  Key (id)=(2) already exists.
+):
+  
+app/controllers/project_controller.rb:43:in `updateProject'
+Started GET "/bryanlzy" for 127.0.0.1 at 2022-09-22 18:06:05 +0800
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"bryanlzy"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/bryan/NUS/CVWO/portfolio-page/public/packs
+[Webpacker] warning package.json: No license field
+warning ..\..\..\package.json: No license field
+
+[Webpacker] Hash: [1m86652ec52b63d64e717f[39m[22m
+Version: webpack [1m4.46.0[39m[22m
+Time: [1m2156[39m[22mms
+Built at: 22/09/2022 [1m6:06:11 pm[39m[22m
+                                                                                 [1mAsset[39m[22m      [1mSize[39m[22m                                          [1mChunks[39m[22m  [1m[39m[22m                       [1m[39m[22m[1mChunk Names[39m[22m
+                                                        [1m[32mjs/app-52a1a61c948533bcb6f4.js[39m[22m  1.58 MiB                                             [1mapp[39m[22m  [1m[32m[emitted] [immutable][39m[22m  app
+                                                    [1m[32mjs/app-52a1a61c948533bcb6f4.js.map[39m[22m  1.76 MiB                                             [1mapp[39m[22m  [1m[32m[emitted] [dev][39m[22m        app
+                                           [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js[39m[22m  4.05 KiB                                [1mimages\bryan-lee[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\bryan-lee
+                                       [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js.map[39m[22m  3.71 KiB                                [1mimages\bryan-lee[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\bryan-lee
+                      [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js[39m[22m  4.19 KiB           [1mimages\task-management-app-screenshot[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\task-management-app-screenshot
+                  [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js.map[39m[22m  3.79 KiB           [1mimages\task-management-app-screenshot[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\task-management-app-screenshot
+                             [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js[39m[22m  4.15 KiB                  [1mimages\telegram-bot-screenshot[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\telegram-bot-screenshot
+                         [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js.map[39m[22m  3.77 KiB                  [1mimages\telegram-bot-screenshot[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\telegram-bot-screenshot
+                                             [1m[32mjs/pages\HomePage-b9ac5c4dabb281068a48.js[39m[22m   257 KiB                                  [1mpages\HomePage[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\HomePage
+                                         [1m[32mjs/pages\HomePage-b9ac5c4dabb281068a48.js.map[39m[22m   269 KiB                                  [1mpages\HomePage[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\HomePage
+                                            [1m[32mjs/pages\OwnerPage-cb051725c9cfffbe03a0.js[39m[22m   242 KiB                                 [1mpages\OwnerPage[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\OwnerPage
+                                        [1m[32mjs/pages\OwnerPage-cb051725c9cfffbe03a0.js.map[39m[22m   264 KiB                                 [1mpages\OwnerPage[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\OwnerPage
+                       [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js[39m[22m   104 KiB            [1mpages\home_page\DescriptionComponent[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\DescriptionComponent
+                   [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js.map[39m[22m   117 KiB            [1mpages\home_page\DescriptionComponent[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\DescriptionComponent
+                                     [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js[39m[22m   102 KiB                          [1mpages\home_page\Footer[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\Footer
+                                 [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js.map[39m[22m   115 KiB                          [1mpages\home_page\Footer[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\Footer
+                                [1m[32mjs/pages\home_page\ProjectList-c576ef6c28227999a9ed.js[39m[22m   244 KiB                     [1mpages\home_page\ProjectList[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\ProjectList
+                            [1m[32mjs/pages\home_page\ProjectList-c576ef6c28227999a9ed.js.map[39m[22m   264 KiB                     [1mpages\home_page\ProjectList[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\ProjectList
+                           [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js[39m[22m   103 KiB                [1mpages\home_page\SummaryComponent[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\SummaryComponent
+                       [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js.map[39m[22m   116 KiB                [1mpages\home_page\SummaryComponent[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\SummaryComponent
+                           [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js[39m[22m  4.14 KiB                [1mpages\home_page\images\bryan-lee[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\images\bryan-lee
+                       [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js.map[39m[22m  3.78 KiB                [1mpages\home_page\images\bryan-lee[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\images\bryan-lee
+                              [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js[39m[22m  4.12 KiB                   [1mpages\home_page\images\resume[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\images\resume
+                          [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js.map[39m[22m  3.76 KiB                   [1mpages\home_page\images\resume[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\images\resume
+             [1m[32mjs/pages\home_page\projectlist\ProjectDescription-d962b1a80522c9aafda6.js[39m[22m   102 KiB  [1mpages\home_page\projectlist\ProjectDescription[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\projectlist\ProjectDescription
+         [1m[32mjs/pages\home_page\projectlist\ProjectDescription-d962b1a80522c9aafda6.js.map[39m[22m   116 KiB  [1mpages\home_page\projectlist\ProjectDescription[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\projectlist\ProjectDescription
+                 [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js[39m[22m   102 KiB      [1mpages\home_page\projectlist\ProjectDisplay[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\projectlist\ProjectDisplay
+             [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js.map[39m[22m   116 KiB      [1mpages\home_page\projectlist\ProjectDisplay[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\projectlist\ProjectDisplay
+                                                                         [1m[32mmanifest.json[39m[22m  6.92 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                     [1m[32mmedia/packs/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg[39m[22m   291 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+[1m[32mmedia/packs/images/task-management-app-screenshot-053c3b8f0fc8365e528fa0377c74f305.jpg[39m[22m  50.7 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+       [1m[32mmedia/packs/images/telegram-bot-screenshot-9d6c275391506849de2d9f0756e4ff9c.jpg[39m[22m   247 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+     [1m[32mmedia/packs/pages/home_page/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg[39m[22m   291 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+        [1m[32mmedia/packs/pages/home_page/images/resume-99de9e47d42f8f91bb7ac5f3769149c9.jpg[39m[22m  85.6 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+Entrypoint [1mapp[39m[22m = [1m[32mjs/app-52a1a61c948533bcb6f4.js[39m[22m [1m[32mjs/app-52a1a61c948533bcb6f4.js.map[39m[22m
+Entrypoint [1mimages\bryan-lee[39m[22m = [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js[39m[22m [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js.map[39m[22m
+Entrypoint [1mimages\task-management-app-screenshot[39m[22m = [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js[39m[22m [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js.map[39m[22m
+Entrypoint [1mimages\telegram-bot-screenshot[39m[22m = [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js[39m[22m [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js.map[39m[22m
+Entrypoint [1mpages\home_page\DescriptionComponent[39m[22m = [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js[39m[22m [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js.map[39m[22m
+Entrypoint [1mpages\home_page\Footer[39m[22m = [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js[39m[22m [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js.map[39m[22m
+Entrypoint [1mpages\home_page\images\bryan-lee[39m[22m = [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js[39m[22m [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js.map[39m[22m
+Entrypoint [1mpages\home_page\images\resume[39m[22m = [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js[39m[22m [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js.map[39m[22m
+Entrypoint [1mpages\home_page\ProjectList[39m[22m = [1m[32mjs/pages\home_page\ProjectList-c576ef6c28227999a9ed.js[39m[22m [1m[32mjs/pages\home_page\ProjectList-c576ef6c28227999a9ed.js.map[39m[22m
+Entrypoint [1mpages\home_page\projectlist\ProjectDescription[39m[22m = [1m[32mjs/pages\home_page\projectlist\ProjectDescription-d962b1a80522c9aafda6.js[39m[22m [1m[32mjs/pages\home_page\projectlist\ProjectDescription-d962b1a80522c9aafda6.js.map[39m[22m
+Entrypoint [1mpages\home_page\projectlist\ProjectDisplay[39m[22m = [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js[39m[22m [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js.map[39m[22m
+Entrypoint [1mpages\home_page\SummaryComponent[39m[22m = [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js[39m[22m [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js.map[39m[22m
+Entrypoint [1mpages\HomePage[39m[22m = [1m[32mjs/pages\HomePage-b9ac5c4dabb281068a48.js[39m[22m [1m[32mjs/pages\HomePage-b9ac5c4dabb281068a48.js.map[39m[22m
+Entrypoint [1mpages\OwnerPage[39m[22m = [1m[32mjs/pages\OwnerPage-cb051725c9cfffbe03a0.js[39m[22m [1m[32mjs/pages\OwnerPage-cb051725c9cfffbe03a0.js.map[39m[22m
+[[1m./app/javascript/packs/app.jsx[39m[22m] 1.68 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/bryan-lee.jpg[39m[22m] 111 bytes {[1m[33mimages\bryan-lee[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/task-management-app-screenshot.jpg[39m[22m] 132 bytes {[1m[33mimages\task-management-app-screenshot[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/telegram-bot-screenshot.jpg[39m[22m] 125 bytes {[1m[33mimages\telegram-bot-screenshot[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/HomePage.jsx[39m[22m] 1.31 KiB {[1m[33mpages\HomePage[39m[22m} {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/OwnerPage.jsx[39m[22m] 8.84 KiB {[1m[33mpages\OwnerPage[39m[22m} {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/DescriptionComponent.jsx[39m[22m] 2.86 KiB {[1m[33mpages\home_page\DescriptionComponent[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/Footer.jsx[39m[22m] 1.15 KiB {[1m[33mpages\home_page\Footer[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/ProjectList.jsx[39m[22m] 6.18 KiB {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/SummaryComponent.jsx[39m[22m] 1.51 KiB {[1m[33mpages\home_page\SummaryComponent[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/images/bryan-lee.jpg[39m[22m] 127 bytes {[1m[33mpages\home_page\images\bryan-lee[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\SummaryComponent[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/images/resume.jpg[39m[22m] 124 bytes {[1m[33mpages\home_page\images\resume[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\DescriptionComponent[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/projectlist/ProjectDescription.jsx[39m[22m] 1.75 KiB {[1m[33mpages\home_page\projectlist\ProjectDescription[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/projectlist/ProjectDisplay.jsx[39m[22m] 1.59 KiB {[1m[33mpages\home_page\projectlist\ProjectDisplay[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/axios/index.js[39m[22m] 40 bytes {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m} {[1m[33mpages\OwnerPage[39m[22m}[1m[32m [built][39m[22m
+    + 49 hidden modules
+
+  Rendered pages/index.html.erb within layouts/application (Duration: 6361.3ms | Allocations: 5772)
+  Rendered layout layouts/application.html.erb (Duration: 6365.5ms | Allocations: 7821)
+Completed 200 OK in 6371ms (Views: 6367.0ms | ActiveRecord: 0.0ms | Allocations: 8135)
+
+
+Started GET "/project" for 127.0.0.1 at 2022-09-22 18:06:12 +0800
+Processing by ProjectController#index as HTML
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/project_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 1143)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-09-22 18:06:12 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 58.1ms | Allocations: 4382)
+  Rendered layout layouts/application.html.erb (Duration: 63.0ms | Allocations: 6356)
+Completed 200 OK in 68ms (Views: 64.2ms | ActiveRecord: 0.0ms | Allocations: 6641)
+
+
+Started POST "/project/1/update_project" for 127.0.0.1 at 2022-09-22 18:06:18 +0800
+Processing by ProjectController#updateProject as HTML
+  Parameters: {"id"=>"1", "shortDescription"=>"For planning out daily tasks and keeping track of projects!", "project"=>{"id"=>"1", "shortDescription"=>"For planning out daily tasks and keeping track of projects!"}}
+Can't verify CSRF token authenticity.
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/project_controller.rb:41:in `updateProject'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mProject Update (1.5ms)[0m  [1m[33mUPDATE "projects" SET "id" = $1, "shortDescription" = $2, "updated_at" = $3 WHERE "projects"."id" = $4[0m  [["id", 3], ["shortDescription", "For planning out daily tasks and keeping track of projects!"], ["updated_at", "2022-09-22 10:06:18.314440"], ["id", 1]]
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 2.7ms | Allocations: 3599)
+
+
+  
+ActiveRecord::RecordNotUnique (PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "projects_pkey"
+DETAIL:  Key (id)=(3) already exists.
+):
+  
+app/controllers/project_controller.rb:43:in `updateProject'
+Started GET "/bryanlzy" for 127.0.0.1 at 2022-09-22 18:08:05 +0800
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"bryanlzy"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/bryan/NUS/CVWO/portfolio-page/public/packs
+[Webpacker] warning package.json: No license field
+warning ..\..\..\package.json: No license field
+
+[Webpacker] Hash: [1m0d4c2a34f55099831d80[39m[22m
+Version: webpack [1m4.46.0[39m[22m
+Time: [1m2227[39m[22mms
+Built at: 22/09/2022 [1m6:08:11 pm[39m[22m
+                                                                                 [1mAsset[39m[22m      [1mSize[39m[22m                                          [1mChunks[39m[22m  [1m[39m[22m                       [1m[39m[22m[1mChunk Names[39m[22m
+                                                        [1m[32mjs/app-fe9501c728ea7e3b773e.js[39m[22m  1.58 MiB                                             [1mapp[39m[22m  [1m[32m[emitted] [immutable][39m[22m  app
+                                                    [1m[32mjs/app-fe9501c728ea7e3b773e.js.map[39m[22m  1.76 MiB                                             [1mapp[39m[22m  [1m[32m[emitted] [dev][39m[22m        app
+                                           [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js[39m[22m  4.05 KiB                                [1mimages\bryan-lee[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\bryan-lee
+                                       [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js.map[39m[22m  3.71 KiB                                [1mimages\bryan-lee[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\bryan-lee
+                      [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js[39m[22m  4.19 KiB           [1mimages\task-management-app-screenshot[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\task-management-app-screenshot
+                  [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js.map[39m[22m  3.79 KiB           [1mimages\task-management-app-screenshot[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\task-management-app-screenshot
+                             [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js[39m[22m  4.15 KiB                  [1mimages\telegram-bot-screenshot[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\telegram-bot-screenshot
+                         [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js.map[39m[22m  3.77 KiB                  [1mimages\telegram-bot-screenshot[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\telegram-bot-screenshot
+                                             [1m[32mjs/pages\HomePage-b9ac5c4dabb281068a48.js[39m[22m   257 KiB                                  [1mpages\HomePage[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\HomePage
+                                         [1m[32mjs/pages\HomePage-b9ac5c4dabb281068a48.js.map[39m[22m   269 KiB                                  [1mpages\HomePage[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\HomePage
+                                            [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js[39m[22m   242 KiB                                 [1mpages\OwnerPage[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\OwnerPage
+                                        [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js.map[39m[22m   263 KiB                                 [1mpages\OwnerPage[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\OwnerPage
+                       [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js[39m[22m   104 KiB            [1mpages\home_page\DescriptionComponent[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\DescriptionComponent
+                   [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js.map[39m[22m   117 KiB            [1mpages\home_page\DescriptionComponent[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\DescriptionComponent
+                                     [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js[39m[22m   102 KiB                          [1mpages\home_page\Footer[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\Footer
+                                 [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js.map[39m[22m   115 KiB                          [1mpages\home_page\Footer[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\Footer
+                                [1m[32mjs/pages\home_page\ProjectList-c576ef6c28227999a9ed.js[39m[22m   244 KiB                     [1mpages\home_page\ProjectList[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\ProjectList
+                            [1m[32mjs/pages\home_page\ProjectList-c576ef6c28227999a9ed.js.map[39m[22m   264 KiB                     [1mpages\home_page\ProjectList[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\ProjectList
+                           [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js[39m[22m   103 KiB                [1mpages\home_page\SummaryComponent[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\SummaryComponent
+                       [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js.map[39m[22m   116 KiB                [1mpages\home_page\SummaryComponent[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\SummaryComponent
+                           [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js[39m[22m  4.14 KiB                [1mpages\home_page\images\bryan-lee[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\images\bryan-lee
+                       [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js.map[39m[22m  3.78 KiB                [1mpages\home_page\images\bryan-lee[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\images\bryan-lee
+                              [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js[39m[22m  4.12 KiB                   [1mpages\home_page\images\resume[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\images\resume
+                          [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js.map[39m[22m  3.76 KiB                   [1mpages\home_page\images\resume[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\images\resume
+             [1m[32mjs/pages\home_page\projectlist\ProjectDescription-d962b1a80522c9aafda6.js[39m[22m   102 KiB  [1mpages\home_page\projectlist\ProjectDescription[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\projectlist\ProjectDescription
+         [1m[32mjs/pages\home_page\projectlist\ProjectDescription-d962b1a80522c9aafda6.js.map[39m[22m   116 KiB  [1mpages\home_page\projectlist\ProjectDescription[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\projectlist\ProjectDescription
+                 [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js[39m[22m   102 KiB      [1mpages\home_page\projectlist\ProjectDisplay[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\projectlist\ProjectDisplay
+             [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js.map[39m[22m   116 KiB      [1mpages\home_page\projectlist\ProjectDisplay[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\projectlist\ProjectDisplay
+                                                                         [1m[32mmanifest.json[39m[22m  6.92 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                     [1m[32mmedia/packs/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg[39m[22m   291 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+[1m[32mmedia/packs/images/task-management-app-screenshot-053c3b8f0fc8365e528fa0377c74f305.jpg[39m[22m  50.7 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+       [1m[32mmedia/packs/images/telegram-bot-screenshot-9d6c275391506849de2d9f0756e4ff9c.jpg[39m[22m   247 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+     [1m[32mmedia/packs/pages/home_page/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg[39m[22m   291 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+        [1m[32mmedia/packs/pages/home_page/images/resume-99de9e47d42f8f91bb7ac5f3769149c9.jpg[39m[22m  85.6 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+Entrypoint [1mapp[39m[22m = [1m[32mjs/app-fe9501c728ea7e3b773e.js[39m[22m [1m[32mjs/app-fe9501c728ea7e3b773e.js.map[39m[22m
+Entrypoint [1mimages\bryan-lee[39m[22m = [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js[39m[22m [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js.map[39m[22m
+Entrypoint [1mimages\task-management-app-screenshot[39m[22m = [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js[39m[22m [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js.map[39m[22m
+Entrypoint [1mimages\telegram-bot-screenshot[39m[22m = [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js[39m[22m [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js.map[39m[22m
+Entrypoint [1mpages\home_page\DescriptionComponent[39m[22m = [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js[39m[22m [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js.map[39m[22m
+Entrypoint [1mpages\home_page\Footer[39m[22m = [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js[39m[22m [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js.map[39m[22m
+Entrypoint [1mpages\home_page\images\bryan-lee[39m[22m = [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js[39m[22m [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js.map[39m[22m
+Entrypoint [1mpages\home_page\images\resume[39m[22m = [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js[39m[22m [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js.map[39m[22m
+Entrypoint [1mpages\home_page\ProjectList[39m[22m = [1m[32mjs/pages\home_page\ProjectList-c576ef6c28227999a9ed.js[39m[22m [1m[32mjs/pages\home_page\ProjectList-c576ef6c28227999a9ed.js.map[39m[22m
+Entrypoint [1mpages\home_page\projectlist\ProjectDescription[39m[22m = [1m[32mjs/pages\home_page\projectlist\ProjectDescription-d962b1a80522c9aafda6.js[39m[22m [1m[32mjs/pages\home_page\projectlist\ProjectDescription-d962b1a80522c9aafda6.js.map[39m[22m
+Entrypoint [1mpages\home_page\projectlist\ProjectDisplay[39m[22m = [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js[39m[22m [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js.map[39m[22m
+Entrypoint [1mpages\home_page\SummaryComponent[39m[22m = [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js[39m[22m [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js.map[39m[22m
+Entrypoint [1mpages\HomePage[39m[22m = [1m[32mjs/pages\HomePage-b9ac5c4dabb281068a48.js[39m[22m [1m[32mjs/pages\HomePage-b9ac5c4dabb281068a48.js.map[39m[22m
+Entrypoint [1mpages\OwnerPage[39m[22m = [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js[39m[22m [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js.map[39m[22m
+[[1m./app/javascript/packs/app.jsx[39m[22m] 1.68 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/bryan-lee.jpg[39m[22m] 111 bytes {[1m[33mimages\bryan-lee[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/task-management-app-screenshot.jpg[39m[22m] 132 bytes {[1m[33mimages\task-management-app-screenshot[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/telegram-bot-screenshot.jpg[39m[22m] 125 bytes {[1m[33mimages\telegram-bot-screenshot[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/HomePage.jsx[39m[22m] 1.31 KiB {[1m[33mpages\HomePage[39m[22m} {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/OwnerPage.jsx[39m[22m] 8.84 KiB {[1m[33mpages\OwnerPage[39m[22m} {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/DescriptionComponent.jsx[39m[22m] 2.86 KiB {[1m[33mpages\home_page\DescriptionComponent[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/Footer.jsx[39m[22m] 1.15 KiB {[1m[33mpages\home_page\Footer[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/ProjectList.jsx[39m[22m] 6.18 KiB {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/SummaryComponent.jsx[39m[22m] 1.51 KiB {[1m[33mpages\home_page\SummaryComponent[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/images/bryan-lee.jpg[39m[22m] 127 bytes {[1m[33mpages\home_page\images\bryan-lee[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\SummaryComponent[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/images/resume.jpg[39m[22m] 124 bytes {[1m[33mpages\home_page\images\resume[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\DescriptionComponent[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/projectlist/ProjectDescription.jsx[39m[22m] 1.75 KiB {[1m[33mpages\home_page\projectlist\ProjectDescription[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/projectlist/ProjectDisplay.jsx[39m[22m] 1.59 KiB {[1m[33mpages\home_page\projectlist\ProjectDisplay[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/axios/index.js[39m[22m] 40 bytes {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m} {[1m[33mpages\OwnerPage[39m[22m}[1m[32m [built][39m[22m
+    + 49 hidden modules
+
+  Rendered pages/index.html.erb within layouts/application (Duration: 6724.2ms | Allocations: 5635)
+  Rendered layout layouts/application.html.erb (Duration: 6729.7ms | Allocations: 7622)
+Completed 200 OK in 6735ms (Views: 6730.5ms | ActiveRecord: 0.0ms | Allocations: 7907)
+
+
+Started GET "/project" for 127.0.0.1 at 2022-09-22 18:08:12 +0800
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-09-22 18:08:12 +0800
+Processing by ProjectController#index as HTML
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/project_controller.rb:6:in `index'
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 1213)
+
+
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 66.8ms | Allocations: 4302)
+  Rendered layout layouts/application.html.erb (Duration: 74.3ms | Allocations: 6276)
+Completed 200 OK in 81ms (Views: 76.0ms | ActiveRecord: 0.0ms | Allocations: 6586)
+
+
+Started POST "/project/3/update_project" for 127.0.0.1 at 2022-09-22 18:08:25 +0800
+Processing by ProjectController#updateProject as HTML
+  Parameters: {"longDescription"=>"Check out the website through this link: ", "id"=>"3", "project"=>{"longDescription"=>"Check out the website through this link: "}}
+Can't verify CSRF token authenticity.
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/project_controller.rb:41:in `updateProject'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mProject Update (0.7ms)[0m  [1m[33mUPDATE "projects" SET "longDescription" = $1, "updated_at" = $2 WHERE "projects"."id" = $3[0m  [["longDescription", "Check out the website through this link: "], ["updated_at", "2022-09-22 10:08:25.144403"], ["id", 3]]
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 2.4ms | Allocations: 2707)
+
+
+Started POST "/project/3/update_project" for 127.0.0.1 at 2022-09-22 18:08:26 +0800
+Processing by ProjectController#updateProject as HTML
+  Parameters: {"siteLink"=>"https://scheduler-site.herokuapp.com/", "id"=>"3", "project"=>{"siteLink"=>"https://scheduler-site.herokuapp.com/"}}
+Can't verify CSRF token authenticity.
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/project_controller.rb:41:in `updateProject'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mProject Update (0.5ms)[0m  [1m[33mUPDATE "projects" SET "updated_at" = $1, "siteLink" = $2 WHERE "projects"."id" = $3[0m  [["updated_at", "2022-09-22 10:08:26.787866"], ["siteLink", "https://scheduler-site.herokuapp.com/"], ["id", 3]]
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 2.7ms | Allocations: 2711)
+
+
+Started POST "/project/3/update_project" for 127.0.0.1 at 2022-09-22 18:08:29 +0800
+Processing by ProjectController#updateProject as HTML
+  Parameters: {"longDescription"=>"", "id"=>"3", "project"=>{"longDescription"=>""}}
+Can't verify CSRF token authenticity.
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/project_controller.rb:41:in `updateProject'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mProject Update (0.7ms)[0m  [1m[33mUPDATE "projects" SET "longDescription" = $1, "updated_at" = $2 WHERE "projects"."id" = $3[0m  [["longDescription", ""], ["updated_at", "2022-09-22 10:08:29.338449"], ["id", 3]]
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mTRANSACTION (6.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 8.3ms | Allocations: 2711)
+
+
+Started POST "/project/3/update_project" for 127.0.0.1 at 2022-09-22 18:08:32 +0800
+Processing by ProjectController#updateProject as HTML
+  Parameters: {"longDescription"=>"", "id"=>"3", "project"=>{"longDescription"=>""}}
+Can't verify CSRF token authenticity.
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/project_controller.rb:41:in `updateProject'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 1008)
+
+
+Started POST "/project/2/update_project" for 127.0.0.1 at 2022-09-22 18:08:40 +0800
+Processing by ProjectController#updateProject as HTML
+  Parameters: {"longDescription"=>"This was a personal project i worked on in February of 2022\nThe bot now helps to record expenses as well as how i spend my time each day\nIts functions are run by a Google Apps Script and the data are stored in a Google Docs sheet\nI have also created a separate Google Apps Script to generate the Google Doc Sheets required to work with the Telegram Bot\nUse the link to check out the repository in github: ", "id"=>"2", "project"=>{"longDescription"=>"This was a personal project i worked on in February of 2022\nThe bot now helps to record expenses as well as how i spend my time each day\nIts functions are run by a Google Apps Script and the data are stored in a Google Docs sheet\nI have also created a separate Google Apps Script to generate the Google Doc Sheets required to work with the Telegram Bot\nUse the link to check out the repository in github: "}}
+Can't verify CSRF token authenticity.
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/project_controller.rb:41:in `updateProject'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mProject Update (0.5ms)[0m  [1m[33mUPDATE "projects" SET "longDescription" = $1, "updated_at" = $2 WHERE "projects"."id" = $3[0m  [["longDescription", "This was a personal project i worked on in February of 2022\nThe bot now helps to record expenses as well as how i spend my time each day\nIts functions are run by a Google Apps Script and the data are stored in a Google Docs sheet\nI have also created a separate Google Apps Script to generate the Google Doc Sheets required to work with the Telegram Bot\nUse the link to check out the repository in github: "], ["updated_at", "2022-09-22 10:08:40.839893"], ["id", 2]]
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mTRANSACTION (6.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+Completed 200 OK in 19ms (Views: 0.1ms | ActiveRecord: 7.7ms | Allocations: 2709)
+
+
+Started POST "/project/2/update_project" for 127.0.0.1 at 2022-09-22 18:08:42 +0800
+Processing by ProjectController#updateProject as HTML
+  Parameters: {"gitLink"=>"https://github.com/BryanL2303/man-hour-and-finance-tracking-telegram-bot", "id"=>"2", "project"=>{"gitLink"=>"https://github.com/BryanL2303/man-hour-and-finance-tracking-telegram-bot"}}
+Can't verify CSRF token authenticity.
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/project_controller.rb:41:in `updateProject'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mProject Update (0.9ms)[0m  [1m[33mUPDATE "projects" SET "updated_at" = $1, "gitLink" = $2 WHERE "projects"."id" = $3[0m  [["updated_at", "2022-09-22 10:08:42.280129"], ["gitLink", "https://github.com/BryanL2303/man-hour-and-finance-tracking-telegram-bot"], ["id", 2]]
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 2.9ms | Allocations: 2709)
+
+
+Started POST "/project/2/update_project" for 127.0.0.1 at 2022-09-22 18:08:46 +0800
+Processing by ProjectController#updateProject as HTML
+  Parameters: {"longDescription"=>"This was a personal project i worked on in February of 2022\nThe bot now helps to record expenses as well as how i spend my time each day\nIts functions are run by a Google Apps Script and the data are stored in a Google Docs sheet\nI have also created a separate Google Apps Script to generate the Google Doc Sheets required to work with the Telegram Bot", "id"=>"2", "project"=>{"longDescription"=>"This was a personal project i worked on in February of 2022\nThe bot now helps to record expenses as well as how i spend my time each day\nIts functions are run by a Google Apps Script and the data are stored in a Google Docs sheet\nI have also created a separate Google Apps Script to generate the Google Doc Sheets required to work with the Telegram Bot"}}
+Can't verify CSRF token authenticity.
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/project_controller.rb:41:in `updateProject'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mProject Update (0.7ms)[0m  [1m[33mUPDATE "projects" SET "longDescription" = $1, "updated_at" = $2 WHERE "projects"."id" = $3[0m  [["longDescription", "This was a personal project i worked on in February of 2022\nThe bot now helps to record expenses as well as how i spend my time each day\nIts functions are run by a Google Apps Script and the data are stored in a Google Docs sheet\nI have also created a separate Google Apps Script to generate the Google Doc Sheets required to work with the Telegram Bot"], ["updated_at", "2022-09-22 10:08:46.916126"], ["id", 2]]
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 2.2ms | Allocations: 2713)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 18:08:56 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 62.5ms | Allocations: 4337)
+  Rendered layout layouts/application.html.erb (Duration: 67.1ms | Allocations: 6342)
+Completed 200 OK in 72ms (Views: 68.1ms | ActiveRecord: 0.0ms | Allocations: 6627)
+
+
+Started GET "/project" for 127.0.0.1 at 2022-09-22 18:08:57 +0800
+Processing by ProjectController#index as HTML
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/project_controller.rb:6:in `index'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 1.0ms | Allocations: 1124)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-09-22 18:08:57 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 64.0ms | Allocations: 4334)
+  Rendered layout layouts/application.html.erb (Duration: 69.2ms | Allocations: 6323)
+Completed 200 OK in 74ms (Views: 70.1ms | ActiveRecord: 0.0ms | Allocations: 6607)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 18:09:49 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/bryan/NUS/CVWO/portfolio-page/public/packs
+[Webpacker] warning package.json: No license field
+warning ..\..\..\package.json: No license field
+
+[Webpacker] Hash: [1m490c52cd1594eddd073e[39m[22m
+Version: webpack [1m4.46.0[39m[22m
+Time: [1m2160[39m[22mms
+Built at: 22/09/2022 [1m6:09:55 pm[39m[22m
+                                                                                 [1mAsset[39m[22m      [1mSize[39m[22m                                          [1mChunks[39m[22m  [1m[39m[22m                       [1m[39m[22m[1mChunk Names[39m[22m
+                                                        [1m[32mjs/app-7e67ccd45a5290bfb290.js[39m[22m  1.58 MiB                                             [1mapp[39m[22m  [1m[32m[emitted] [immutable][39m[22m  app
+                                                    [1m[32mjs/app-7e67ccd45a5290bfb290.js.map[39m[22m  1.76 MiB                                             [1mapp[39m[22m  [1m[32m[emitted] [dev][39m[22m        app
+                                           [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js[39m[22m  4.05 KiB                                [1mimages\bryan-lee[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\bryan-lee
+                                       [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js.map[39m[22m  3.71 KiB                                [1mimages\bryan-lee[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\bryan-lee
+                      [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js[39m[22m  4.19 KiB           [1mimages\task-management-app-screenshot[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\task-management-app-screenshot
+                  [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js.map[39m[22m  3.79 KiB           [1mimages\task-management-app-screenshot[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\task-management-app-screenshot
+                             [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js[39m[22m  4.15 KiB                  [1mimages\telegram-bot-screenshot[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\telegram-bot-screenshot
+                         [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js.map[39m[22m  3.77 KiB                  [1mimages\telegram-bot-screenshot[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\telegram-bot-screenshot
+                                             [1m[32mjs/pages\HomePage-84621d27596b8ece8e05.js[39m[22m   257 KiB                                  [1mpages\HomePage[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\HomePage
+                                         [1m[32mjs/pages\HomePage-84621d27596b8ece8e05.js.map[39m[22m   269 KiB                                  [1mpages\HomePage[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\HomePage
+                                            [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js[39m[22m   242 KiB                                 [1mpages\OwnerPage[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\OwnerPage
+                                        [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js.map[39m[22m   263 KiB                                 [1mpages\OwnerPage[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\OwnerPage
+                       [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js[39m[22m   104 KiB            [1mpages\home_page\DescriptionComponent[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\DescriptionComponent
+                   [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js.map[39m[22m   117 KiB            [1mpages\home_page\DescriptionComponent[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\DescriptionComponent
+                                     [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js[39m[22m   102 KiB                          [1mpages\home_page\Footer[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\Footer
+                                 [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js.map[39m[22m   115 KiB                          [1mpages\home_page\Footer[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\Footer
+                                [1m[32mjs/pages\home_page\ProjectList-7170bbbb805f4644ba26.js[39m[22m   244 KiB                     [1mpages\home_page\ProjectList[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\ProjectList
+                            [1m[32mjs/pages\home_page\ProjectList-7170bbbb805f4644ba26.js.map[39m[22m   264 KiB                     [1mpages\home_page\ProjectList[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\ProjectList
+                           [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js[39m[22m   103 KiB                [1mpages\home_page\SummaryComponent[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\SummaryComponent
+                       [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js.map[39m[22m   116 KiB                [1mpages\home_page\SummaryComponent[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\SummaryComponent
+                           [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js[39m[22m  4.14 KiB                [1mpages\home_page\images\bryan-lee[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\images\bryan-lee
+                       [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js.map[39m[22m  3.78 KiB                [1mpages\home_page\images\bryan-lee[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\images\bryan-lee
+                              [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js[39m[22m  4.12 KiB                   [1mpages\home_page\images\resume[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\images\resume
+                          [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js.map[39m[22m  3.76 KiB                   [1mpages\home_page\images\resume[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\images\resume
+             [1m[32mjs/pages\home_page\projectlist\ProjectDescription-d962b1a80522c9aafda6.js[39m[22m   102 KiB  [1mpages\home_page\projectlist\ProjectDescription[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\projectlist\ProjectDescription
+         [1m[32mjs/pages\home_page\projectlist\ProjectDescription-d962b1a80522c9aafda6.js.map[39m[22m   116 KiB  [1mpages\home_page\projectlist\ProjectDescription[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\projectlist\ProjectDescription
+                 [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js[39m[22m   102 KiB      [1mpages\home_page\projectlist\ProjectDisplay[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\projectlist\ProjectDisplay
+             [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js.map[39m[22m   116 KiB      [1mpages\home_page\projectlist\ProjectDisplay[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\projectlist\ProjectDisplay
+                                                                         [1m[32mmanifest.json[39m[22m  6.92 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                     [1m[32mmedia/packs/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg[39m[22m   291 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+[1m[32mmedia/packs/images/task-management-app-screenshot-053c3b8f0fc8365e528fa0377c74f305.jpg[39m[22m  50.7 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+       [1m[32mmedia/packs/images/telegram-bot-screenshot-9d6c275391506849de2d9f0756e4ff9c.jpg[39m[22m   247 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+     [1m[32mmedia/packs/pages/home_page/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg[39m[22m   291 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+        [1m[32mmedia/packs/pages/home_page/images/resume-99de9e47d42f8f91bb7ac5f3769149c9.jpg[39m[22m  85.6 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+Entrypoint [1mapp[39m[22m = [1m[32mjs/app-7e67ccd45a5290bfb290.js[39m[22m [1m[32mjs/app-7e67ccd45a5290bfb290.js.map[39m[22m
+Entrypoint [1mimages\bryan-lee[39m[22m = [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js[39m[22m [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js.map[39m[22m
+Entrypoint [1mimages\task-management-app-screenshot[39m[22m = [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js[39m[22m [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js.map[39m[22m
+Entrypoint [1mimages\telegram-bot-screenshot[39m[22m = [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js[39m[22m [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js.map[39m[22m
+Entrypoint [1mpages\home_page\DescriptionComponent[39m[22m = [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js[39m[22m [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js.map[39m[22m
+Entrypoint [1mpages\home_page\Footer[39m[22m = [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js[39m[22m [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js.map[39m[22m
+Entrypoint [1mpages\home_page\images\bryan-lee[39m[22m = [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js[39m[22m [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js.map[39m[22m
+Entrypoint [1mpages\home_page\images\resume[39m[22m = [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js[39m[22m [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js.map[39m[22m
+Entrypoint [1mpages\home_page\ProjectList[39m[22m = [1m[32mjs/pages\home_page\ProjectList-7170bbbb805f4644ba26.js[39m[22m [1m[32mjs/pages\home_page\ProjectList-7170bbbb805f4644ba26.js.map[39m[22m
+Entrypoint [1mpages\home_page\projectlist\ProjectDescription[39m[22m = [1m[32mjs/pages\home_page\projectlist\ProjectDescription-d962b1a80522c9aafda6.js[39m[22m [1m[32mjs/pages\home_page\projectlist\ProjectDescription-d962b1a80522c9aafda6.js.map[39m[22m
+Entrypoint [1mpages\home_page\projectlist\ProjectDisplay[39m[22m = [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js[39m[22m [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js.map[39m[22m
+Entrypoint [1mpages\home_page\SummaryComponent[39m[22m = [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js[39m[22m [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js.map[39m[22m
+Entrypoint [1mpages\HomePage[39m[22m = [1m[32mjs/pages\HomePage-84621d27596b8ece8e05.js[39m[22m [1m[32mjs/pages\HomePage-84621d27596b8ece8e05.js.map[39m[22m
+Entrypoint [1mpages\OwnerPage[39m[22m = [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js[39m[22m [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js.map[39m[22m
+[[1m./app/javascript/packs/app.jsx[39m[22m] 1.68 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/bryan-lee.jpg[39m[22m] 111 bytes {[1m[33mimages\bryan-lee[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/task-management-app-screenshot.jpg[39m[22m] 132 bytes {[1m[33mimages\task-management-app-screenshot[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/telegram-bot-screenshot.jpg[39m[22m] 125 bytes {[1m[33mimages\telegram-bot-screenshot[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/HomePage.jsx[39m[22m] 1.31 KiB {[1m[33mpages\HomePage[39m[22m} {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/OwnerPage.jsx[39m[22m] 8.84 KiB {[1m[33mpages\OwnerPage[39m[22m} {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/DescriptionComponent.jsx[39m[22m] 2.86 KiB {[1m[33mpages\home_page\DescriptionComponent[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/Footer.jsx[39m[22m] 1.15 KiB {[1m[33mpages\home_page\Footer[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/ProjectList.jsx[39m[22m] 6.18 KiB {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/SummaryComponent.jsx[39m[22m] 1.51 KiB {[1m[33mpages\home_page\SummaryComponent[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/images/bryan-lee.jpg[39m[22m] 127 bytes {[1m[33mpages\home_page\images\bryan-lee[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\SummaryComponent[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/images/resume.jpg[39m[22m] 124 bytes {[1m[33mpages\home_page\images\resume[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\DescriptionComponent[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/projectlist/ProjectDescription.jsx[39m[22m] 1.75 KiB {[1m[33mpages\home_page\projectlist\ProjectDescription[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/projectlist/ProjectDisplay.jsx[39m[22m] 1.59 KiB {[1m[33mpages\home_page\projectlist\ProjectDisplay[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/axios/index.js[39m[22m] 40 bytes {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m} {[1m[33mpages\OwnerPage[39m[22m}[1m[32m [built][39m[22m
+    + 49 hidden modules
+
+  Rendered pages/index.html.erb within layouts/application (Duration: 6248.3ms | Allocations: 5596)
+  Rendered layout layouts/application.html.erb (Duration: 6253.1ms | Allocations: 7576)
+Completed 200 OK in 6258ms (Views: 6254.2ms | ActiveRecord: 0.0ms | Allocations: 7860)
+
+
+Started GET "/project" for 127.0.0.1 at 2022-09-22 18:09:56 +0800
+Processing by ProjectController#index as HTML
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/project_controller.rb:6:in `index'
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 1192)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-09-22 18:09:56 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 56.2ms | Allocations: 5415)
+  Rendered layout layouts/application.html.erb (Duration: 60.3ms | Allocations: 7374)
+Completed 200 OK in 67ms (Views: 61.5ms | ActiveRecord: 0.0ms | Allocations: 7658)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-09-22 18:10:13 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 66.0ms | Allocations: 4302)
+  Rendered layout layouts/application.html.erb (Duration: 71.4ms | Allocations: 6285)
+Completed 200 OK in 77ms (Views: 72.6ms | ActiveRecord: 0.0ms | Allocations: 6569)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-09-22 18:10:19 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 101.1ms | Allocations: 8767)
+  Rendered layout layouts/application.html.erb (Duration: 105.9ms | Allocations: 10804)
+Completed 200 OK in 115ms (Views: 107.9ms | ActiveRecord: 0.0ms | Allocations: 11432)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-09-22 18:10:24 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 56.0ms | Allocations: 4302)
+  Rendered layout layouts/application.html.erb (Duration: 61.4ms | Allocations: 6293)
+Completed 200 OK in 66ms (Views: 62.4ms | ActiveRecord: 0.0ms | Allocations: 6577)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 18:16:04 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/bryan/NUS/CVWO/portfolio-page/public/packs
+[Webpacker] warning package.json: No license field
+warning ..\..\..\package.json: No license field
+
+[Webpacker] Hash: [1m7a0a1bc8632bc1d687b5[39m[22m
+Version: webpack [1m4.46.0[39m[22m
+Time: [1m2084[39m[22mms
+Built at: 22/09/2022 [1m6:16:09 pm[39m[22m
+                                                                                 [1mAsset[39m[22m      [1mSize[39m[22m                                          [1mChunks[39m[22m  [1m[39m[22m                       [1m[39m[22m[1mChunk Names[39m[22m
+                                                        [1m[32mjs/app-4221e19b966a54d62d1d.js[39m[22m  1.58 MiB                                             [1mapp[39m[22m  [1m[32m[emitted] [immutable][39m[22m  app
+                                                    [1m[32mjs/app-4221e19b966a54d62d1d.js.map[39m[22m  1.76 MiB                                             [1mapp[39m[22m  [1m[32m[emitted] [dev][39m[22m        app
+                                           [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js[39m[22m  4.05 KiB                                [1mimages\bryan-lee[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\bryan-lee
+                                       [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js.map[39m[22m  3.71 KiB                                [1mimages\bryan-lee[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\bryan-lee
+                      [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js[39m[22m  4.19 KiB           [1mimages\task-management-app-screenshot[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\task-management-app-screenshot
+                  [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js.map[39m[22m  3.79 KiB           [1mimages\task-management-app-screenshot[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\task-management-app-screenshot
+                             [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js[39m[22m  4.15 KiB                  [1mimages\telegram-bot-screenshot[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\telegram-bot-screenshot
+                         [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js.map[39m[22m  3.77 KiB                  [1mimages\telegram-bot-screenshot[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\telegram-bot-screenshot
+                                             [1m[32mjs/pages\HomePage-9b107be6b0772a3b7492.js[39m[22m   257 KiB                                  [1mpages\HomePage[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\HomePage
+                                         [1m[32mjs/pages\HomePage-9b107be6b0772a3b7492.js.map[39m[22m   269 KiB                                  [1mpages\HomePage[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\HomePage
+                                            [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js[39m[22m   242 KiB                                 [1mpages\OwnerPage[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\OwnerPage
+                                        [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js.map[39m[22m   263 KiB                                 [1mpages\OwnerPage[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\OwnerPage
+                       [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js[39m[22m   104 KiB            [1mpages\home_page\DescriptionComponent[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\DescriptionComponent
+                   [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js.map[39m[22m   117 KiB            [1mpages\home_page\DescriptionComponent[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\DescriptionComponent
+                                     [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js[39m[22m   102 KiB                          [1mpages\home_page\Footer[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\Footer
+                                 [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js.map[39m[22m   115 KiB                          [1mpages\home_page\Footer[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\Footer
+                                [1m[32mjs/pages\home_page\ProjectList-f3f7874efd320fdff891.js[39m[22m   244 KiB                     [1mpages\home_page\ProjectList[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\ProjectList
+                            [1m[32mjs/pages\home_page\ProjectList-f3f7874efd320fdff891.js.map[39m[22m   264 KiB                     [1mpages\home_page\ProjectList[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\ProjectList
+                           [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js[39m[22m   103 KiB                [1mpages\home_page\SummaryComponent[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\SummaryComponent
+                       [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js.map[39m[22m   116 KiB                [1mpages\home_page\SummaryComponent[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\SummaryComponent
+                           [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js[39m[22m  4.14 KiB                [1mpages\home_page\images\bryan-lee[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\images\bryan-lee
+                       [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js.map[39m[22m  3.78 KiB                [1mpages\home_page\images\bryan-lee[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\images\bryan-lee
+                              [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js[39m[22m  4.12 KiB                   [1mpages\home_page\images\resume[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\images\resume
+                          [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js.map[39m[22m  3.76 KiB                   [1mpages\home_page\images\resume[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\images\resume
+             [1m[32mjs/pages\home_page\projectlist\ProjectDescription-d962b1a80522c9aafda6.js[39m[22m   102 KiB  [1mpages\home_page\projectlist\ProjectDescription[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\projectlist\ProjectDescription
+         [1m[32mjs/pages\home_page\projectlist\ProjectDescription-d962b1a80522c9aafda6.js.map[39m[22m   116 KiB  [1mpages\home_page\projectlist\ProjectDescription[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\projectlist\ProjectDescription
+                 [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js[39m[22m   102 KiB      [1mpages\home_page\projectlist\ProjectDisplay[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\projectlist\ProjectDisplay
+             [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js.map[39m[22m   116 KiB      [1mpages\home_page\projectlist\ProjectDisplay[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\projectlist\ProjectDisplay
+                                                                         [1m[32mmanifest.json[39m[22m  6.92 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                     [1m[32mmedia/packs/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg[39m[22m   291 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+[1m[32mmedia/packs/images/task-management-app-screenshot-053c3b8f0fc8365e528fa0377c74f305.jpg[39m[22m  50.7 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+       [1m[32mmedia/packs/images/telegram-bot-screenshot-9d6c275391506849de2d9f0756e4ff9c.jpg[39m[22m   247 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+     [1m[32mmedia/packs/pages/home_page/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg[39m[22m   291 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+        [1m[32mmedia/packs/pages/home_page/images/resume-99de9e47d42f8f91bb7ac5f3769149c9.jpg[39m[22m  85.6 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+Entrypoint [1mapp[39m[22m = [1m[32mjs/app-4221e19b966a54d62d1d.js[39m[22m [1m[32mjs/app-4221e19b966a54d62d1d.js.map[39m[22m
+Entrypoint [1mimages\bryan-lee[39m[22m = [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js[39m[22m [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js.map[39m[22m
+Entrypoint [1mimages\task-management-app-screenshot[39m[22m = [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js[39m[22m [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js.map[39m[22m
+Entrypoint [1mimages\telegram-bot-screenshot[39m[22m = [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js[39m[22m [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js.map[39m[22m
+Entrypoint [1mpages\home_page\DescriptionComponent[39m[22m = [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js[39m[22m [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js.map[39m[22m
+Entrypoint [1mpages\home_page\Footer[39m[22m = [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js[39m[22m [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js.map[39m[22m
+Entrypoint [1mpages\home_page\images\bryan-lee[39m[22m = [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js[39m[22m [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js.map[39m[22m
+Entrypoint [1mpages\home_page\images\resume[39m[22m = [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js[39m[22m [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js.map[39m[22m
+Entrypoint [1mpages\home_page\ProjectList[39m[22m = [1m[32mjs/pages\home_page\ProjectList-f3f7874efd320fdff891.js[39m[22m [1m[32mjs/pages\home_page\ProjectList-f3f7874efd320fdff891.js.map[39m[22m
+Entrypoint [1mpages\home_page\projectlist\ProjectDescription[39m[22m = [1m[32mjs/pages\home_page\projectlist\ProjectDescription-d962b1a80522c9aafda6.js[39m[22m [1m[32mjs/pages\home_page\projectlist\ProjectDescription-d962b1a80522c9aafda6.js.map[39m[22m
+Entrypoint [1mpages\home_page\projectlist\ProjectDisplay[39m[22m = [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js[39m[22m [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js.map[39m[22m
+Entrypoint [1mpages\home_page\SummaryComponent[39m[22m = [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js[39m[22m [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js.map[39m[22m
+Entrypoint [1mpages\HomePage[39m[22m = [1m[32mjs/pages\HomePage-9b107be6b0772a3b7492.js[39m[22m [1m[32mjs/pages\HomePage-9b107be6b0772a3b7492.js.map[39m[22m
+Entrypoint [1mpages\OwnerPage[39m[22m = [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js[39m[22m [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js.map[39m[22m
+[[1m./app/javascript/packs/app.jsx[39m[22m] 1.68 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/bryan-lee.jpg[39m[22m] 111 bytes {[1m[33mimages\bryan-lee[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/task-management-app-screenshot.jpg[39m[22m] 132 bytes {[1m[33mimages\task-management-app-screenshot[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/telegram-bot-screenshot.jpg[39m[22m] 125 bytes {[1m[33mimages\telegram-bot-screenshot[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/HomePage.jsx[39m[22m] 1.31 KiB {[1m[33mpages\HomePage[39m[22m} {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/OwnerPage.jsx[39m[22m] 8.84 KiB {[1m[33mpages\OwnerPage[39m[22m} {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/DescriptionComponent.jsx[39m[22m] 2.86 KiB {[1m[33mpages\home_page\DescriptionComponent[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/Footer.jsx[39m[22m] 1.15 KiB {[1m[33mpages\home_page\Footer[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/ProjectList.jsx[39m[22m] 6.18 KiB {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/SummaryComponent.jsx[39m[22m] 1.51 KiB {[1m[33mpages\home_page\SummaryComponent[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/images/bryan-lee.jpg[39m[22m] 127 bytes {[1m[33mpages\home_page\images\bryan-lee[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\SummaryComponent[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/images/resume.jpg[39m[22m] 124 bytes {[1m[33mpages\home_page\images\resume[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\DescriptionComponent[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/projectlist/ProjectDescription.jsx[39m[22m] 1.75 KiB {[1m[33mpages\home_page\projectlist\ProjectDescription[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/projectlist/ProjectDisplay.jsx[39m[22m] 1.59 KiB {[1m[33mpages\home_page\projectlist\ProjectDisplay[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/axios/index.js[39m[22m] 40 bytes {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m} {[1m[33mpages\OwnerPage[39m[22m}[1m[32m [built][39m[22m
+    + 49 hidden modules
+
+  Rendered pages/index.html.erb within layouts/application (Duration: 6277.6ms | Allocations: 16503)
+  Rendered layout layouts/application.html.erb (Duration: 6283.4ms | Allocations: 18480)
+Completed 200 OK in 6289ms (Views: 6284.4ms | Allocations: 18761)
+
+
+Started GET "/project" for 127.0.0.1 at 2022-09-22 18:16:10 +0800
+Processing by ProjectController#index as HTML
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-09-22 18:16:10 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mProject Load (1.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/project_controller.rb:6:in `index'
+Completed 200 OK in 126ms (Views: 0.1ms | ActiveRecord: 12.6ms | Allocations: 8633)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 66.3ms | Allocations: 8807)
+  Rendered layout layouts/application.html.erb (Duration: 71.2ms | Allocations: 10789)
+Completed 200 OK in 76ms (Views: 72.3ms | ActiveRecord: 0.0ms | Allocations: 11084)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 18:16:28 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 64.1ms | Allocations: 4304)
+  Rendered layout layouts/application.html.erb (Duration: 69.1ms | Allocations: 6287)
+Completed 200 OK in 74ms (Views: 70.3ms | ActiveRecord: 0.0ms | Allocations: 6571)
+
+
+Started GET "/project" for 127.0.0.1 at 2022-09-22 18:16:29 +0800
+Processing by ProjectController#index as HTML
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/project_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 1124)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-09-22 18:16:29 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 58.8ms | Allocations: 4336)
+  Rendered layout layouts/application.html.erb (Duration: 63.3ms | Allocations: 6301)
+Completed 200 OK in 69ms (Views: 64.3ms | ActiveRecord: 0.0ms | Allocations: 6585)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 18:17:08 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 123.4ms | Allocations: 15751)
+  Rendered layout layouts/application.html.erb (Duration: 129.1ms | Allocations: 17737)
+Completed 200 OK in 135ms (Views: 130.5ms | ActiveRecord: 0.0ms | Allocations: 18021)
+
+
+Started GET "/project" for 127.0.0.1 at 2022-09-22 18:17:09 +0800
+Processing by ProjectController#index as HTML
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/project_controller.rb:6:in `index'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 1124)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-09-22 18:17:09 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 53.9ms | Allocations: 4306)
+  Rendered layout layouts/application.html.erb (Duration: 60.3ms | Allocations: 6299)
+Completed 200 OK in 66ms (Views: 61.7ms | ActiveRecord: 0.0ms | Allocations: 6583)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 18:17:15 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 62.4ms | Allocations: 4341)
+  Rendered layout layouts/application.html.erb (Duration: 67.0ms | Allocations: 6337)
+Completed 200 OK in 72ms (Views: 68.3ms | ActiveRecord: 0.0ms | Allocations: 6621)
+
+
+Started GET "/project" for 127.0.0.1 at 2022-09-22 18:17:15 +0800
+Processing by ProjectController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/project_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 1124)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-09-22 18:17:16 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 58.7ms | Allocations: 4338)
+  Rendered layout layouts/application.html.erb (Duration: 69.1ms | Allocations: 6306)
+Completed 200 OK in 75ms (Views: 70.2ms | ActiveRecord: 0.0ms | Allocations: 6590)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 18:17:49 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 121.4ms | Allocations: 16414)
+  Rendered layout layouts/application.html.erb (Duration: 126.2ms | Allocations: 18388)
+Completed 200 OK in 132ms (Views: 127.6ms | ActiveRecord: 0.0ms | Allocations: 18672)
+
+
+Started GET "/project" for 127.0.0.1 at 2022-09-22 18:17:49 +0800
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-09-22 18:17:49 +0800
+Processing by ProjectController#index as HTML
+  [1m[36mProject Load (1.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/project_controller.rb:6:in `index'
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 1169)
+
+
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 83.2ms | Allocations: 5762)
+  Rendered layout layouts/application.html.erb (Duration: 88.6ms | Allocations: 7744)
+Completed 200 OK in 100ms (Views: 90.7ms | ActiveRecord: 0.0ms | Allocations: 8309)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 18:19:40 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/bryan/NUS/CVWO/portfolio-page/public/packs
+[Webpacker] warning package.json: No license field
+warning ..\..\..\package.json: No license field
+
+[Webpacker] Hash: [1mf222a325e52cf036b642[39m[22m
+Version: webpack [1m4.46.0[39m[22m
+Time: [1m1945[39m[22mms
+Built at: 22/09/2022 [1m6:19:46 pm[39m[22m
+                                                                                 [1mAsset[39m[22m      [1mSize[39m[22m                                          [1mChunks[39m[22m  [1m[39m[22m                       [1m[39m[22m[1mChunk Names[39m[22m
+                                                        [1m[32mjs/app-16d7c3a471c8853c35d2.js[39m[22m  1.58 MiB                                             [1mapp[39m[22m  [1m[32m[emitted] [immutable][39m[22m  app
+                                                    [1m[32mjs/app-16d7c3a471c8853c35d2.js.map[39m[22m  1.76 MiB                                             [1mapp[39m[22m  [1m[32m[emitted] [dev][39m[22m        app
+                                           [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js[39m[22m  4.05 KiB                                [1mimages\bryan-lee[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\bryan-lee
+                                       [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js.map[39m[22m  3.71 KiB                                [1mimages\bryan-lee[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\bryan-lee
+                      [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js[39m[22m  4.19 KiB           [1mimages\task-management-app-screenshot[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\task-management-app-screenshot
+                  [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js.map[39m[22m  3.79 KiB           [1mimages\task-management-app-screenshot[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\task-management-app-screenshot
+                             [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js[39m[22m  4.15 KiB                  [1mimages\telegram-bot-screenshot[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\telegram-bot-screenshot
+                         [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js.map[39m[22m  3.77 KiB                  [1mimages\telegram-bot-screenshot[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\telegram-bot-screenshot
+                                             [1m[32mjs/pages\HomePage-aad258959842dcaf5076.js[39m[22m   257 KiB                                  [1mpages\HomePage[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\HomePage
+                                         [1m[32mjs/pages\HomePage-aad258959842dcaf5076.js.map[39m[22m   269 KiB                                  [1mpages\HomePage[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\HomePage
+                                            [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js[39m[22m   242 KiB                                 [1mpages\OwnerPage[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\OwnerPage
+                                        [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js.map[39m[22m   263 KiB                                 [1mpages\OwnerPage[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\OwnerPage
+                       [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js[39m[22m   104 KiB            [1mpages\home_page\DescriptionComponent[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\DescriptionComponent
+                   [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js.map[39m[22m   117 KiB            [1mpages\home_page\DescriptionComponent[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\DescriptionComponent
+                                     [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js[39m[22m   102 KiB                          [1mpages\home_page\Footer[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\Footer
+                                 [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js.map[39m[22m   115 KiB                          [1mpages\home_page\Footer[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\Footer
+                                [1m[32mjs/pages\home_page\ProjectList-e7272a1c4c70f01548cd.js[39m[22m   244 KiB                     [1mpages\home_page\ProjectList[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\ProjectList
+                            [1m[32mjs/pages\home_page\ProjectList-e7272a1c4c70f01548cd.js.map[39m[22m   264 KiB                     [1mpages\home_page\ProjectList[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\ProjectList
+                           [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js[39m[22m   103 KiB                [1mpages\home_page\SummaryComponent[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\SummaryComponent
+                       [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js.map[39m[22m   116 KiB                [1mpages\home_page\SummaryComponent[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\SummaryComponent
+                           [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js[39m[22m  4.14 KiB                [1mpages\home_page\images\bryan-lee[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\images\bryan-lee
+                       [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js.map[39m[22m  3.78 KiB                [1mpages\home_page\images\bryan-lee[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\images\bryan-lee
+                              [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js[39m[22m  4.12 KiB                   [1mpages\home_page\images\resume[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\images\resume
+                          [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js.map[39m[22m  3.76 KiB                   [1mpages\home_page\images\resume[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\images\resume
+             [1m[32mjs/pages\home_page\projectlist\ProjectDescription-23f0114db6d901010b45.js[39m[22m   102 KiB  [1mpages\home_page\projectlist\ProjectDescription[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\projectlist\ProjectDescription
+         [1m[32mjs/pages\home_page\projectlist\ProjectDescription-23f0114db6d901010b45.js.map[39m[22m   116 KiB  [1mpages\home_page\projectlist\ProjectDescription[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\projectlist\ProjectDescription
+                 [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js[39m[22m   102 KiB      [1mpages\home_page\projectlist\ProjectDisplay[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\projectlist\ProjectDisplay
+             [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js.map[39m[22m   116 KiB      [1mpages\home_page\projectlist\ProjectDisplay[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\projectlist\ProjectDisplay
+                                                                         [1m[32mmanifest.json[39m[22m  6.92 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                     [1m[32mmedia/packs/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg[39m[22m   291 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+[1m[32mmedia/packs/images/task-management-app-screenshot-053c3b8f0fc8365e528fa0377c74f305.jpg[39m[22m  50.7 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+       [1m[32mmedia/packs/images/telegram-bot-screenshot-9d6c275391506849de2d9f0756e4ff9c.jpg[39m[22m   247 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+     [1m[32mmedia/packs/pages/home_page/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg[39m[22m   291 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+        [1m[32mmedia/packs/pages/home_page/images/resume-99de9e47d42f8f91bb7ac5f3769149c9.jpg[39m[22m  85.6 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+Entrypoint [1mapp[39m[22m = [1m[32mjs/app-16d7c3a471c8853c35d2.js[39m[22m [1m[32mjs/app-16d7c3a471c8853c35d2.js.map[39m[22m
+Entrypoint [1mimages\bryan-lee[39m[22m = [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js[39m[22m [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js.map[39m[22m
+Entrypoint [1mimages\task-management-app-screenshot[39m[22m = [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js[39m[22m [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js.map[39m[22m
+Entrypoint [1mimages\telegram-bot-screenshot[39m[22m = [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js[39m[22m [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js.map[39m[22m
+Entrypoint [1mpages\home_page\DescriptionComponent[39m[22m = [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js[39m[22m [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js.map[39m[22m
+Entrypoint [1mpages\home_page\Footer[39m[22m = [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js[39m[22m [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js.map[39m[22m
+Entrypoint [1mpages\home_page\images\bryan-lee[39m[22m = [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js[39m[22m [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js.map[39m[22m
+Entrypoint [1mpages\home_page\images\resume[39m[22m = [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js[39m[22m [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js.map[39m[22m
+Entrypoint [1mpages\home_page\ProjectList[39m[22m = [1m[32mjs/pages\home_page\ProjectList-e7272a1c4c70f01548cd.js[39m[22m [1m[32mjs/pages\home_page\ProjectList-e7272a1c4c70f01548cd.js.map[39m[22m
+Entrypoint [1mpages\home_page\projectlist\ProjectDescription[39m[22m = [1m[32mjs/pages\home_page\projectlist\ProjectDescription-23f0114db6d901010b45.js[39m[22m [1m[32mjs/pages\home_page\projectlist\ProjectDescription-23f0114db6d901010b45.js.map[39m[22m
+Entrypoint [1mpages\home_page\projectlist\ProjectDisplay[39m[22m = [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js[39m[22m [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js.map[39m[22m
+Entrypoint [1mpages\home_page\SummaryComponent[39m[22m = [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js[39m[22m [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js.map[39m[22m
+Entrypoint [1mpages\HomePage[39m[22m = [1m[32mjs/pages\HomePage-aad258959842dcaf5076.js[39m[22m [1m[32mjs/pages\HomePage-aad258959842dcaf5076.js.map[39m[22m
+Entrypoint [1mpages\OwnerPage[39m[22m = [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js[39m[22m [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js.map[39m[22m
+[[1m./app/javascript/packs/app.jsx[39m[22m] 1.68 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/bryan-lee.jpg[39m[22m] 111 bytes {[1m[33mimages\bryan-lee[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/task-management-app-screenshot.jpg[39m[22m] 132 bytes {[1m[33mimages\task-management-app-screenshot[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/telegram-bot-screenshot.jpg[39m[22m] 125 bytes {[1m[33mimages\telegram-bot-screenshot[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/HomePage.jsx[39m[22m] 1.31 KiB {[1m[33mpages\HomePage[39m[22m} {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/OwnerPage.jsx[39m[22m] 8.84 KiB {[1m[33mpages\OwnerPage[39m[22m} {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/DescriptionComponent.jsx[39m[22m] 2.86 KiB {[1m[33mpages\home_page\DescriptionComponent[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/Footer.jsx[39m[22m] 1.15 KiB {[1m[33mpages\home_page\Footer[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/ProjectList.jsx[39m[22m] 6.18 KiB {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/SummaryComponent.jsx[39m[22m] 1.51 KiB {[1m[33mpages\home_page\SummaryComponent[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/images/bryan-lee.jpg[39m[22m] 127 bytes {[1m[33mpages\home_page\images\bryan-lee[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\SummaryComponent[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/images/resume.jpg[39m[22m] 124 bytes {[1m[33mpages\home_page\images\resume[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\DescriptionComponent[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/projectlist/ProjectDescription.jsx[39m[22m] 1.85 KiB {[1m[33mpages\home_page\projectlist\ProjectDescription[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/projectlist/ProjectDisplay.jsx[39m[22m] 1.59 KiB {[1m[33mpages\home_page\projectlist\ProjectDisplay[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/axios/index.js[39m[22m] 40 bytes {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m} {[1m[33mpages\OwnerPage[39m[22m}[1m[32m [built][39m[22m
+    + 49 hidden modules
+
+  Rendered pages/index.html.erb within layouts/application (Duration: 6106.9ms | Allocations: 17661)
+  Rendered layout layouts/application.html.erb (Duration: 6114.1ms | Allocations: 19638)
+Completed 200 OK in 6121ms (Views: 6116.9ms | ActiveRecord: 0.0ms | Allocations: 19922)
+
+
+Started GET "/project" for 127.0.0.1 at 2022-09-22 18:19:47 +0800
+Processing by ProjectController#index as HTML
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/project_controller.rb:6:in `index'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 1124)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-09-22 18:19:47 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 59.4ms | Allocations: 4336)
+  Rendered layout layouts/application.html.erb (Duration: 64.6ms | Allocations: 6321)
+Completed 200 OK in 71ms (Views: 66.1ms | ActiveRecord: 0.0ms | Allocations: 6606)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 18:20:55 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 138.0ms | Allocations: 16401)
+  Rendered layout layouts/application.html.erb (Duration: 143.9ms | Allocations: 18393)
+Completed 200 OK in 149ms (Views: 144.9ms | ActiveRecord: 0.0ms | Allocations: 18678)
+
+
+Started GET "/project" for 127.0.0.1 at 2022-09-22 18:20:56 +0800
+Processing by ProjectController#index as HTML
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-09-22 18:20:56 +0800
+  [1m[36mProject Load (1.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/project_controller.rb:6:in `index'
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 1.7ms | Allocations: 1456)
+
+
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 57.4ms | Allocations: 4317)
+  Rendered layout layouts/application.html.erb (Duration: 62.6ms | Allocations: 6303)
+Completed 200 OK in 71ms (Views: 63.8ms | ActiveRecord: 0.0ms | Allocations: 7212)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 18:21:38 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 62.3ms | Allocations: 4309)
+  Rendered layout layouts/application.html.erb (Duration: 67.8ms | Allocations: 6310)
+Completed 200 OK in 73ms (Views: 68.7ms | ActiveRecord: 0.0ms | Allocations: 6594)
+
+
+Started GET "/project" for 127.0.0.1 at 2022-09-22 18:21:38 +0800
+Processing by ProjectController#index as HTML
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/project_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 1124)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-09-22 18:21:38 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 64.7ms | Allocations: 4349)
+  Rendered layout layouts/application.html.erb (Duration: 69.7ms | Allocations: 6322)
+Completed 200 OK in 76ms (Views: 70.8ms | ActiveRecord: 0.0ms | Allocations: 6606)
+
+
