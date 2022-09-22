@@ -34305,3 +34305,620 @@ Processing by PagesController#index as */*
 Completed 200 OK in 76ms (Views: 70.8ms | ActiveRecord: 0.0ms | Allocations: 6606)
 
 
+Started GET "/" for 127.0.0.1 at 2022-09-22 18:37:03 +0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: [1m8cbe2690682ef91c9fc9[39m[22m
+Version: webpack [1m4.46.0[39m[22m
+Time: [1m1843[39m[22mms
+Built at: 22/09/2022 [1m6:37:10 pm[39m[22m
+                                                                                 [1mAsset[39m[22m      [1mSize[39m[22m                                          [1mChunks[39m[22m  [1m[39m[22m                       [1m[39m[22m[1mChunk Names[39m[22m
+                                                        [1m[32mjs/app-25ddff174f625c7e74c4.js[39m[22m  1.58 MiB                                             [1mapp[39m[22m  [1m[32m[emitted] [immutable][39m[22m  app
+                                                    [1m[32mjs/app-25ddff174f625c7e74c4.js.map[39m[22m  1.76 MiB                                             [1mapp[39m[22m  [1m[32m[emitted] [dev][39m[22m        app
+                                           [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js[39m[22m  4.05 KiB                                [1mimages\bryan-lee[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\bryan-lee
+                                       [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js.map[39m[22m  3.71 KiB                                [1mimages\bryan-lee[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\bryan-lee
+                      [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js[39m[22m  4.19 KiB           [1mimages\task-management-app-screenshot[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\task-management-app-screenshot
+                  [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js.map[39m[22m  3.79 KiB           [1mimages\task-management-app-screenshot[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\task-management-app-screenshot
+                             [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js[39m[22m  4.15 KiB                  [1mimages\telegram-bot-screenshot[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\telegram-bot-screenshot
+                         [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js.map[39m[22m  3.77 KiB                  [1mimages\telegram-bot-screenshot[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\telegram-bot-screenshot
+                                             [1m[32mjs/pages\HomePage-4c4c868a15f7d581daa2.js[39m[22m   263 KiB                                  [1mpages\HomePage[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\HomePage
+                                         [1m[32mjs/pages\HomePage-4c4c868a15f7d581daa2.js.map[39m[22m   268 KiB                                  [1mpages\HomePage[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\HomePage
+                                            [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js[39m[22m   242 KiB                                 [1mpages\OwnerPage[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\OwnerPage
+                                        [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js.map[39m[22m   263 KiB                                 [1mpages\OwnerPage[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\OwnerPage
+                       [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js[39m[22m   104 KiB            [1mpages\home_page\DescriptionComponent[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\DescriptionComponent
+                   [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js.map[39m[22m   117 KiB            [1mpages\home_page\DescriptionComponent[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\DescriptionComponent
+                                     [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js[39m[22m   102 KiB                          [1mpages\home_page\Footer[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\Footer
+                                 [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js.map[39m[22m   115 KiB                          [1mpages\home_page\Footer[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\Footer
+                                [1m[32mjs/pages\home_page\ProjectList-30cee50a8073f3963539.js[39m[22m   249 KiB                     [1mpages\home_page\ProjectList[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\ProjectList
+                            [1m[32mjs/pages\home_page\ProjectList-30cee50a8073f3963539.js.map[39m[22m   263 KiB                     [1mpages\home_page\ProjectList[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\ProjectList
+                           [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js[39m[22m   103 KiB                [1mpages\home_page\SummaryComponent[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\SummaryComponent
+                       [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js.map[39m[22m   116 KiB                [1mpages\home_page\SummaryComponent[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\SummaryComponent
+                           [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js[39m[22m  4.14 KiB                [1mpages\home_page\images\bryan-lee[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\images\bryan-lee
+                       [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js.map[39m[22m  3.78 KiB                [1mpages\home_page\images\bryan-lee[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\images\bryan-lee
+                              [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js[39m[22m  4.12 KiB                   [1mpages\home_page\images\resume[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\images\resume
+                          [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js.map[39m[22m  3.76 KiB                   [1mpages\home_page\images\resume[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\images\resume
+             [1m[32mjs/pages\home_page\projectlist\ProjectDescription-ca34862fcff0d9f40cd8.js[39m[22m  11.4 KiB  [1mpages\home_page\projectlist\ProjectDescription[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\projectlist\ProjectDescription
+         [1m[32mjs/pages\home_page\projectlist\ProjectDescription-ca34862fcff0d9f40cd8.js.map[39m[22m   3.6 KiB  [1mpages\home_page\projectlist\ProjectDescription[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\projectlist\ProjectDescription
+                 [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js[39m[22m   102 KiB      [1mpages\home_page\projectlist\ProjectDisplay[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\projectlist\ProjectDisplay
+             [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js.map[39m[22m   116 KiB      [1mpages\home_page\projectlist\ProjectDisplay[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\projectlist\ProjectDisplay
+                                                                         [1m[32mmanifest.json[39m[22m  6.92 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                     [1m[32mmedia/packs/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg[39m[22m   291 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+[1m[32mmedia/packs/images/task-management-app-screenshot-053c3b8f0fc8365e528fa0377c74f305.jpg[39m[22m  50.7 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+       [1m[32mmedia/packs/images/telegram-bot-screenshot-9d6c275391506849de2d9f0756e4ff9c.jpg[39m[22m   247 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+     [1m[32mmedia/packs/pages/home_page/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg[39m[22m   291 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+        [1m[32mmedia/packs/pages/home_page/images/resume-99de9e47d42f8f91bb7ac5f3769149c9.jpg[39m[22m  85.6 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+Entrypoint [1mapp[39m[22m = [1m[32mjs/app-25ddff174f625c7e74c4.js[39m[22m [1m[32mjs/app-25ddff174f625c7e74c4.js.map[39m[22m
+Entrypoint [1mimages\bryan-lee[39m[22m = [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js[39m[22m [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js.map[39m[22m
+Entrypoint [1mimages\task-management-app-screenshot[39m[22m = [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js[39m[22m [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js.map[39m[22m
+Entrypoint [1mimages\telegram-bot-screenshot[39m[22m = [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js[39m[22m [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js.map[39m[22m
+Entrypoint [1mpages\home_page\DescriptionComponent[39m[22m = [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js[39m[22m [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js.map[39m[22m
+Entrypoint [1mpages\home_page\Footer[39m[22m = [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js[39m[22m [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js.map[39m[22m
+Entrypoint [1mpages\home_page\images\bryan-lee[39m[22m = [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js[39m[22m [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js.map[39m[22m
+Entrypoint [1mpages\home_page\images\resume[39m[22m = [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js[39m[22m [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js.map[39m[22m
+Entrypoint [1mpages\home_page\ProjectList[39m[22m = [1m[32mjs/pages\home_page\ProjectList-30cee50a8073f3963539.js[39m[22m [1m[32mjs/pages\home_page\ProjectList-30cee50a8073f3963539.js.map[39m[22m
+Entrypoint [1mpages\home_page\projectlist\ProjectDescription[39m[22m = [1m[32mjs/pages\home_page\projectlist\ProjectDescription-ca34862fcff0d9f40cd8.js[39m[22m [1m[32mjs/pages\home_page\projectlist\ProjectDescription-ca34862fcff0d9f40cd8.js.map[39m[22m
+Entrypoint [1mpages\home_page\projectlist\ProjectDisplay[39m[22m = [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js[39m[22m [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js.map[39m[22m
+Entrypoint [1mpages\home_page\SummaryComponent[39m[22m = [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js[39m[22m [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js.map[39m[22m
+Entrypoint [1mpages\HomePage[39m[22m = [1m[32mjs/pages\HomePage-4c4c868a15f7d581daa2.js[39m[22m [1m[32mjs/pages\HomePage-4c4c868a15f7d581daa2.js.map[39m[22m
+Entrypoint [1mpages\OwnerPage[39m[22m = [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js[39m[22m [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js.map[39m[22m
+[[1m./app/javascript/packs/app.jsx[39m[22m] 1.68 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/bryan-lee.jpg[39m[22m] 111 bytes {[1m[33mimages\bryan-lee[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/task-management-app-screenshot.jpg[39m[22m] 132 bytes {[1m[33mimages\task-management-app-screenshot[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/telegram-bot-screenshot.jpg[39m[22m] 125 bytes {[1m[33mimages\telegram-bot-screenshot[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/HomePage.jsx[39m[22m] 1.31 KiB {[1m[33mpages\HomePage[39m[22m} {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/OwnerPage.jsx[39m[22m] 8.84 KiB {[1m[33mpages\OwnerPage[39m[22m} {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/DescriptionComponent.jsx[39m[22m] 2.86 KiB {[1m[33mpages\home_page\DescriptionComponent[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/Footer.jsx[39m[22m] 1.15 KiB {[1m[33mpages\home_page\Footer[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/ProjectList.jsx[39m[22m] 6.18 KiB {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/SummaryComponent.jsx[39m[22m] 1.51 KiB {[1m[33mpages\home_page\SummaryComponent[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/images/bryan-lee.jpg[39m[22m] 127 bytes {[1m[33mpages\home_page\images\bryan-lee[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\SummaryComponent[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/images/resume.jpg[39m[22m] 124 bytes {[1m[33mpages\home_page\images\resume[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\DescriptionComponent[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/projectlist/ProjectDescription.jsx[39m[22m] 7.32 KiB {[1m[33mpages\home_page\projectlist\ProjectDescription[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m[1m[31m [failed][39m[22m[1m[31m [1 error][39m[22m
+[[1m./app/javascript/packs/pages/home_page/projectlist/ProjectDisplay.jsx[39m[22m] 1.59 KiB {[1m[33mpages\home_page\projectlist\ProjectDisplay[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/axios/index.js[39m[22m] 40 bytes {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m} {[1m[33mpages\OwnerPage[39m[22m}[1m[32m [built][39m[22m
+    + 49 hidden modules
+
+[1m[31mERROR in ./app/javascript/packs/pages/home_page/projectlist/ProjectDescription.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: C:\Users\bryan\NUS\CVWO\portfolio-page\app\javascript\packs\pages\home_page\projectlist\ProjectDescription.jsx: Expected corresponding JSX closing tag for <br>. (11:6)
+
+   9 |       {project.attributes.gitLink!=null && <a href={project.attributes.gitLink}>Click here to see the github page!</a>}
+  10 |       {project.attributes.siteLink!=null && <br><a href={project.attributes.siteLink}>Click here to check out the website!</a>}
+> 11 |       </div>
+     |       ^
+  12 |     )    
+  13 |   }
+  14 |   else {
+    at instantiate (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:72:32)
+    at constructor (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:367:12)
+    at JSXParserMixin.raise (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:3684:19)
+    at JSXParserMixin.jsxParseElementAt (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:8131:16)
+    at JSXParserMixin.jsxParseElement (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:8162:17)
+    at JSXParserMixin.parseExprAtom (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:8176:19)
+    at JSXParserMixin.parseExprSubscripts (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12848:23)
+    at JSXParserMixin.parseUpdate (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12827:21)
+    at JSXParserMixin.parseMaybeUnary (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12797:23)
+    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12588:61)
+    at JSXParserMixin.parseExprOpBaseRightExpr (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12710:34)
+    at JSXParserMixin.parseExprOpRightExpr (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12703:21)
+    at JSXParserMixin.parseExprOp (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12656:27)
+    at JSXParserMixin.parseExprOp (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12666:21)
+    at JSXParserMixin.parseExprOps (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12601:17)
+    at JSXParserMixin.parseMaybeConditional (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12565:23)
+    at JSXParserMixin.parseMaybeAssign (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12517:21)
+    at JSXParserMixin.parseExpressionBase (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12453:23)
+    at C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12447:39
+    at JSXParserMixin.allowInAnd (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:14549:12)
+    at JSXParserMixin.parseExpression (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12447:17)
+    at JSXParserMixin.jsxParseExpressionContainer (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:8009:31)
+    at JSXParserMixin.jsxParseElementAt (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:8109:36)
+    at JSXParserMixin.jsxParseElement (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:8162:17)
+    at JSXParserMixin.parseExprAtom (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:8176:19)
+    at JSXParserMixin.parseExprSubscripts (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12848:23)
+    at JSXParserMixin.parseUpdate (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12827:21)
+    at JSXParserMixin.parseMaybeUnary (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12797:23)
+    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12588:61)
+    at JSXParserMixin.parseExprOps (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12595:23)
+    at JSXParserMixin.parseMaybeConditional (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12565:23)
+    at JSXParserMixin.parseMaybeAssign (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12517:21)
+    at C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12475:39
+    at JSXParserMixin.allowInAnd (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:14549:12)
+    at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12475:17)
+    at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:13604:28)
+    at JSXParserMixin.parseExprAtom (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:13176:23)
+    at JSXParserMixin.parseExprAtom (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:8181:20)
+    at JSXParserMixin.parseExprSubscripts (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12848:23)
+    at JSXParserMixin.parseUpdate (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12827:21)
+    at JSXParserMixin.parseMaybeUnary (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12797:23)
+    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12588:61)
+    at JSXParserMixin.parseExprOps (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12595:23)
+    at JSXParserMixin.parseMaybeConditional (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12565:23)
+    at JSXParserMixin.parseMaybeAssign (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12517:21)
+    at JSXParserMixin.parseExpressionBase (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12453:23)
+    at C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12447:39
+    at JSXParserMixin.allowInAnd (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:14543:16)
+    at JSXParserMixin.parseExpression (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12447:17)
+    at JSXParserMixin.parseReturnStatement (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:15271:28)[39m[22m
+
+
+warning package.json: No license field
+warning ..\..\..\package.json: No license field
+
+  Rendered pages/index.html.erb within layouts/application (Duration: 6715.2ms | Allocations: 55492)
+  Rendered layout layouts/application.html.erb (Duration: 6749.1ms | Allocations: 67717)
+Completed 200 OK in 6805ms (Views: 6767.7ms | ActiveRecord: 0.0ms | Allocations: 71397)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-09-22 18:37:11 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 59.1ms | Allocations: 4427)
+  Rendered layout layouts/application.html.erb (Duration: 66.7ms | Allocations: 6464)
+Completed 200 OK in 72ms (Views: 67.6ms | ActiveRecord: 0.0ms | Allocations: 6881)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 18:38:15 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: [1md6fdc089cfa8e84c1c58[39m[22m
+Version: webpack [1m4.46.0[39m[22m
+Time: [1m1898[39m[22mms
+Built at: 22/09/2022 [1m6:38:20 pm[39m[22m
+                                                                                 [1mAsset[39m[22m      [1mSize[39m[22m                                          [1mChunks[39m[22m  [1m[39m[22m                       [1m[39m[22m[1mChunk Names[39m[22m
+                                                        [1m[32mjs/app-6d33fd0c3a725b30f1dd.js[39m[22m  1.58 MiB                                             [1mapp[39m[22m  [1m[32m[emitted] [immutable][39m[22m  app
+                                                    [1m[32mjs/app-6d33fd0c3a725b30f1dd.js.map[39m[22m  1.76 MiB                                             [1mapp[39m[22m  [1m[32m[emitted] [dev][39m[22m        app
+                                           [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js[39m[22m  4.05 KiB                                [1mimages\bryan-lee[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\bryan-lee
+                                       [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js.map[39m[22m  3.71 KiB                                [1mimages\bryan-lee[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\bryan-lee
+                      [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js[39m[22m  4.19 KiB           [1mimages\task-management-app-screenshot[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\task-management-app-screenshot
+                  [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js.map[39m[22m  3.79 KiB           [1mimages\task-management-app-screenshot[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\task-management-app-screenshot
+                             [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js[39m[22m  4.15 KiB                  [1mimages\telegram-bot-screenshot[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\telegram-bot-screenshot
+                         [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js.map[39m[22m  3.77 KiB                  [1mimages\telegram-bot-screenshot[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\telegram-bot-screenshot
+                                             [1m[32mjs/pages\HomePage-bae73439148347c22481.js[39m[22m   263 KiB                                  [1mpages\HomePage[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\HomePage
+                                         [1m[32mjs/pages\HomePage-bae73439148347c22481.js.map[39m[22m   268 KiB                                  [1mpages\HomePage[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\HomePage
+                                            [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js[39m[22m   242 KiB                                 [1mpages\OwnerPage[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\OwnerPage
+                                        [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js.map[39m[22m   263 KiB                                 [1mpages\OwnerPage[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\OwnerPage
+                       [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js[39m[22m   104 KiB            [1mpages\home_page\DescriptionComponent[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\DescriptionComponent
+                   [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js.map[39m[22m   117 KiB            [1mpages\home_page\DescriptionComponent[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\DescriptionComponent
+                                     [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js[39m[22m   102 KiB                          [1mpages\home_page\Footer[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\Footer
+                                 [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js.map[39m[22m   115 KiB                          [1mpages\home_page\Footer[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\Footer
+                                [1m[32mjs/pages\home_page\ProjectList-f8a38437b7308f6e7091.js[39m[22m   250 KiB                     [1mpages\home_page\ProjectList[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\ProjectList
+                            [1m[32mjs/pages\home_page\ProjectList-f8a38437b7308f6e7091.js.map[39m[22m   263 KiB                     [1mpages\home_page\ProjectList[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\ProjectList
+                           [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js[39m[22m   103 KiB                [1mpages\home_page\SummaryComponent[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\SummaryComponent
+                       [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js.map[39m[22m   116 KiB                [1mpages\home_page\SummaryComponent[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\SummaryComponent
+                           [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js[39m[22m  4.14 KiB                [1mpages\home_page\images\bryan-lee[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\images\bryan-lee
+                       [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js.map[39m[22m  3.78 KiB                [1mpages\home_page\images\bryan-lee[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\images\bryan-lee
+                              [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js[39m[22m  4.12 KiB                   [1mpages\home_page\images\resume[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\images\resume
+                          [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js.map[39m[22m  3.76 KiB                   [1mpages\home_page\images\resume[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\images\resume
+             [1m[32mjs/pages\home_page\projectlist\ProjectDescription-ea4c0ded50b54d725174.js[39m[22m  11.7 KiB  [1mpages\home_page\projectlist\ProjectDescription[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\projectlist\ProjectDescription
+         [1m[32mjs/pages\home_page\projectlist\ProjectDescription-ea4c0ded50b54d725174.js.map[39m[22m   3.6 KiB  [1mpages\home_page\projectlist\ProjectDescription[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\projectlist\ProjectDescription
+                 [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js[39m[22m   102 KiB      [1mpages\home_page\projectlist\ProjectDisplay[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\projectlist\ProjectDisplay
+             [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js.map[39m[22m   116 KiB      [1mpages\home_page\projectlist\ProjectDisplay[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\projectlist\ProjectDisplay
+                                                                         [1m[32mmanifest.json[39m[22m  6.92 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                     [1m[32mmedia/packs/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg[39m[22m   291 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+[1m[32mmedia/packs/images/task-management-app-screenshot-053c3b8f0fc8365e528fa0377c74f305.jpg[39m[22m  50.7 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+       [1m[32mmedia/packs/images/telegram-bot-screenshot-9d6c275391506849de2d9f0756e4ff9c.jpg[39m[22m   247 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+     [1m[32mmedia/packs/pages/home_page/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg[39m[22m   291 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+        [1m[32mmedia/packs/pages/home_page/images/resume-99de9e47d42f8f91bb7ac5f3769149c9.jpg[39m[22m  85.6 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+Entrypoint [1mapp[39m[22m = [1m[32mjs/app-6d33fd0c3a725b30f1dd.js[39m[22m [1m[32mjs/app-6d33fd0c3a725b30f1dd.js.map[39m[22m
+Entrypoint [1mimages\bryan-lee[39m[22m = [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js[39m[22m [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js.map[39m[22m
+Entrypoint [1mimages\task-management-app-screenshot[39m[22m = [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js[39m[22m [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js.map[39m[22m
+Entrypoint [1mimages\telegram-bot-screenshot[39m[22m = [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js[39m[22m [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js.map[39m[22m
+Entrypoint [1mpages\home_page\DescriptionComponent[39m[22m = [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js[39m[22m [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js.map[39m[22m
+Entrypoint [1mpages\home_page\Footer[39m[22m = [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js[39m[22m [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js.map[39m[22m
+Entrypoint [1mpages\home_page\images\bryan-lee[39m[22m = [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js[39m[22m [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js.map[39m[22m
+Entrypoint [1mpages\home_page\images\resume[39m[22m = [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js[39m[22m [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js.map[39m[22m
+Entrypoint [1mpages\home_page\ProjectList[39m[22m = [1m[32mjs/pages\home_page\ProjectList-f8a38437b7308f6e7091.js[39m[22m [1m[32mjs/pages\home_page\ProjectList-f8a38437b7308f6e7091.js.map[39m[22m
+Entrypoint [1mpages\home_page\projectlist\ProjectDescription[39m[22m = [1m[32mjs/pages\home_page\projectlist\ProjectDescription-ea4c0ded50b54d725174.js[39m[22m [1m[32mjs/pages\home_page\projectlist\ProjectDescription-ea4c0ded50b54d725174.js.map[39m[22m
+Entrypoint [1mpages\home_page\projectlist\ProjectDisplay[39m[22m = [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js[39m[22m [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js.map[39m[22m
+Entrypoint [1mpages\home_page\SummaryComponent[39m[22m = [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js[39m[22m [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js.map[39m[22m
+Entrypoint [1mpages\HomePage[39m[22m = [1m[32mjs/pages\HomePage-bae73439148347c22481.js[39m[22m [1m[32mjs/pages\HomePage-bae73439148347c22481.js.map[39m[22m
+Entrypoint [1mpages\OwnerPage[39m[22m = [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js[39m[22m [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js.map[39m[22m
+[[1m./app/javascript/packs/app.jsx[39m[22m] 1.68 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/bryan-lee.jpg[39m[22m] 111 bytes {[1m[33mimages\bryan-lee[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/task-management-app-screenshot.jpg[39m[22m] 132 bytes {[1m[33mimages\task-management-app-screenshot[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/telegram-bot-screenshot.jpg[39m[22m] 125 bytes {[1m[33mimages\telegram-bot-screenshot[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/HomePage.jsx[39m[22m] 1.31 KiB {[1m[33mpages\HomePage[39m[22m} {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/OwnerPage.jsx[39m[22m] 8.84 KiB {[1m[33mpages\OwnerPage[39m[22m} {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/DescriptionComponent.jsx[39m[22m] 2.86 KiB {[1m[33mpages\home_page\DescriptionComponent[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/Footer.jsx[39m[22m] 1.15 KiB {[1m[33mpages\home_page\Footer[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/ProjectList.jsx[39m[22m] 6.18 KiB {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/SummaryComponent.jsx[39m[22m] 1.51 KiB {[1m[33mpages\home_page\SummaryComponent[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/images/bryan-lee.jpg[39m[22m] 127 bytes {[1m[33mpages\home_page\images\bryan-lee[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\SummaryComponent[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/images/resume.jpg[39m[22m] 124 bytes {[1m[33mpages\home_page\images\resume[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\DescriptionComponent[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/projectlist/ProjectDescription.jsx[39m[22m] 7.59 KiB {[1m[33mpages\home_page\projectlist\ProjectDescription[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m[1m[31m [failed][39m[22m[1m[31m [1 error][39m[22m
+[[1m./app/javascript/packs/pages/home_page/projectlist/ProjectDisplay.jsx[39m[22m] 1.59 KiB {[1m[33mpages\home_page\projectlist\ProjectDisplay[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/axios/index.js[39m[22m] 40 bytes {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m} {[1m[33mpages\OwnerPage[39m[22m}[1m[32m [built][39m[22m
+    + 49 hidden modules
+
+[1m[31mERROR in ./app/javascript/packs/pages/home_page/projectlist/ProjectDescription.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: C:\Users\bryan\NUS\CVWO\portfolio-page\app\javascript\packs\pages\home_page\projectlist\ProjectDescription.jsx: Expecting Unicode escape sequence \uXXXX. (9:116)
+
+   7 |       <h1 className='project__name'>{project.attributes.name}</h1>
+   8 |       <textarea className='project__long-description' readOnly value={project.attributes.longDescription}></textarea>
+>  9 |       {project.attributes.gitLink!=null && <a href={project.attributes.gitLink}>Click here to see the github page!{\n}</a>}
+     |                                                                                                                     ^
+  10 |       {project.attributes.siteLink!=null && <a href={project.attributes.siteLink}>Click here to check out the website!</a>}
+  11 |       </div>
+  12 |     )    
+    at instantiate (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:72:32)
+    at constructor (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:367:12)
+    at JSXParserMixin.raise (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:3684:19)
+    at JSXParserMixin.readWord1 (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:3624:16)
+    at JSXParserMixin.readWord (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:3654:23)
+    at JSXParserMixin.getTokenFromCode (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:3267:14)
+    at JSXParserMixin.getTokenFromCode (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:8217:18)
+    at JSXParserMixin.nextToken (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:2617:10)
+    at JSXParserMixin.next (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:2521:10)
+    at JSXParserMixin.jsxParseElementAt (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:8104:20)
+    at JSXParserMixin.jsxParseElement (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:8162:17)
+    at JSXParserMixin.parseExprAtom (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:8176:19)
+    at JSXParserMixin.parseExprSubscripts (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12848:23)
+    at JSXParserMixin.parseUpdate (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12827:21)
+    at JSXParserMixin.parseMaybeUnary (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12797:23)
+    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12588:61)
+    at JSXParserMixin.parseExprOpBaseRightExpr (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12710:34)
+    at JSXParserMixin.parseExprOpRightExpr (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12703:21)
+    at JSXParserMixin.parseExprOp (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12656:27)
+    at JSXParserMixin.parseExprOp (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12666:21)
+    at JSXParserMixin.parseExprOps (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12601:17)
+    at JSXParserMixin.parseMaybeConditional (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12565:23)
+    at JSXParserMixin.parseMaybeAssign (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12517:21)
+    at JSXParserMixin.parseExpressionBase (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12453:23)
+    at C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12447:39
+    at JSXParserMixin.allowInAnd (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:14549:12)
+    at JSXParserMixin.parseExpression (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12447:17)
+    at JSXParserMixin.jsxParseExpressionContainer (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:8009:31)
+    at JSXParserMixin.jsxParseElementAt (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:8109:36)
+    at JSXParserMixin.jsxParseElement (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:8162:17)
+    at JSXParserMixin.parseExprAtom (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:8176:19)
+    at JSXParserMixin.parseExprSubscripts (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12848:23)
+    at JSXParserMixin.parseUpdate (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12827:21)
+    at JSXParserMixin.parseMaybeUnary (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12797:23)
+    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12588:61)
+    at JSXParserMixin.parseExprOps (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12595:23)
+    at JSXParserMixin.parseMaybeConditional (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12565:23)
+    at JSXParserMixin.parseMaybeAssign (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12517:21)
+    at C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12475:39
+    at JSXParserMixin.allowInAnd (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:14549:12)
+    at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12475:17)
+    at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:13604:28)
+    at JSXParserMixin.parseExprAtom (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:13176:23)
+    at JSXParserMixin.parseExprAtom (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:8181:20)
+    at JSXParserMixin.parseExprSubscripts (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12848:23)
+    at JSXParserMixin.parseUpdate (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12827:21)
+    at JSXParserMixin.parseMaybeUnary (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12797:23)
+    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12588:61)
+    at JSXParserMixin.parseExprOps (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12595:23)
+    at JSXParserMixin.parseMaybeConditional (C:\Users\bryan\NUS\CVWO\portfolio-page\node_modules\@babel\parser\lib\index.js:12565:23)[39m[22m
+
+
+warning package.json: No license field
+warning ..\..\..\package.json: No license field
+
+  Rendered pages/index.html.erb within layouts/application (Duration: 6133.3ms | Allocations: 5549)
+  Rendered layout layouts/application.html.erb (Duration: 6137.7ms | Allocations: 7535)
+Completed 200 OK in 6145ms (Views: 6139.8ms | ActiveRecord: 0.0ms | Allocations: 7820)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-09-22 18:38:21 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 62.6ms | Allocations: 4307)
+  Rendered layout layouts/application.html.erb (Duration: 69.3ms | Allocations: 6291)
+Completed 200 OK in 76ms (Views: 70.4ms | ActiveRecord: 0.0ms | Allocations: 6582)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 18:39:34 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/bryan/NUS/CVWO/portfolio-page/public/packs
+[Webpacker] warning package.json: No license field
+warning ..\..\..\package.json: No license field
+
+[Webpacker] Hash: [1mf4b2e0667fc0d67862cb[39m[22m
+Version: webpack [1m4.46.0[39m[22m
+Time: [1m1966[39m[22mms
+Built at: 22/09/2022 [1m6:39:39 pm[39m[22m
+                                                                                 [1mAsset[39m[22m      [1mSize[39m[22m                                          [1mChunks[39m[22m  [1m[39m[22m                       [1m[39m[22m[1mChunk Names[39m[22m
+                                                        [1m[32mjs/app-c94abd3c76ab0279531f.js[39m[22m  1.58 MiB                                             [1mapp[39m[22m  [1m[32m[emitted] [immutable][39m[22m  app
+                                                    [1m[32mjs/app-c94abd3c76ab0279531f.js.map[39m[22m  1.76 MiB                                             [1mapp[39m[22m  [1m[32m[emitted] [dev][39m[22m        app
+                                           [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js[39m[22m  4.05 KiB                                [1mimages\bryan-lee[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\bryan-lee
+                                       [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js.map[39m[22m  3.71 KiB                                [1mimages\bryan-lee[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\bryan-lee
+                      [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js[39m[22m  4.19 KiB           [1mimages\task-management-app-screenshot[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\task-management-app-screenshot
+                  [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js.map[39m[22m  3.79 KiB           [1mimages\task-management-app-screenshot[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\task-management-app-screenshot
+                             [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js[39m[22m  4.15 KiB                  [1mimages\telegram-bot-screenshot[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\telegram-bot-screenshot
+                         [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js.map[39m[22m  3.77 KiB                  [1mimages\telegram-bot-screenshot[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\telegram-bot-screenshot
+                                             [1m[32mjs/pages\HomePage-157d69238367794948f0.js[39m[22m   258 KiB                                  [1mpages\HomePage[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\HomePage
+                                         [1m[32mjs/pages\HomePage-157d69238367794948f0.js.map[39m[22m   269 KiB                                  [1mpages\HomePage[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\HomePage
+                                            [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js[39m[22m   242 KiB                                 [1mpages\OwnerPage[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\OwnerPage
+                                        [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js.map[39m[22m   263 KiB                                 [1mpages\OwnerPage[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\OwnerPage
+                       [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js[39m[22m   104 KiB            [1mpages\home_page\DescriptionComponent[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\DescriptionComponent
+                   [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js.map[39m[22m   117 KiB            [1mpages\home_page\DescriptionComponent[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\DescriptionComponent
+                                     [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js[39m[22m   102 KiB                          [1mpages\home_page\Footer[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\Footer
+                                 [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js.map[39m[22m   115 KiB                          [1mpages\home_page\Footer[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\Footer
+                                [1m[32mjs/pages\home_page\ProjectList-9afa40d3f23c3219fea9.js[39m[22m   245 KiB                     [1mpages\home_page\ProjectList[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\ProjectList
+                            [1m[32mjs/pages\home_page\ProjectList-9afa40d3f23c3219fea9.js.map[39m[22m   264 KiB                     [1mpages\home_page\ProjectList[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\ProjectList
+                           [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js[39m[22m   103 KiB                [1mpages\home_page\SummaryComponent[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\SummaryComponent
+                       [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js.map[39m[22m   116 KiB                [1mpages\home_page\SummaryComponent[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\SummaryComponent
+                           [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js[39m[22m  4.14 KiB                [1mpages\home_page\images\bryan-lee[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\images\bryan-lee
+                       [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js.map[39m[22m  3.78 KiB                [1mpages\home_page\images\bryan-lee[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\images\bryan-lee
+                              [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js[39m[22m  4.12 KiB                   [1mpages\home_page\images\resume[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\images\resume
+                          [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js.map[39m[22m  3.76 KiB                   [1mpages\home_page\images\resume[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\images\resume
+             [1m[32mjs/pages\home_page\projectlist\ProjectDescription-c5e8bc69e7eecf70e0b3.js[39m[22m   103 KiB  [1mpages\home_page\projectlist\ProjectDescription[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\projectlist\ProjectDescription
+         [1m[32mjs/pages\home_page\projectlist\ProjectDescription-c5e8bc69e7eecf70e0b3.js.map[39m[22m   116 KiB  [1mpages\home_page\projectlist\ProjectDescription[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\projectlist\ProjectDescription
+                 [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js[39m[22m   102 KiB      [1mpages\home_page\projectlist\ProjectDisplay[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\projectlist\ProjectDisplay
+             [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js.map[39m[22m   116 KiB      [1mpages\home_page\projectlist\ProjectDisplay[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\projectlist\ProjectDisplay
+                                                                         [1m[32mmanifest.json[39m[22m  6.92 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                     [1m[32mmedia/packs/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg[39m[22m   291 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+[1m[32mmedia/packs/images/task-management-app-screenshot-053c3b8f0fc8365e528fa0377c74f305.jpg[39m[22m  50.7 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+       [1m[32mmedia/packs/images/telegram-bot-screenshot-9d6c275391506849de2d9f0756e4ff9c.jpg[39m[22m   247 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+     [1m[32mmedia/packs/pages/home_page/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg[39m[22m   291 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+        [1m[32mmedia/packs/pages/home_page/images/resume-99de9e47d42f8f91bb7ac5f3769149c9.jpg[39m[22m  85.6 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+Entrypoint [1mapp[39m[22m = [1m[32mjs/app-c94abd3c76ab0279531f.js[39m[22m [1m[32mjs/app-c94abd3c76ab0279531f.js.map[39m[22m
+Entrypoint [1mimages\bryan-lee[39m[22m = [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js[39m[22m [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js.map[39m[22m
+Entrypoint [1mimages\task-management-app-screenshot[39m[22m = [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js[39m[22m [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js.map[39m[22m
+Entrypoint [1mimages\telegram-bot-screenshot[39m[22m = [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js[39m[22m [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js.map[39m[22m
+Entrypoint [1mpages\home_page\DescriptionComponent[39m[22m = [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js[39m[22m [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js.map[39m[22m
+Entrypoint [1mpages\home_page\Footer[39m[22m = [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js[39m[22m [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js.map[39m[22m
+Entrypoint [1mpages\home_page\images\bryan-lee[39m[22m = [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js[39m[22m [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js.map[39m[22m
+Entrypoint [1mpages\home_page\images\resume[39m[22m = [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js[39m[22m [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js.map[39m[22m
+Entrypoint [1mpages\home_page\ProjectList[39m[22m = [1m[32mjs/pages\home_page\ProjectList-9afa40d3f23c3219fea9.js[39m[22m [1m[32mjs/pages\home_page\ProjectList-9afa40d3f23c3219fea9.js.map[39m[22m
+Entrypoint [1mpages\home_page\projectlist\ProjectDescription[39m[22m = [1m[32mjs/pages\home_page\projectlist\ProjectDescription-c5e8bc69e7eecf70e0b3.js[39m[22m [1m[32mjs/pages\home_page\projectlist\ProjectDescription-c5e8bc69e7eecf70e0b3.js.map[39m[22m
+Entrypoint [1mpages\home_page\projectlist\ProjectDisplay[39m[22m = [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js[39m[22m [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js.map[39m[22m
+Entrypoint [1mpages\home_page\SummaryComponent[39m[22m = [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js[39m[22m [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js.map[39m[22m
+Entrypoint [1mpages\HomePage[39m[22m = [1m[32mjs/pages\HomePage-157d69238367794948f0.js[39m[22m [1m[32mjs/pages\HomePage-157d69238367794948f0.js.map[39m[22m
+Entrypoint [1mpages\OwnerPage[39m[22m = [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js[39m[22m [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js.map[39m[22m
+[[1m./app/javascript/packs/app.jsx[39m[22m] 1.68 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/bryan-lee.jpg[39m[22m] 111 bytes {[1m[33mimages\bryan-lee[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/task-management-app-screenshot.jpg[39m[22m] 132 bytes {[1m[33mimages\task-management-app-screenshot[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/telegram-bot-screenshot.jpg[39m[22m] 125 bytes {[1m[33mimages\telegram-bot-screenshot[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/HomePage.jsx[39m[22m] 1.31 KiB {[1m[33mpages\HomePage[39m[22m} {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/OwnerPage.jsx[39m[22m] 8.84 KiB {[1m[33mpages\OwnerPage[39m[22m} {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/DescriptionComponent.jsx[39m[22m] 2.86 KiB {[1m[33mpages\home_page\DescriptionComponent[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/Footer.jsx[39m[22m] 1.15 KiB {[1m[33mpages\home_page\Footer[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/ProjectList.jsx[39m[22m] 6.18 KiB {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/SummaryComponent.jsx[39m[22m] 1.51 KiB {[1m[33mpages\home_page\SummaryComponent[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/images/bryan-lee.jpg[39m[22m] 127 bytes {[1m[33mpages\home_page\images\bryan-lee[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\SummaryComponent[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/images/resume.jpg[39m[22m] 124 bytes {[1m[33mpages\home_page\images\resume[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\DescriptionComponent[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/projectlist/ProjectDescription.jsx[39m[22m] 2.03 KiB {[1m[33mpages\home_page\projectlist\ProjectDescription[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/projectlist/ProjectDisplay.jsx[39m[22m] 1.59 KiB {[1m[33mpages\home_page\projectlist\ProjectDisplay[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/axios/index.js[39m[22m] 40 bytes {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m} {[1m[33mpages\OwnerPage[39m[22m}[1m[32m [built][39m[22m
+    + 49 hidden modules
+
+  Rendered pages/index.html.erb within layouts/application (Duration: 6019.3ms | Allocations: 5602)
+  Rendered layout layouts/application.html.erb (Duration: 6024.5ms | Allocations: 7580)
+Completed 200 OK in 6029ms (Views: 6025.2ms | ActiveRecord: 0.0ms | Allocations: 7868)
+
+
+Started GET "/project" for 127.0.0.1 at 2022-09-22 18:39:40 +0800
+Processing by ProjectController#index as HTML
+  [1m[36mProject Load (1.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/project_controller.rb:6:in `index'
+Completed 200 OK in 39ms (Views: 0.2ms | ActiveRecord: 8.6ms | Allocations: 9196)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-09-22 18:39:41 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 61.7ms | Allocations: 4443)
+  Rendered layout layouts/application.html.erb (Duration: 67.9ms | Allocations: 6497)
+Completed 200 OK in 75ms (Views: 69.2ms | ActiveRecord: 0.0ms | Allocations: 6820)
+
+
+Started GET "/bryanlzy" for 127.0.0.1 at 2022-09-22 18:39:49 +0800
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"bryanlzy"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 58.3ms | Allocations: 4306)
+  Rendered layout layouts/application.html.erb (Duration: 63.1ms | Allocations: 6277)
+Completed 200 OK in 69ms (Views: 63.8ms | ActiveRecord: 0.0ms | Allocations: 6561)
+
+
+Started GET "/project" for 127.0.0.1 at 2022-09-22 18:39:49 +0800
+Processing by ProjectController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/project_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 1206)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-09-22 18:39:49 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 56.9ms | Allocations: 4334)
+  Rendered layout layouts/application.html.erb (Duration: 64.5ms | Allocations: 6311)
+Completed 200 OK in 70ms (Views: 66.1ms | ActiveRecord: 0.0ms | Allocations: 6628)
+
+
+Started POST "/project/3/update_project" for 127.0.0.1 at 2022-09-22 18:40:07 +0800
+Processing by ProjectController#updateProject as HTML
+  Parameters: {"gitLink"=>"", "id"=>"3", "project"=>{"gitLink"=>""}}
+Can't verify CSRF token authenticity.
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/project_controller.rb:41:in `updateProject'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mProject Update (1.6ms)[0m  [1m[33mUPDATE "projects" SET "updated_at" = $1, "gitLink" = $2 WHERE "projects"."id" = $3[0m  [["updated_at", "2022-09-22 10:40:07.132345"], ["gitLink", ""], ["id", 3]]
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+Completed 200 OK in 28ms (Views: 0.1ms | ActiveRecord: 4.4ms | Allocations: 5992)
+
+
+Started POST "/project/3/update_project" for 127.0.0.1 at 2022-09-22 18:40:09 +0800
+Processing by ProjectController#updateProject as HTML
+  Parameters: {"siteLink"=>"https://scheduler-site.herokuapp.com/", "id"=>"3", "project"=>{"siteLink"=>"https://scheduler-site.herokuapp.com/"}}
+Can't verify CSRF token authenticity.
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/project_controller.rb:41:in `updateProject'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 1062)
+
+
+Started POST "/project/3/update_project" for 127.0.0.1 at 2022-09-22 18:40:12 +0800
+Processing by ProjectController#updateProject as HTML
+  Parameters: {"gitLink"=>"https://scheduler-site.herokuapp.com/", "id"=>"3", "project"=>{"gitLink"=>"https://scheduler-site.herokuapp.com/"}}
+Can't verify CSRF token authenticity.
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/project_controller.rb:41:in `updateProject'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mProject Update (0.6ms)[0m  [1m[33mUPDATE "projects" SET "updated_at" = $1, "gitLink" = $2 WHERE "projects"."id" = $3[0m  [["updated_at", "2022-09-22 10:40:12.123942"], ["gitLink", "https://scheduler-site.herokuapp.com/"], ["id", 3]]
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+  [1m[36mTRANSACTION (7.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/project_controller.rb:43:in `updateProject'
+Completed 200 OK in 22ms (Views: 0.2ms | ActiveRecord: 9.1ms | Allocations: 2742)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 18:40:19 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 63.8ms | Allocations: 4437)
+  Rendered layout layouts/application.html.erb (Duration: 69.8ms | Allocations: 6462)
+Completed 200 OK in 77ms (Views: 70.9ms | ActiveRecord: 0.0ms | Allocations: 6770)
+
+
+Started GET "/project" for 127.0.0.1 at 2022-09-22 18:40:20 +0800
+Processing by ProjectController#index as HTML
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/project_controller.rb:6:in `index'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 1136)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-09-22 18:40:20 +0800
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 54.9ms | Allocations: 4371)
+  Rendered layout layouts/application.html.erb (Duration: 60.1ms | Allocations: 6363)
+Completed 200 OK in 66ms (Views: 61.0ms | ActiveRecord: 0.0ms | Allocations: 6648)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 18:41:03 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/bryan/NUS/CVWO/portfolio-page/public/packs
+[Webpacker] warning package.json: No license field
+warning ..\..\..\package.json: No license field
+
+[Webpacker] Hash: [1m12ef1495a29c27491209[39m[22m
+Version: webpack [1m4.46.0[39m[22m
+Time: [1m2045[39m[22mms
+Built at: 22/09/2022 [1m6:41:08 pm[39m[22m
+                                                                                 [1mAsset[39m[22m      [1mSize[39m[22m                                          [1mChunks[39m[22m  [1m[39m[22m                       [1m[39m[22m[1mChunk Names[39m[22m
+                                                        [1m[32mjs/app-75cd11665dd0112bb566.js[39m[22m  1.58 MiB                                             [1mapp[39m[22m  [1m[32m[emitted] [immutable][39m[22m  app
+                                                    [1m[32mjs/app-75cd11665dd0112bb566.js.map[39m[22m  1.76 MiB                                             [1mapp[39m[22m  [1m[32m[emitted] [dev][39m[22m        app
+                                           [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js[39m[22m  4.05 KiB                                [1mimages\bryan-lee[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\bryan-lee
+                                       [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js.map[39m[22m  3.71 KiB                                [1mimages\bryan-lee[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\bryan-lee
+                      [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js[39m[22m  4.19 KiB           [1mimages\task-management-app-screenshot[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\task-management-app-screenshot
+                  [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js.map[39m[22m  3.79 KiB           [1mimages\task-management-app-screenshot[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\task-management-app-screenshot
+                             [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js[39m[22m  4.15 KiB                  [1mimages\telegram-bot-screenshot[39m[22m  [1m[32m[emitted] [immutable][39m[22m  images\telegram-bot-screenshot
+                         [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js.map[39m[22m  3.77 KiB                  [1mimages\telegram-bot-screenshot[39m[22m  [1m[32m[emitted] [dev][39m[22m        images\telegram-bot-screenshot
+                                             [1m[32mjs/pages\HomePage-cbc9aa8b55615434a9a3.js[39m[22m   258 KiB                                  [1mpages\HomePage[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\HomePage
+                                         [1m[32mjs/pages\HomePage-cbc9aa8b55615434a9a3.js.map[39m[22m   269 KiB                                  [1mpages\HomePage[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\HomePage
+                                            [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js[39m[22m   242 KiB                                 [1mpages\OwnerPage[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\OwnerPage
+                                        [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js.map[39m[22m   263 KiB                                 [1mpages\OwnerPage[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\OwnerPage
+                       [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js[39m[22m   104 KiB            [1mpages\home_page\DescriptionComponent[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\DescriptionComponent
+                   [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js.map[39m[22m   117 KiB            [1mpages\home_page\DescriptionComponent[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\DescriptionComponent
+                                     [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js[39m[22m   102 KiB                          [1mpages\home_page\Footer[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\Footer
+                                 [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js.map[39m[22m   115 KiB                          [1mpages\home_page\Footer[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\Footer
+                                [1m[32mjs/pages\home_page\ProjectList-faba622173e0ef2029f8.js[39m[22m   245 KiB                     [1mpages\home_page\ProjectList[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\ProjectList
+                            [1m[32mjs/pages\home_page\ProjectList-faba622173e0ef2029f8.js.map[39m[22m   264 KiB                     [1mpages\home_page\ProjectList[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\ProjectList
+                           [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js[39m[22m   103 KiB                [1mpages\home_page\SummaryComponent[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\SummaryComponent
+                       [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js.map[39m[22m   116 KiB                [1mpages\home_page\SummaryComponent[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\SummaryComponent
+                           [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js[39m[22m  4.14 KiB                [1mpages\home_page\images\bryan-lee[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\images\bryan-lee
+                       [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js.map[39m[22m  3.78 KiB                [1mpages\home_page\images\bryan-lee[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\images\bryan-lee
+                              [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js[39m[22m  4.12 KiB                   [1mpages\home_page\images\resume[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\images\resume
+                          [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js.map[39m[22m  3.76 KiB                   [1mpages\home_page\images\resume[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\images\resume
+             [1m[32mjs/pages\home_page\projectlist\ProjectDescription-9fb7787d11ab5eb380f0.js[39m[22m   103 KiB  [1mpages\home_page\projectlist\ProjectDescription[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\projectlist\ProjectDescription
+         [1m[32mjs/pages\home_page\projectlist\ProjectDescription-9fb7787d11ab5eb380f0.js.map[39m[22m   116 KiB  [1mpages\home_page\projectlist\ProjectDescription[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\projectlist\ProjectDescription
+                 [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js[39m[22m   102 KiB      [1mpages\home_page\projectlist\ProjectDisplay[39m[22m  [1m[32m[emitted] [immutable][39m[22m  pages\home_page\projectlist\ProjectDisplay
+             [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js.map[39m[22m   116 KiB      [1mpages\home_page\projectlist\ProjectDisplay[39m[22m  [1m[32m[emitted] [dev][39m[22m        pages\home_page\projectlist\ProjectDisplay
+                                                                         [1m[32mmanifest.json[39m[22m  6.92 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                     [1m[32mmedia/packs/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg[39m[22m   291 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+[1m[32mmedia/packs/images/task-management-app-screenshot-053c3b8f0fc8365e528fa0377c74f305.jpg[39m[22m  50.7 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+       [1m[32mmedia/packs/images/telegram-bot-screenshot-9d6c275391506849de2d9f0756e4ff9c.jpg[39m[22m   247 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+     [1m[32mmedia/packs/pages/home_page/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg[39m[22m   291 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+        [1m[32mmedia/packs/pages/home_page/images/resume-99de9e47d42f8f91bb7ac5f3769149c9.jpg[39m[22m  85.6 KiB                                                [1m[39m[22m  [1m[32m[emitted][39m[22m              
+Entrypoint [1mapp[39m[22m = [1m[32mjs/app-75cd11665dd0112bb566.js[39m[22m [1m[32mjs/app-75cd11665dd0112bb566.js.map[39m[22m
+Entrypoint [1mimages\bryan-lee[39m[22m = [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js[39m[22m [1m[32mjs/images\bryan-lee-24cfe8a57985ce94e9f9.js.map[39m[22m
+Entrypoint [1mimages\task-management-app-screenshot[39m[22m = [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js[39m[22m [1m[32mjs/images\task-management-app-screenshot-5690c3df2acd306475cf.js.map[39m[22m
+Entrypoint [1mimages\telegram-bot-screenshot[39m[22m = [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js[39m[22m [1m[32mjs/images\telegram-bot-screenshot-ef8414a28de654577be9.js.map[39m[22m
+Entrypoint [1mpages\home_page\DescriptionComponent[39m[22m = [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js[39m[22m [1m[32mjs/pages\home_page\DescriptionComponent-b6413c61681270c8a9e8.js.map[39m[22m
+Entrypoint [1mpages\home_page\Footer[39m[22m = [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js[39m[22m [1m[32mjs/pages\home_page\Footer-4b0c3b800d8ca3d15580.js.map[39m[22m
+Entrypoint [1mpages\home_page\images\bryan-lee[39m[22m = [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js[39m[22m [1m[32mjs/pages\home_page\images\bryan-lee-0d83d2965284681af195.js.map[39m[22m
+Entrypoint [1mpages\home_page\images\resume[39m[22m = [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js[39m[22m [1m[32mjs/pages\home_page\images\resume-ae8a98e7fc11777aadd0.js.map[39m[22m
+Entrypoint [1mpages\home_page\ProjectList[39m[22m = [1m[32mjs/pages\home_page\ProjectList-faba622173e0ef2029f8.js[39m[22m [1m[32mjs/pages\home_page\ProjectList-faba622173e0ef2029f8.js.map[39m[22m
+Entrypoint [1mpages\home_page\projectlist\ProjectDescription[39m[22m = [1m[32mjs/pages\home_page\projectlist\ProjectDescription-9fb7787d11ab5eb380f0.js[39m[22m [1m[32mjs/pages\home_page\projectlist\ProjectDescription-9fb7787d11ab5eb380f0.js.map[39m[22m
+Entrypoint [1mpages\home_page\projectlist\ProjectDisplay[39m[22m = [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js[39m[22m [1m[32mjs/pages\home_page\projectlist\ProjectDisplay-a482165b00c07e2c16d1.js.map[39m[22m
+Entrypoint [1mpages\home_page\SummaryComponent[39m[22m = [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js[39m[22m [1m[32mjs/pages\home_page\SummaryComponent-b0ffee1047c31963f171.js.map[39m[22m
+Entrypoint [1mpages\HomePage[39m[22m = [1m[32mjs/pages\HomePage-cbc9aa8b55615434a9a3.js[39m[22m [1m[32mjs/pages\HomePage-cbc9aa8b55615434a9a3.js.map[39m[22m
+Entrypoint [1mpages\OwnerPage[39m[22m = [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js[39m[22m [1m[32mjs/pages\OwnerPage-ab80764a1c0370c55a21.js.map[39m[22m
+[[1m./app/javascript/packs/app.jsx[39m[22m] 1.68 KiB {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/bryan-lee.jpg[39m[22m] 111 bytes {[1m[33mimages\bryan-lee[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/task-management-app-screenshot.jpg[39m[22m] 132 bytes {[1m[33mimages\task-management-app-screenshot[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/images/telegram-bot-screenshot.jpg[39m[22m] 125 bytes {[1m[33mimages\telegram-bot-screenshot[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/HomePage.jsx[39m[22m] 1.31 KiB {[1m[33mpages\HomePage[39m[22m} {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/OwnerPage.jsx[39m[22m] 8.84 KiB {[1m[33mpages\OwnerPage[39m[22m} {[1m[33mapp[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/DescriptionComponent.jsx[39m[22m] 2.86 KiB {[1m[33mpages\home_page\DescriptionComponent[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/Footer.jsx[39m[22m] 1.15 KiB {[1m[33mpages\home_page\Footer[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/ProjectList.jsx[39m[22m] 6.18 KiB {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/SummaryComponent.jsx[39m[22m] 1.51 KiB {[1m[33mpages\home_page\SummaryComponent[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/images/bryan-lee.jpg[39m[22m] 127 bytes {[1m[33mpages\home_page\images\bryan-lee[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\SummaryComponent[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/images/resume.jpg[39m[22m] 124 bytes {[1m[33mpages\home_page\images\resume[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\DescriptionComponent[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/projectlist/ProjectDescription.jsx[39m[22m] 2.06 KiB {[1m[33mpages\home_page\projectlist\ProjectDescription[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./app/javascript/packs/pages/home_page/projectlist/ProjectDisplay.jsx[39m[22m] 1.59 KiB {[1m[33mpages\home_page\projectlist\ProjectDisplay[39m[22m} {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/axios/index.js[39m[22m] 40 bytes {[1m[33mapp[39m[22m} {[1m[33mpages\home_page\ProjectList[39m[22m} {[1m[33mpages\HomePage[39m[22m} {[1m[33mpages\OwnerPage[39m[22m}[1m[32m [built][39m[22m
+    + 49 hidden modules
+
+  Rendered pages/index.html.erb within layouts/application (Duration: 6109.8ms | Allocations: 5647)
+  Rendered layout layouts/application.html.erb (Duration: 6115.5ms | Allocations: 7618)
+Completed 200 OK in 6121ms (Views: 6116.5ms | ActiveRecord: 0.0ms | Allocations: 7902)
+
+
+Started GET "/project" for 127.0.0.1 at 2022-09-22 18:41:09 +0800
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-09-22 18:41:09 +0800
+Processing by ProjectController#index as HTML
+  [1m[36mProject Load (1.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/project_controller.rb:6:in `index'
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 1217)
+
+
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"favicon"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 75.6ms | Allocations: 5417)
+  Rendered layout layouts/application.html.erb (Duration: 81.1ms | Allocations: 7406)
+Completed 200 OK in 91ms (Views: 82.3ms | ActiveRecord: 0.0ms | Allocations: 8533)
+
+
