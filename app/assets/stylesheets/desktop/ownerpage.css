@@ -29,6 +29,16 @@
 	width: 80%;
 }
 
+.ownerpage__container .project--form .form__git-link{
+	height: 5%;
+	width: 100%;
+}
+
+.ownerpage__container .project--form .form__site-link{
+	height: 5%;
+	width: 100%;
+}
+
 .ownerpage__container .project--form .form__short-description{
 	height: 10%;
 	width: 100%;

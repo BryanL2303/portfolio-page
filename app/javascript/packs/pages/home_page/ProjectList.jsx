@@ -26,7 +26,7 @@ const ProjectList = () => {
       let projectContainer = document.getElementsByClassName('projects__container')[0]
       let projectList = document.getElementsByClassName('projects__list')[0]
       if (screen.width > 500) {
-        projectContainer.style['height'] = `${620 + ((projectDisplays.length
+        projectContainer.style['height'] = `${400 + ((projectDisplays.length
          - 1 - ((projectDisplays.length - 1)%3))/3)*320}px`
         projectList.style['height'] = `${320 + ((projectDisplays.length
          - 1 - ((projectDisplays.length - 1) %3))/3)*320}px`
@@ -44,7 +44,7 @@ const ProjectList = () => {
         }
       }
       else {
-       projectContainer.style['height'] = `${590 + ((projectDisplays.length
+       projectContainer.style['height'] = `${360 + ((projectDisplays.length
         - 1  - ((projectDisplays.length-1)%2))/2)*270}px`
         projectList.style['height'] = `${270 + ((projectDisplays.length
         - 1  - ((projectDisplays.length-1)%2))/2)*270}px`
@@ -60,6 +60,21 @@ const ProjectList = () => {
       }
     }
   }, [projects])
+
+  useEffect(() =>{
+    let projectDisplays = document.getElementsByClassName('project__display')
+    if (displayedProject != null) {
+      let projectContainer = document.getElementsByClassName('projects__container')[0]
+      if (screen.width > 500) {
+        projectContainer.style['height'] = `${650 + ((projectDisplays.length
+         - 1 - ((projectDisplays.length - 1)%3))/3)*320}px`
+      }
+      else {
+       projectContainer.style['height'] = `${620 + ((projectDisplays.length
+        - 1  - ((projectDisplays.length-1)%2))/2)*270}px` 
+      }
+    }
+  }, [displayedProject])
 
   return(
     <div className='projects__container'>
