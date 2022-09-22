@@ -16,11 +16,11 @@
     }
 
     .description__container .description{
-        height: 30%;
+        height: 80%;
         width: 100%;
         overflow: hidden;
         position: absolute;
-        top: 125%;
+        top: 140%;
     }
 
     .description__container .description p{

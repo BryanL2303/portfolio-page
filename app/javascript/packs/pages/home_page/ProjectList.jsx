@@ -44,16 +44,16 @@ const ProjectList = () => {
         }
       }
       else {
-       projectContainer.style['height'] = `${520 + ((projectDisplays.length
-        - 1  - ((projectDisplays.length-1)%2))/2)*220}px`
+       projectContainer.style['height'] = `${570 + ((projectDisplays.length
+        - 1  - ((projectDisplays.length-1)%2))/2)*270}px`
         projectList.style['height'] = `${220 + ((projectDisplays.length
-        - 1  - ((projectDisplays.length-1)%2))/2)*220}px`
+        - 1  - ((projectDisplays.length-1)%2))/2)*270}px`
         let x = 0
         for (x = 0; x < projectDisplays.length; x++) {
           let displayStyle = projectDisplays[x].style
           let y = x + 1
-          let left = 45 - ((y % 2) * 35)
-          let top = projectList.offsetTop + ((x - (x % 2)) / 2) * 220
+          let left = 50 - ((y % 2) * 40)
+          let top = projectList.offsetTop + ((x - (x % 2)) / 2) * 270
           displayStyle['left'] = `${left}%`
           displayStyle['top'] = `${top}px`
         } 
