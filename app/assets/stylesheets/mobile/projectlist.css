@@ -25,11 +25,24 @@
 	    background-color: inherit;
 	}
 
+	.project--image{
+		height: 150px;
+		width: 100%;
+		overflow: hidden;
+	}
+
 	.project__display .project__name{
-		font-size: 15px;
-		height: 60px;
+		font-size: 16px;
+		height: 50px;
 		width: 100%;
 	    overflow: hidden;
+	}
+
+	.project__short-description{
+		font-size: 6px;
+		height: 50px;
+		width: 100%;
+		overflow: hidden;
 	}
 
 	.project__display--button{
@@ -40,24 +53,11 @@
 	    background-color: inherit;
 	}
 
-	.project--image{
-		height: 150px;
-		width: 100%;
-		overflow: hidden;
-	}
-
 	.project__container .project__name{
 		font-size: 23px;
 		height: 40px;
 		width: 100%;
 	    overflow: hidden;
-	}
-
-	.project__short-description{
-		font-size: 7px;
-		height: 45px;
-		width: 100%;
-		overflow: hidden;
 	}
 
 	.project__long-description {
