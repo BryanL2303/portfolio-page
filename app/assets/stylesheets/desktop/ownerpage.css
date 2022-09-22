@@ -1,0 +1,45 @@
+.ownerpage__container .project__name{
+	width: 20%;
+}
+
+.ownerpage__container .project__image{
+	position: absolute;
+	left: 20%;
+	width: 80%;
+}
+
+.ownerpage__container .project__delete--button{
+	position: absolute;
+	left: 90%;
+	width: 10%;
+	height: 10%;
+}
+
+.ownerpage__container .project--form{
+	height: 40vh;
+}
+
+.ownerpage__container .project--form .form__name{
+	height: 5%;
+	width: 20%;
+}
+
+.ownerpage__container .project--form .form__image{
+	height: 5%;
+	width: 80%;
+}
+
+.ownerpage__container .project--form .form__short-description{
+	height: 10%;
+	width: 100%;
+}
+
+.ownerpage__container .project--form .form__long-description{
+	height: 15%;
+	width: 100%;
+}
+
+.ownerpage__container .project--form .form__submit--button{
+	height: 10%;
+	width: 100%;
+}

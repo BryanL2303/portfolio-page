@@ -1,8 +1,0 @@
-.about-me.body-container{
-	height: 640px;
-	width: 100%;
-    position: absolute;
-    top: 30px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
