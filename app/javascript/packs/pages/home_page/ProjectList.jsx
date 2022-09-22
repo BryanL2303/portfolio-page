@@ -52,7 +52,7 @@ const ProjectList = () => {
         for (x = 0; x < projectDisplays.length; x++) {
           let displayStyle = projectDisplays[x].style
           let y = x + 1
-          let left = 50 - ((y % 2) * 40)
+          let left = 52 - ((y % 2) * 48)
           let top = projectList.offsetTop + ((x - (x % 2)) / 2) * 270
           displayStyle['left'] = `${left}%`
           displayStyle['top'] = `${top}px`
