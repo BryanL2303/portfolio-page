@@ -53,6 +53,10 @@
 	    background-color: inherit;
 	}
 
+	.project__display--button:hover{
+		opacity: 0.8;
+	}
+
 	.project__container .project__name{
 		font-size: 23px;
 		height: 50px;
