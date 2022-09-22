@@ -1,0 +1,59 @@
+.telegram-bot-page.body-container{
+    height: 640px;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    color: black;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.telegram-bot-page.body-container .description-container{
+    height: 450px;
+    width: inherit;
+    overflow: hidden;
+    position: absolute;
+    top: 150px;
+    text-align: center;
+}
+
+.telegram-bot-page.body-container .description-container .text-container{
+    font-size: 25px;
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    text-align: left;
+}
+
+@media screen 
+  and (max-width: 500px)  
+  and (orientation: portrait){
+    .telegram-bot-page.body-container .description-container{
+        top: 20px;
+    }
+
+    .telegram-bot-page.body-container .description-container .text-container{
+        font-size: 20px;
+        position: absolute;
+        left: 10%;
+        width: 80%;
+        text-align: left;
+    }    
+}
+
+@media screen 
+  and (max-height: 500px) 
+  and (orientation: landscape)
+  {
+    .telegram-bot-page.body-container .description-container{
+        top: 20px;
+    }
+
+    .telegram-bot-page.body-container .description-container .text-container{
+        font-size: 20px;
+        position: absolute;
+        left: 10%;
+        width: 80%;
+        text-align: left;
+    }    
+}
