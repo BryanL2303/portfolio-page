@@ -11,7 +11,7 @@
     .description__container .resume--image{
         position: absolute;
         left: 0%;
-        height: 70%;
+        height: 80%;
         width: 100%;
     }
 
@@ -20,7 +20,7 @@
         width: 100%;
         overflow: hidden;
         position: absolute;
-        top: 70%;
+        top: 125%;
     }
 
     .description__container .description p{
