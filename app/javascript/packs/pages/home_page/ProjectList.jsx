@@ -46,7 +46,7 @@ const ProjectList = () => {
       else {
        projectContainer.style['height'] = `${570 + ((projectDisplays.length
         - 1  - ((projectDisplays.length-1)%2))/2)*270}px`
-        projectList.style['height'] = `${220 + ((projectDisplays.length
+        projectList.style['height'] = `${290 + ((projectDisplays.length
         - 1  - ((projectDisplays.length-1)%2))/2)*270}px`
         let x = 0
         for (x = 0; x < projectDisplays.length; x++) {
