@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const ProjectDescription = ({project}) => {
   if (project != null) {
-      return(
+    useEffect(() => {
+      let descriptionBox = document.getElementsByClassName('project__long-description')[0]
+      if (project.attributes.longDescription == null || project.attributes.longDescription == '') {
+        descriptionBox.style['height'] = `0px`  
+      }
+      else {
+        descriptionBox.style['height'] = `${descriptionBox.scrollHeight}px`
+      }
+    }, [project])
+
+    return(
       <div className='project__container'>
       <h1 className='project__name'>{project.attributes.name}</h1>
       <textarea className='project__long-description' readOnly value={project.attributes.longDescription}></textarea>

@@ -7,6 +7,7 @@ function DescriptionComponent(){
       <img className="resume--image" src={resume} alt="error loading image"></img>
       <div className='description'>
         <h1>Have a look at my resume on the left and my projects below!</h1>
+        <br></br>
         <p>I have just started studying and trying to explore more regarding programming</p>
         <br></br>
         <p>The projects that i have worked on so far are just personal projects that i created for my own sake</p>

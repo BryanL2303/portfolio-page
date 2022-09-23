@@ -1,5 +1,7 @@
 @media screen and (max-width: 500px){
     .description__container{
+        background-color: #b0c4de;
+        position: relative;
         height: 150%;
         width: 100%;
         text-align: center;
@@ -11,19 +13,23 @@
     .description__container .resume--image{
         position: absolute;
         left: 0%;
-        height: 80%;
+        height: 60%;
         width: 100%;
     }
 
     .description__container .description{
-        height: 80%;
         width: 100%;
         overflow: hidden;
         position: absolute;
-        top: 140%;
+        top: 60%;
+        transform: translateY(-50%);
     }
 
     .description__container .description p{
+        font-size: 20px;
+    }
+
+    .description__container .description a{
         font-size: 20px;
     }
 }

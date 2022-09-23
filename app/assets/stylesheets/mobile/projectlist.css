@@ -1,22 +1,28 @@
 @media screen and (max-width: 500px){
 	.projects__container{
+		background-color: #dcdcdc;
+		position: relative;
 		width: 100%;
 		text-align: center;
 	    overflow: hidden;
 	}
 
-	.projects__container p{
+	.projects__container .projects__segment-header{
+		height: 70px;
+	}
+
+	.projects__container .projects__segment-header p{
 		font-size: 20px;
 	}
 
-	.projects__list{
+	.projects__container .projects__list{
 		margin-top: 5px;
 		width: 100%;
 		text-align: center;
 	    overflow: hidden;
 	}
 
-	.project__display{
+	.projects__container .project__display{
 		height: 250px;
 		width: 44%;
 		position: absolute;
@@ -25,27 +31,7 @@
 	    background-color: inherit;
 	}
 
-	.project--image{
-		height: 150px;
-		width: 100%;
-		overflow: hidden;
-	}
-
-	.project__display .project__name{
-		font-size: 16px;
-		height: 50px;
-		width: 100%;
-	    overflow: hidden;
-	}
-
-	.project__short-description{
-		font-size: 6px;
-		height: 50px;
-		width: 100%;
-		overflow: hidden;
-	}
-
-	.project__display--button{
+	.project__display .project__display--button{
 		height: 100%;
 		width: 100%;
 		text-align: center;
@@ -53,8 +39,34 @@
 	    background-color: inherit;
 	}
 
-	.project__display--button:hover{
+	.project__display .project__display--button:hover{
 		opacity: 0.8;
+	}
+
+	.project__display .project--image{
+		height: 150px;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.project__display .project__display .project__name{
+		font-size: 16px;
+		height: 50px;
+		width: 100%;
+	    overflow: hidden;
+	}
+
+	.project__display .project__short-description{
+		font-size: 6px;
+		height: 50px;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.project__container{
+		position: relative;
+		margin: 10px;
+		background-color: inherit;
 	}
 
 	.project__container .project__name{
@@ -62,12 +74,11 @@
 		height: 50px;
 		width: 100%;
 	    overflow: hidden;
+	    text-align: center;
 	}
 
 	.project__container .project__long-description {
 		width: 100%;
-		height: 160px;
-		top: 150px;
 		border: hidden;
 		text-align: center;
 		background-color: inherit;

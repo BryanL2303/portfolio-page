@@ -1,22 +1,28 @@
 @media screen and (min-width: 500px){
 	.projects__container{
+		background-color: #dcdcdc;
 		width: 100%;
+		position: relative;
 		text-align: center;
 	    overflow: hidden;
 	}
 
-	.projects__container p{
+	.projects__container .projects__segment-header{
+		height: 70px;
+	}
+
+	.projects__container .projects__segment-header p{
 		font-size: 20px;
 	}
 
-	.projects__list{
+	.projects__container .projects__list{
 		margin-top: 10px;
 		width: 100%;
 		text-align: center;
 	    overflow: hidden;
 	}
 
-	.project__display{
+	.projects__list .project__display{
 		height: 300px;
 		width: 20%;
 		position: absolute;
@@ -25,7 +31,7 @@
 	    background-color: inherit;
 	}
 
-	.project__display--button{
+	.project__display .project__display--button{
 		height: 100%;
 		width: 100%;
 		text-align: center;
@@ -33,32 +39,43 @@
 	    background-color: inherit;
 	}
 
-	.project__display--button:hover{
+	.project__display .project__display--button:hover{
 		opacity: 0.8;
 	}
 
-	.project--image{
+	.project__display .project--image{
 		height: 200px;
 		width: 100%;
 		overflow: hidden;
 	}
 
-	.project__name{
+	.project__display .project__name{
 		height: 50px;
 		width: 100%;
 	    overflow: hidden;
 	}
 
-	.project__short-description{
+	.project__display .project__short-description{
 		height: 50px;
 		width: 100%;
 		overflow: hidden;
 	}
 
-	.project__long-description {
+	.project__container{
+		position: relative;
+		margin: 10px;
+		background-color: inherit;
+	}
+
+	.project__container .project__name{
+		height: 50px;
 		width: 100%;
-		height: 150px;
-		top: 150px;
+	    overflow: hidden;
+	    text-align: center;
+	}
+
+	.project__container .project__long-description {
+		width: 100%;
 		border: hidden;
 		text-align: center;
 		background-color: inherit;
