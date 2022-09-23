@@ -1,5 +1,7 @@
 @media screen and (min-width: 500px){
     .description__container{
+        background-color: #b0c4de;
+        position: relative;
         height: 100%;
         width: 100%;
         text-align: center;
@@ -16,15 +18,18 @@
     }
 
     .description__container .description{
-        height: inherit;
-        width: 50%;
-        overflow: hidden;
+        width: 40%;
         position: absolute;
-        left: 50%;
-        margin-top: 10%;
+        top: 50%;
+        left: 55%;
+        transform: translateY(-50%);
     }
 
     .description__container .description p{
+        font-size: 20px;
+    }
+
+    .description__container .description a{
         font-size: 20px;
     }
 }

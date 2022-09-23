@@ -23,11 +23,8 @@ const ProjectList = () => {
   useEffect(() =>{
     let projectDisplays = document.getElementsByClassName('project__display')
     if (projectDisplays.length > 0) {
-      let projectContainer = document.getElementsByClassName('projects__container')[0]
       let projectList = document.getElementsByClassName('projects__list')[0]
       if (screen.width > 500) {
-        projectContainer.style['height'] = `${400 + ((projectDisplays.length
-         - 1 - ((projectDisplays.length - 1)%3))/3)*320}px`
         projectList.style['height'] = `${320 + ((projectDisplays.length
          - 1 - ((projectDisplays.length - 1) %3))/3)*320}px`
         let x = 0
@@ -44,8 +41,6 @@ const ProjectList = () => {
         }
       }
       else {
-       projectContainer.style['height'] = `${360 + ((projectDisplays.length
-        - 1  - ((projectDisplays.length-1)%2))/2)*270}px`
         projectList.style['height'] = `${270 + ((projectDisplays.length
         - 1  - ((projectDisplays.length-1)%2))/2)*270}px`
         let x = 0
@@ -61,32 +56,21 @@ const ProjectList = () => {
     }
   }, [projects])
 
-  useEffect(() =>{
-    let projectDisplays = document.getElementsByClassName('project__display')
-    if (displayedProject != null) {
-      let projectContainer = document.getElementsByClassName('projects__container')[0]
-      if (screen.width > 500) {
-        projectContainer.style['height'] = `${650 + ((projectDisplays.length
-         - 1 - ((projectDisplays.length - 1)%3))/3)*320}px`
-      }
-      else {
-       projectContainer.style['height'] = `${620 + ((projectDisplays.length
-        - 1  - ((projectDisplays.length-1)%2))/2)*270}px` 
-      }
-    }
-  }, [displayedProject])
-
   return(
     <div className='projects__container'>
-      <h1>Projects</h1>
-      <p>The following are all projects that i have worked on!</p>
-      <div className='projects__list'>
-      {projects.map(project => {
-        return(
-          <ProjectDisplay key={project.id} project={project} setDisplayedProject={setDisplayedProject}/>
-        )
-      })}
+      <div className='projects__segment-header'>
+        <h1>Projects</h1>
+        <p>The following are all projects that i have worked on!</p>
       </div>
+
+      <div className='projects__list'>
+        {projects.map(project => {
+          return(
+            <ProjectDisplay key={project.id} project={project} setDisplayedProject={setDisplayedProject}/>
+          )
+        })}
+      </div>
+
       <ProjectDescription project={displayedProject}/>
     </div>
   )
