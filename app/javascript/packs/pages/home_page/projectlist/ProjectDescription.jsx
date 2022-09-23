@@ -8,6 +8,7 @@ const ProjectDescription = ({project}) => {
         descriptionBox.style['height'] = `0px`  
       }
       else {
+        descriptionBox.style['height'] = `0px`
         descriptionBox.style['height'] = `${descriptionBox.scrollHeight}px`
       }
     }, [project])

@@ -1,13 +1,13 @@
 {
-  "app.js": "/packs/js/app-4f0dff0156a0105c32d9.js",
-  "app.js.map": "/packs/js/app-4f0dff0156a0105c32d9.js.map",
+  "app.js": "/packs/js/app-3fb4fba02d53784a0f90.js",
+  "app.js.map": "/packs/js/app-3fb4fba02d53784a0f90.js.map",
   "entrypoints": {
     "app": {
       "js": [
-        "/packs/js/app-4f0dff0156a0105c32d9.js"
+        "/packs/js/app-3fb4fba02d53784a0f90.js"
       ],
       "js.map": [
-        "/packs/js/app-4f0dff0156a0105c32d9.js.map"
+        "/packs/js/app-3fb4fba02d53784a0f90.js.map"
       ]
     },
     "images\\bryan-lee": {
@@ -68,18 +68,18 @@
     },
     "pages\\home_page\\ProjectList": {
       "js": [
-        "/packs/js/pages/home_page/ProjectList-b3d9931d26b7734fe7bb.js"
+        "/packs/js/pages/home_page/ProjectList-3237a147cdae963c2fc0.js"
       ],
       "js.map": [
-        "/packs/js/pages/home_page/ProjectList-b3d9931d26b7734fe7bb.js.map"
+        "/packs/js/pages/home_page/ProjectList-3237a147cdae963c2fc0.js.map"
       ]
     },
     "pages\\home_page\\projectlist\\ProjectDescription": {
       "js": [
-        "/packs/js/pages/home_page/projectlist/ProjectDescription-d7b7f9f75eca358c26f3.js"
+        "/packs/js/pages/home_page/projectlist/ProjectDescription-cc5e4e7df1884b1e6164.js"
       ],
       "js.map": [
-        "/packs/js/pages/home_page/projectlist/ProjectDescription-d7b7f9f75eca358c26f3.js.map"
+        "/packs/js/pages/home_page/projectlist/ProjectDescription-cc5e4e7df1884b1e6164.js.map"
       ]
     },
     "pages\\home_page\\projectlist\\ProjectDisplay": {
@@ -100,10 +100,10 @@
     },
     "pages\\HomePage": {
       "js": [
-        "/packs/js/pages/HomePage-61b48b51ad2ffed9cfee.js"
+        "/packs/js/pages/HomePage-e8be36e90a5f9beeb320.js"
       ],
       "js.map": [
-        "/packs/js/pages/HomePage-61b48b51ad2ffed9cfee.js.map"
+        "/packs/js/pages/HomePage-e8be36e90a5f9beeb320.js.map"
       ]
     },
     "pages\\OwnerPage": {
@@ -126,24 +126,24 @@
   "media/packs/images/telegram-bot-screenshot.jpg": "/packs/media/packs/images/telegram-bot-screenshot-9d6c275391506849de2d9f0756e4ff9c.jpg",
   "media/packs/pages/home_page/images/bryan-lee.jpg": "/packs/media/packs/pages/home_page/images/bryan-lee-a3940d1e766f560fd0f804c46024a4a5.jpg",
   "media/packs/pages/home_page/images/resume.jpg": "/packs/media/packs/pages/home_page/images/resume-99de9e47d42f8f91bb7ac5f3769149c9.jpg",
-  "pages/HomePage.js": "/packs/js/pages/HomePage-61b48b51ad2ffed9cfee.js",
-  "pages/HomePage.js.map": "/packs/js/pages/HomePage-61b48b51ad2ffed9cfee.js.map",
+  "pages/HomePage.js": "/packs/js/pages/HomePage-e8be36e90a5f9beeb320.js",
+  "pages/HomePage.js.map": "/packs/js/pages/HomePage-e8be36e90a5f9beeb320.js.map",
   "pages/OwnerPage.js": "/packs/js/pages/OwnerPage-ab80764a1c0370c55a21.js",
   "pages/OwnerPage.js.map": "/packs/js/pages/OwnerPage-ab80764a1c0370c55a21.js.map",
   "pages/home_page/DescriptionComponent.js": "/packs/js/pages/home_page/DescriptionComponent-c4112c81675d48ae1d03.js",
   "pages/home_page/DescriptionComponent.js.map": "/packs/js/pages/home_page/DescriptionComponent-c4112c81675d48ae1d03.js.map",
   "pages/home_page/Footer.js": "/packs/js/pages/home_page/Footer-4b0c3b800d8ca3d15580.js",
   "pages/home_page/Footer.js.map": "/packs/js/pages/home_page/Footer-4b0c3b800d8ca3d15580.js.map",
-  "pages/home_page/ProjectList.js": "/packs/js/pages/home_page/ProjectList-b3d9931d26b7734fe7bb.js",
-  "pages/home_page/ProjectList.js.map": "/packs/js/pages/home_page/ProjectList-b3d9931d26b7734fe7bb.js.map",
+  "pages/home_page/ProjectList.js": "/packs/js/pages/home_page/ProjectList-3237a147cdae963c2fc0.js",
+  "pages/home_page/ProjectList.js.map": "/packs/js/pages/home_page/ProjectList-3237a147cdae963c2fc0.js.map",
   "pages/home_page/SummaryComponent.js": "/packs/js/pages/home_page/SummaryComponent-b0ffee1047c31963f171.js",
   "pages/home_page/SummaryComponent.js.map": "/packs/js/pages/home_page/SummaryComponent-b0ffee1047c31963f171.js.map",
   "pages/home_page/images/bryan-lee.js": "/packs/js/pages/home_page/images/bryan-lee-0d83d2965284681af195.js",
   "pages/home_page/images/bryan-lee.js.map": "/packs/js/pages/home_page/images/bryan-lee-0d83d2965284681af195.js.map",
   "pages/home_page/images/resume.js": "/packs/js/pages/home_page/images/resume-ae8a98e7fc11777aadd0.js",
   "pages/home_page/images/resume.js.map": "/packs/js/pages/home_page/images/resume-ae8a98e7fc11777aadd0.js.map",
-  "pages/home_page/projectlist/ProjectDescription.js": "/packs/js/pages/home_page/projectlist/ProjectDescription-d7b7f9f75eca358c26f3.js",
-  "pages/home_page/projectlist/ProjectDescription.js.map": "/packs/js/pages/home_page/projectlist/ProjectDescription-d7b7f9f75eca358c26f3.js.map",
+  "pages/home_page/projectlist/ProjectDescription.js": "/packs/js/pages/home_page/projectlist/ProjectDescription-cc5e4e7df1884b1e6164.js",
+  "pages/home_page/projectlist/ProjectDescription.js.map": "/packs/js/pages/home_page/projectlist/ProjectDescription-cc5e4e7df1884b1e6164.js.map",
   "pages/home_page/projectlist/ProjectDisplay.js": "/packs/js/pages/home_page/projectlist/ProjectDisplay-a482165b00c07e2c16d1.js",
   "pages/home_page/projectlist/ProjectDisplay.js.map": "/packs/js/pages/home_page/projectlist/ProjectDisplay-a482165b00c07e2c16d1.js.map"
 }
