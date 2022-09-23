@@ -24,7 +24,7 @@ const ProjectList = () => {
     let projectDisplays = document.getElementsByClassName('project__display')
     if (projectDisplays.length > 0) {
       let projectList = document.getElementsByClassName('projects__list')[0]
-      if (screen.width > 700) {
+      if (screen.width > 750) {
         projectList.style['height'] = `${320 + ((projectDisplays.length
          - 1 - ((projectDisplays.length - 1) %3))/3)*320}px`
         let x = 0
