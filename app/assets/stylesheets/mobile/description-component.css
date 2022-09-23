@@ -1,9 +1,8 @@
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     .description__container{
         background-color: #b0c4de;
         position: relative;
         width: 100%;
-        text-align: center;
         overflow: hidden;
         border-bottom: solid;
         box-shadow: grey;
@@ -17,6 +16,7 @@
     .description__container .description{
         width: 100%;
         overflow: hidden;
+        text-align: center;
         margin: 10px;
     }
 
